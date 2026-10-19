@@ -593,7 +593,12 @@
       width: 100%;
       height: 520px;
       object-fit: cover;
+      object-position: center 10%;
       display: block;
+      transition: transform 0.5s var(--ease-luxe);
+    }
+    .doctor-img-wrap:hover .doctor-img {
+      transform: scale(1.02);
     }
     .doctor-decor-badge {
       position: absolute;
@@ -1604,7 +1609,7 @@
       <div class="doctor-grid">
         <div class="doctor-media">
           <div class="doctor-img-wrap">
-            <img src="assets/dra-jailin-1.jpeg" alt="Dra. Jailin Rada en consulta" class="doctor-img">
+            <img src="assets/dra-jailin.jpg" alt="Dra. Jailin Rada — Odontóloga Especialista" class="doctor-img">
           </div>
           <div class="doctor-decor-badge">
             Odontóloga Especialista

@@ -60,7 +60,7 @@ La plataforma eleva la identidad visual de la clínica al nivel de un servicio m
 ```text
 ├── assets/                       # Logotipos, retratos médicos y texturas optimizadas
 │   ├── logo.png                  # Logo oficial de Aurea Smile
-│   ├── dra-jailin-1.jpeg         # Retrato profesional de la Dra. Jailin Rada
+│   ├── dra-jailin.jpg            # Retrato oficial de la Dra. Jailin Rada
 │   ├── dra-jailin-2.jpeg         # Foto clínica en consulta
 │   ├── hero-dental.png           # Imagen de impacto de estética dental
 │   └── fondo-2.png               # Textura de fondo suave
