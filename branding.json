@@ -1,0 +1,59 @@
+{
+  "negocio": "Aurea Smile – Odontología Especializada",
+  "directora": "Dra. Jailin Rada",
+  "claim": "Diseñamos tu sonrisa mientras disfrutas de una experiencia multisensorial de relajación.",
+  "claim_secundario": "Transformando sonrisas con precisión, elegancia y atención personalizada en el corazón del Caribe.",
+  "filosofia": "Somos un concepto odontológico diferente, centrado en la persona y soportado en la innovación y la tecnología digital.",
+  "logo": "assets/logo.png",
+  "colores": {
+    "primario": "#f76a0c",
+    "secundario": "#87c3da",
+    "acento_oscuro": "#0a2540",
+    "fondo": "#ffffff",
+    "fondo_suave": "#f8fbfd",
+    "texto": "#1f2937",
+    "texto_mutado": "#64748b"
+  },
+  "tipografias": {
+    "titulos": "Montserrat, sans-serif",
+    "texto": "Poppins, sans-serif"
+  },
+  "contacto": {
+    "tel": "+57 316 147 3568",
+    "whatsapp": "+57 316 147 3568",
+    "whatsapp_link": "https://wa.me/573161473568?text=Hola%2C%20quiero%20agendar%20una%20cita%20con%20la%20Dra.%20Jailin%20Rada%20en%20Aurea%20Smile",
+    "ubicacion": "Caribe Colombiano",
+    "horario": "Lunes a Viernes: 8:00 AM - 6:00 PM | Sábados: 8:00 AM - 1:00 PM"
+  },
+  "servicios": [
+    {
+      "categoria": "Odontología Digital",
+      "descripcion": "Tecnología de escaneo intraoral 3D y diseño computarizado para procedimientos más rápidos, precisos y sin moldes incómodos.",
+      "items": ["Escaneo Intraoral 3D", "Planificación Quirúrgica Guiada", "Diseño Digital de Sonrisa (DSD)"]
+    },
+    {
+      "categoria": "Rehabilitación Oral",
+      "descripcion": "Restauración integral de la función masticatoria, oclusión y armonía dental con materiales biocompatibles de alta duración.",
+      "items": ["Coronas Digitales", "Coronas Metal-Free (Zirconio/Disilicato)", "Coronas y Prótesis Sobre Implantes"]
+    },
+    {
+      "categoria": "Estética Dental",
+      "descripcion": "Tratamientos de alta gama para lograr una sonrisa luminosa, simétrica y de aspecto 100% natural.",
+      "items": ["Diseño de Sonrisa Personalizado", "Blanqueamiento Dental Láser / Combinado", "Diseño y Colocación de Carillas Cerámicas y Resina"]
+    },
+    {
+      "categoria": "Tratamientos Complementarios y Prevención",
+      "descripcion": "Cuidado integral de la salud bucal para mantener encías sanas y estructuras dentales libres de patologías.",
+      "items": ["Profilaxis y Limpiezas Profundas con Ultrasonido", "Odontología General Preventiva", "Implantes Dentales Osteointegrados"]
+    }
+  ],
+  "biografia_dra": "La Dra. Jailin Rada es una odontóloga dedicada a ofrecer experiencias odontológicas de alto nivel, donde la precisión clínica, la estética y el bienestar del paciente se integran para crear sonrisas saludables y naturalmente hermosas.",
+  "diferenciadores": [
+    "Experiencia multisensorial relajante (cero estrés dental)",
+    "Flujo 100% digital de última generación",
+    "Atención personalizada directa por la Dra. Jailin Rada",
+    "Materiales libres de metal con acabado hiperrealista"
+  ],
+  "idiomas": ["es", "en"],
+  "idioma_principal": "es"
+}

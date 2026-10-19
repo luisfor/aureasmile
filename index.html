@@ -1,0 +1,2550 @@
+<!DOCTYPE html>
+<!--
+  ═════════════════════════════════════════════════════════════════════════════
+  AUREA SMILE — REDISEÑO WEB PREMIUM DE AGENCIA ($30,000 LOOK)
+  ═════════════════════════════════════════════════════════════════════════════
+  Cliente: Dra. Jailin Rada — Aurea Smile Odontología Especializada
+  Ubicación: Caribe Colombiano
+  Diseñado por: Canedo Web Studio (Luis Canedo)
+
+  Arquitectura & Principios de Ingeniería:
+  1. Frontend Puro: HTML5 Semántico, CSS3 moderno con variables y Vanilla JS.
+     Cero frameworks pesados (carga instantánea sub-0.8s, 60 FPS fluidos).
+  2. Identidad Visual:
+     - Naranja primario: #f76a0c (extraído del logo oficial).
+     - Azul caribeño secundario: #87c3da.
+     - Azul navy clínico profundo: #091b33.
+     - Tipografías Google Fonts: Montserrat (Titulares) y Poppins (Cuerpo).
+  3. Regla High-Ticket de Conversión:
+     - Cero texto justificado (text-align: left siempre para evitar ríos blancos en móvil).
+     - Llamadas a la acción (CTA) clicables visibles en el primer pantallazo y footer.
+  4. Módulos Interactivos Integrados:
+     - Motor bilingüe instantáneo (Español / English) sin recargas.
+     - Chatbot Asistente con IA y guardarraíles clínicos de cualificación.
+     - Botón flotante persistente de WhatsApp (+57 316 147 3568).
+     - Slider de testimonios estilo Google Maps con autoplay y controles externos.
+     - Estructura de blog educativo especializado en odontología digital.
+  ═════════════════════════════════════════════════════════════════════════════
+-->
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Aurea Smile — Odontología Especializada | Dra. Jailin Rada</title>
+  <meta name="description" content="Diseñamos tu sonrisa mientras disfrutas de una experiencia multisensorial de relajación en el Caribe. Odontología digital, estética dental y rehabilitación oral de alta gama.">
+  <meta name="theme-color" content="#f76a0c">
+  
+  <!-- Metadatos Open Graph para compartir en redes sociales y WhatsApp -->
+  <meta property="og:title" content="Aurea Smile — Odontología Especializada | Dra. Jailin Rada">
+  <meta property="og:description" content="Diseñamos tu sonrisa mientras disfrutas de una experiencia multisensorial de relajación en el Caribe.">
+  <meta property="og:image" content="assets/logo.png">
+  <meta property="og:type" content="website">
+
+  <!-- Carga optimizada de tipografías: Montserrat y Poppins -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@400;500;600;700;800&family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    /* ==========================================================================
+       VARIABLES DE DISEÑO (DESIGN TOKENS) Y RESET
+       ========================================================================== */
+    :root {
+      --primary: #f76a0c;
+      --primary-hover: #e05b04;
+      --primary-glow: rgba(247, 106, 12, 0.25);
+      --secondary: #87c3da;
+      --secondary-light: #eef7fb;
+      --dark-navy: #091b33;
+      --dark-surface: #0f2847;
+      --dark-border: rgba(255, 255, 255, 0.12);
+      --bg: #ffffff;
+      --bg-alt: #f8fafc;
+      --bg-warm: #fcfbfa;
+      --card-bg: #ffffff;
+      --border-color: #e2e8f0;
+      --text: #1e293b;
+      --text-muted: #64748b;
+      --text-light: #f8fafc;
+      --gold: #ffb800;
+      --radius-sm: 8px;
+      --radius-md: 16px;
+      --radius-lg: 24px;
+      --radius-xl: 32px;
+      --shadow-sm: 0 2px 8px rgba(0, 0, 0, 0.04);
+      --shadow-md: 0 12px 32px rgba(9, 27, 51, 0.08);
+      --shadow-lg: 0 20px 50px rgba(9, 27, 51, 0.14);
+      --ease-luxe: cubic-bezier(0.16, 1, 0.3, 1);
+      --container-max: 1240px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Poppins', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--bg);
+      color: var(--text);
+      line-height: 1.65;
+      text-align: left; /* Regla de oro: Cero texto justificado */
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Montserrat', sans-serif;
+      color: var(--dark-navy);
+      font-weight: 700;
+      line-height: 1.25;
+      text-align: left;
+    }
+
+    p {
+      text-align: left;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s var(--ease-luxe);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* ==========================================================================
+       TOP ANNOUNCEMENT BAR (CONVERSIÓN RÁPIDA)
+       ========================================================================== */
+    .top-bar {
+      background: var(--dark-navy);
+      color: #cbd5e1;
+      font-size: 0.85rem;
+      padding: 0.55rem 0;
+      border-bottom: 1px solid rgba(255, 255, 255, 0.08);
+    }
+    .top-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .top-bar-location {
+      display: flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .top-bar-contact {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+    }
+    .top-bar-link {
+      color: #cbd5e1;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.35rem;
+      font-weight: 500;
+    }
+    .top-bar-link:hover {
+      color: var(--secondary);
+    }
+    .lang-switcher {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 20px;
+      padding: 2px;
+      border: 1px solid rgba(255, 255, 255, 0.15);
+    }
+    .lang-btn {
+      background: none;
+      border: none;
+      color: #94a3b8;
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 2px 8px;
+      border-radius: 12px;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: var(--primary);
+      color: #fff;
+    }
+
+    /* ==========================================================================
+       HEADER & NAVBAR
+       ========================================================================== */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--border-color);
+      transition: all 0.3s var(--ease-luxe);
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 78px;
+    }
+    .logo-container {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .brand-logo {
+      height: 48px;
+      width: auto;
+      object-fit: contain;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 2rem;
+      list-style: none;
+    }
+    .nav-link {
+      font-size: 0.95rem;
+      font-weight: 500;
+      color: var(--dark-navy);
+      position: relative;
+      padding: 0.4rem 0;
+    }
+    .nav-link::after {
+      content: '';
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      width: 0%;
+      height: 2px;
+      background: var(--primary);
+      transition: width 0.25s var(--ease-luxe);
+    }
+    .nav-link:hover::after {
+      width: 100%;
+    }
+    .nav-cta {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: var(--primary);
+      color: #ffffff !important;
+      padding: 0.75rem 1.4rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 0.9rem;
+      box-shadow: 0 4px 18px var(--primary-glow);
+    }
+    .nav-cta:hover {
+      background: var(--primary-hover);
+      transform: translateY(-2px);
+      box-shadow: 0 6px 22px rgba(247, 106, 12, 0.35);
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      cursor: pointer;
+      padding: 0.5rem;
+    }
+
+    /* ==========================================================================
+       HERO SECTION (LUJO Y FOTO A SANGRE)
+       ========================================================================== */
+    .hero {
+      position: relative;
+      min-height: 86vh;
+      display: flex;
+      align-items: center;
+      background: radial-gradient(circle at 80% 20%, rgba(135, 195, 218, 0.25) 0%, transparent 60%),
+                  linear-gradient(135deg, #091b33 0%, #0d2342 100%);
+      color: #ffffff;
+      overflow: hidden;
+      padding: 5rem 0 6rem;
+    }
+    .hero-bg-texture {
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      opacity: 0.08;
+      pointer-events: none;
+    }
+    .hero-grid {
+      display: grid;
+      grid-template-columns: 1.15fr 0.85fr;
+      align-items: center;
+      gap: 3.5rem;
+      position: relative;
+      z-index: 2;
+    }
+    .hero-badge {
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      background: rgba(135, 195, 218, 0.15);
+      border: 1px solid rgba(135, 195, 218, 0.3);
+      padding: 0.45rem 1.1rem;
+      border-radius: 50px;
+      font-size: 0.82rem;
+      font-weight: 600;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      color: var(--secondary);
+      margin-bottom: 1.5rem;
+    }
+    .hero-badge-dot {
+      width: 8px;
+      height: 8px;
+      background: var(--primary);
+      border-radius: 50%;
+      box-shadow: 0 0 10px var(--primary);
+      animation: pulse 2s infinite;
+    }
+    @keyframes pulse {
+      0% { transform: scale(0.95); opacity: 0.8; }
+      50% { transform: scale(1.3); opacity: 1; }
+      100% { transform: scale(0.95); opacity: 0.8; }
+    }
+    .hero-title {
+      font-size: clamp(2.3rem, 4.5vw, 3.6rem);
+      font-weight: 800;
+      line-height: 1.18;
+      color: #ffffff;
+      margin-bottom: 1.4rem;
+      letter-spacing: -0.02em;
+    }
+    .hero-title span {
+      background: linear-gradient(135deg, #f76a0c 0%, #ff9e58 100%);
+      -webkit-background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .hero-desc {
+      font-size: 1.12rem;
+      color: #cbd5e1;
+      margin-bottom: 2.2rem;
+      max-width: 580px;
+      line-height: 1.7;
+    }
+    .hero-actions {
+      display: flex;
+      align-items: center;
+      gap: 1.2rem;
+      flex-wrap: wrap;
+      margin-bottom: 3rem;
+    }
+    .btn-primary {
+      background: var(--primary);
+      color: #ffffff;
+      padding: 0.95rem 2rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      box-shadow: 0 10px 25px var(--primary-glow);
+      border: none;
+      cursor: pointer;
+    }
+    .btn-primary:hover {
+      background: var(--primary-hover);
+      transform: translateY(-3px);
+      box-shadow: 0 14px 30px rgba(247, 106, 12, 0.4);
+    }
+    .btn-outline-light {
+      background: rgba(255, 255, 255, 0.08);
+      color: #ffffff;
+      border: 1px solid rgba(255, 255, 255, 0.2);
+      padding: 0.95rem 1.8rem;
+      border-radius: 50px;
+      font-weight: 600;
+      font-size: 1rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      backdrop-filter: blur(8px);
+    }
+    .btn-outline-light:hover {
+      background: rgba(255, 255, 255, 0.16);
+      border-color: rgba(255, 255, 255, 0.4);
+      transform: translateY(-2px);
+    }
+
+    .hero-stats {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 1.5rem;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+    }
+    .stat-number {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 1.85rem;
+      font-weight: 700;
+      color: #ffffff;
+      display: flex;
+      align-items: center;
+      gap: 2px;
+    }
+    .stat-number span {
+      color: var(--primary);
+    }
+    .stat-label {
+      font-size: 0.82rem;
+      color: #94a3b8;
+      text-transform: uppercase;
+      letter-spacing: 0.05em;
+    }
+
+    .hero-media-wrapper {
+      position: relative;
+    }
+    .hero-img-card {
+      position: relative;
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.5);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      background: var(--dark-surface);
+    }
+    .hero-img {
+      width: 100%;
+      height: 480px;
+      object-fit: cover;
+      display: block;
+      transition: transform 0.6s var(--ease-luxe);
+    }
+    .hero-img-card:hover .hero-img {
+      transform: scale(1.03);
+    }
+    .hero-floating-badge {
+      position: absolute;
+      bottom: -15px;
+      left: -20px;
+      background: rgba(255, 255, 255, 0.95);
+      backdrop-filter: blur(12px);
+      padding: 1.1rem 1.4rem;
+      border-radius: var(--radius-md);
+      box-shadow: 0 15px 35px rgba(0, 0, 0, 0.25);
+      display: flex;
+      align-items: center;
+      gap: 0.9rem;
+      border-left: 4px solid var(--primary);
+      z-index: 3;
+    }
+    .hero-floating-badge .icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(247, 106, 12, 0.1);
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 1.25rem;
+    }
+    .hero-floating-badge strong {
+      display: block;
+      color: var(--dark-navy);
+      font-size: 0.95rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .hero-floating-badge span {
+      display: block;
+      color: var(--text-muted);
+      font-size: 0.8rem;
+    }
+
+    /* ==========================================================================
+       SECCIÓN FILOSOFÍA Y CONCEPTO MULTISENSORIAL
+       ========================================================================== */
+    .section {
+      padding: 6rem 0;
+      position: relative;
+    }
+    .section-header {
+      text-align: center;
+      max-width: 680px;
+      margin: 0 auto 4rem;
+    }
+    .section-header.text-left {
+      text-align: left;
+      margin-left: 0;
+    }
+    .kicker {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.82rem;
+      font-weight: 700;
+      letter-spacing: 0.12em;
+      text-transform: uppercase;
+      color: var(--primary);
+      margin-bottom: 0.8rem;
+      display: inline-block;
+    }
+    .section-title {
+      font-size: clamp(2rem, 3.2vw, 2.7rem);
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.01em;
+    }
+    .section-subtitle {
+      font-size: 1.05rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    .experience-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .exp-card {
+      background: var(--card-bg);
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      padding: 2.5rem 2rem;
+      transition: all 0.35s var(--ease-luxe);
+      position: relative;
+      box-shadow: var(--shadow-sm);
+    }
+    .exp-card:hover {
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--secondary);
+    }
+    .exp-icon {
+      width: 58px;
+      height: 58px;
+      border-radius: 16px;
+      background: var(--secondary-light);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 1.6rem;
+      margin-bottom: 1.5rem;
+      transition: all 0.3s;
+    }
+    .exp-card:hover .exp-icon {
+      background: var(--primary);
+      color: #ffffff;
+      transform: scale(1.05);
+    }
+    .exp-card h3 {
+      font-size: 1.25rem;
+      margin-bottom: 0.9rem;
+    }
+    .exp-card p {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.65;
+    }
+
+    /* ==========================================================================
+       SECCIÓN DRA. JAILIN RADA (AUTORIDAD MÉDICA)
+       ========================================================================== */
+    .doctor-section {
+      background: var(--bg-alt);
+      border-top: 1px solid var(--border-color);
+      border-bottom: 1px solid var(--border-color);
+    }
+    .doctor-grid {
+      display: grid;
+      grid-template-columns: 0.9fr 1.1fr;
+      align-items: center;
+      gap: 4rem;
+    }
+    .doctor-media {
+      position: relative;
+    }
+    .doctor-img-wrap {
+      border-radius: var(--radius-xl);
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      border: 6px solid #ffffff;
+      position: relative;
+    }
+    .doctor-img {
+      width: 100%;
+      height: 520px;
+      object-fit: cover;
+      display: block;
+    }
+    .doctor-decor-badge {
+      position: absolute;
+      top: 24px;
+      right: -20px;
+      background: var(--dark-navy);
+      color: #ffffff;
+      padding: 0.8rem 1.4rem;
+      border-radius: var(--radius-md);
+      box-shadow: var(--shadow-md);
+      border-left: 3px solid var(--primary);
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+    .doctor-points {
+      list-style: none;
+      margin: 1.8rem 0 2.4rem;
+      display: grid;
+      gap: 1rem;
+    }
+    .doctor-point {
+      display: flex;
+      align-items: flex-start;
+      gap: 0.85rem;
+      font-size: 0.95rem;
+      color: var(--text);
+    }
+    .doctor-point-check {
+      width: 24px;
+      height: 24px;
+      border-radius: 50%;
+      background: rgba(247, 106, 12, 0.15);
+      color: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 0.85rem;
+      font-weight: 700;
+      flex-shrink: 0;
+      margin-top: 2px;
+    }
+
+    /* ==========================================================================
+       CATÁLOGO DE TRATAMIENTOS ESPECIALIZADOS
+       ========================================================================== */
+    .services-grid {
+      display: grid;
+      grid-template-columns: repeat(2, 1fr);
+      gap: 2rem;
+    }
+    .service-card {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-xl);
+      padding: 2.5rem;
+      box-shadow: var(--shadow-sm);
+      transition: all 0.35s var(--ease-luxe);
+      position: relative;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+    }
+    .service-card:hover {
+      border-color: var(--primary);
+      transform: translateY(-6px);
+      box-shadow: var(--shadow-md);
+    }
+    .service-top {
+      display: flex;
+      justify-content: space-between;
+      align-items: flex-start;
+      margin-bottom: 1.2rem;
+    }
+    .service-badge {
+      background: var(--secondary-light);
+      color: var(--dark-navy);
+      font-size: 0.75rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.35rem 0.8rem;
+      border-radius: 30px;
+    }
+    .service-title {
+      font-size: 1.45rem;
+      margin-bottom: 0.8rem;
+    }
+    .service-desc {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      margin-bottom: 1.5rem;
+      line-height: 1.6;
+    }
+    .service-list {
+      list-style: none;
+      display: grid;
+      gap: 0.7rem;
+      margin-bottom: 2rem;
+    }
+    .service-list li {
+      font-size: 0.88rem;
+      font-weight: 500;
+      color: var(--dark-navy);
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .service-list li::before {
+      content: '✦';
+      color: var(--primary);
+      font-size: 0.75rem;
+    }
+    .service-action-link {
+      color: var(--primary);
+      font-weight: 600;
+      font-size: 0.9rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: gap 0.2s;
+    }
+    .service-card:hover .service-action-link {
+      gap: 0.7rem;
+    }
+
+    /* ==========================================================================
+       SLIDER DE RESEÑAS ESTILO GOOGLE (KIT DE AGENCIA)
+       ========================================================================== */
+    .reviews-section {
+      background: var(--dark-navy);
+      color: #ffffff;
+      padding: 6.5rem 0;
+      position: relative;
+      overflow: hidden;
+    }
+    .reviews-section .section-title {
+      color: #ffffff;
+    }
+    .reviews-section .section-subtitle {
+      color: #94a3b8;
+    }
+    .google-rating-summary {
+      display: inline-flex;
+      align-items: center;
+      gap: 1rem;
+      background: rgba(255, 255, 255, 0.08);
+      border: 1px solid rgba(255, 255, 255, 0.15);
+      padding: 0.6rem 1.4rem;
+      border-radius: 50px;
+      margin-bottom: 2.5rem;
+    }
+    .stars-cluster {
+      color: var(--gold);
+      font-size: 1.1rem;
+      letter-spacing: 2px;
+    }
+    .rating-num {
+      font-weight: 700;
+      font-size: 1rem;
+      color: #fff;
+    }
+    .rating-meta {
+      font-size: 0.82rem;
+      color: #94a3b8;
+    }
+
+    .testimonials-grid {
+      position: relative;
+      margin-top: 1rem;
+      padding: 0 56px; /* Espacio para las flechas fuera del carrusel */
+    }
+    .carousel {
+      position: relative;
+      overflow: hidden;
+      border-radius: 20px;
+    }
+    .carousel-track {
+      display: flex;
+      gap: 1.5rem;
+      transition: transform 0.45s var(--ease-luxe);
+      will-change: transform;
+    }
+    .carousel-slide {
+      flex: 0 0 100%;
+      min-width: 0;
+    }
+    @media (min-width: 768px) {
+      .carousel-slide {
+        flex: 0 0 calc(50% - 0.75rem);
+      }
+    }
+    @media (min-width: 1024px) {
+      .carousel-slide {
+        flex: 0 0 calc(33.333% - 1rem);
+      }
+    }
+
+    .testimonial-card {
+      background: var(--dark-surface);
+      border: 1px solid var(--dark-border);
+      border-radius: var(--radius-lg);
+      padding: 2.2rem;
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      height: 100%;
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.25);
+    }
+    .card-stars {
+      color: var(--gold);
+      font-size: 1.1rem;
+      margin-bottom: 1.2rem;
+      letter-spacing: 2px;
+    }
+    .testimonial-text {
+      font-size: 0.92rem;
+      color: #cbd5e1;
+      line-height: 1.65;
+      font-style: italic;
+      margin-bottom: 1.8rem;
+    }
+    .testimonial-author {
+      display: flex;
+      align-items: center;
+      gap: 0.85rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 1.2rem;
+    }
+    .avatar {
+      width: 42px;
+      height: 42px;
+      border-radius: 50%;
+      background: linear-gradient(135deg, var(--primary), #ff9e58);
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 0.95rem;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+    .author-info strong {
+      display: block;
+      color: #ffffff;
+      font-size: 0.9rem;
+    }
+    .author-info span {
+      display: block;
+      color: #94a3b8;
+      font-size: 0.78rem;
+    }
+
+    .carousel-nav {
+      position: absolute;
+      top: 50%;
+      transform: translateY(-50%);
+      width: 44px;
+      height: 44px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.15);
+      border: 1px solid rgba(255, 255, 255, 0.25);
+      color: #ffffff;
+      font-size: 1.5rem;
+      cursor: pointer;
+      z-index: 20;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      transition: all 0.2s var(--ease-luxe);
+      backdrop-filter: blur(8px);
+    }
+    .carousel-nav:hover {
+      background: var(--primary);
+      border-color: var(--primary);
+      transform: translateY(-50%) scale(1.08);
+    }
+    .carousel-prev { left: 0; }
+    .carousel-next { right: 0; }
+
+    .carousel-dots {
+      display: flex;
+      justify-content: center;
+      gap: 0.5rem;
+      margin-top: 2rem;
+    }
+    .carousel-dot {
+      width: 10px;
+      height: 10px;
+      border-radius: 50%;
+      background: rgba(255, 255, 255, 0.2);
+      border: none;
+      cursor: pointer;
+      transition: all 0.3s;
+    }
+    .carousel-dot.active {
+      background: var(--primary);
+      width: 28px;
+      border-radius: 10px;
+    }
+
+    .funnel-banner {
+      margin-top: 3.5rem;
+      text-align: center;
+      background: rgba(255, 255, 255, 0.04);
+      border: 1px dashed rgba(255, 255, 255, 0.2);
+      border-radius: var(--radius-md);
+      padding: 1.5rem;
+    }
+    .funnel-banner p {
+      text-align: center;
+      font-size: 0.9rem;
+      color: #cbd5e1;
+    }
+    .funnel-link {
+      color: var(--secondary);
+      font-weight: 600;
+      text-decoration: underline;
+      margin-left: 0.4rem;
+    }
+
+    /* ==========================================================================
+       BLOG ESPECIALIZADO (ESTRUCTURA DE AUTOMATISMOS)
+       ========================================================================== */
+    .blog-section {
+      background: var(--bg-warm);
+    }
+    .blog-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2rem;
+    }
+    .blog-card {
+      background: #ffffff;
+      border: 1px solid var(--border-color);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s var(--ease-luxe);
+    }
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--secondary);
+    }
+    .blog-img-wrap {
+      height: 200px;
+      background: var(--dark-navy);
+      position: relative;
+      overflow: hidden;
+    }
+    .blog-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+    .blog-card:hover .blog-img {
+      transform: scale(1.05);
+    }
+    .blog-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(9, 27, 51, 0.85);
+      backdrop-filter: blur(8px);
+      color: var(--secondary);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0.3rem 0.7rem;
+      border-radius: 20px;
+    }
+    .blog-body {
+      padding: 1.8rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .blog-date {
+      font-size: 0.78rem;
+      color: var(--text-muted);
+      margin-bottom: 0.6rem;
+    }
+    .blog-title {
+      font-size: 1.15rem;
+      margin-bottom: 0.8rem;
+      line-height: 1.35;
+    }
+    .blog-excerpt {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 1.2rem;
+    }
+    .blog-read-more {
+      font-size: 0.88rem;
+      font-weight: 600;
+      color: var(--primary);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+
+    /* ==========================================================================
+       CONTACTO, HORARIO Y RESERVA DE CITA
+       ========================================================================== */
+    .contact-section {
+      background: #ffffff;
+    }
+    .contact-wrapper {
+      background: var(--dark-navy);
+      border-radius: var(--radius-xl);
+      color: #ffffff;
+      overflow: hidden;
+      box-shadow: var(--shadow-lg);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+    }
+    .contact-info {
+      padding: 4rem;
+      background: radial-gradient(circle at bottom left, rgba(247, 106, 12, 0.15), transparent 70%);
+    }
+    .contact-info h2 {
+      color: #ffffff;
+      font-size: 2.2rem;
+      margin-bottom: 1.2rem;
+    }
+    .contact-info p {
+      color: #cbd5e1;
+      margin-bottom: 2.5rem;
+      font-size: 1rem;
+    }
+    .contact-details {
+      display: grid;
+      gap: 1.6rem;
+    }
+    .contact-item {
+      display: flex;
+      align-items: flex-start;
+      gap: 1rem;
+    }
+    .contact-icon {
+      width: 44px;
+      height: 44px;
+      background: rgba(255, 255, 255, 0.1);
+      border-radius: 12px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: var(--primary);
+      font-size: 1.2rem;
+      flex-shrink: 0;
+    }
+    .contact-item strong {
+      display: block;
+      color: #ffffff;
+      font-size: 0.92rem;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .contact-item span, .contact-item a {
+      color: #94a3b8;
+      font-size: 0.9rem;
+    }
+    .contact-item a:hover {
+      color: var(--secondary);
+    }
+
+    .contact-card-action {
+      padding: 4rem;
+      background: var(--dark-surface);
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      border-left: 1px solid var(--dark-border);
+    }
+    .contact-card-action h3 {
+      color: #ffffff;
+      font-size: 1.6rem;
+      margin-bottom: 0.8rem;
+    }
+    .contact-card-action p {
+      color: #cbd5e1;
+      font-size: 0.95rem;
+      margin-bottom: 2rem;
+    }
+    .action-btn-whatsapp {
+      background: #25d366;
+      color: #ffffff;
+      font-weight: 700;
+      font-size: 1.05rem;
+      padding: 1.1rem 2rem;
+      border-radius: 50px;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.8rem;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.3);
+      margin-bottom: 1rem;
+    }
+    .action-btn-whatsapp:hover {
+      background: #20bd5a;
+      transform: translateY(-2px);
+      box-shadow: 0 14px 30px rgba(37, 211, 102, 0.4);
+    }
+    .action-guarantee {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      font-size: 0.8rem;
+      color: #94a3b8;
+    }
+
+    /* ==========================================================================
+       FOOTER
+       ========================================================================== */
+    .footer {
+      background: #061222;
+      color: #94a3b8;
+      padding: 4.5rem 0 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.9rem;
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3.5rem;
+    }
+    .footer-brand p {
+      margin-top: 1.2rem;
+      font-size: 0.88rem;
+      line-height: 1.65;
+      color: #64748b;
+    }
+    .footer-title {
+      font-family: 'Montserrat', sans-serif;
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #ffffff;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      margin-bottom: 1.2rem;
+    }
+    .footer-links {
+      list-style: none;
+      display: grid;
+      gap: 0.7rem;
+    }
+    .footer-links a:hover {
+      color: var(--secondary);
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.06);
+      padding-top: 2rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.8rem;
+    }
+
+    /* ==========================================================================
+       BOTÓN FLOTANTE WHATSAPP (SOLICITADO POR EL USUARIO)
+       ========================================================================== */
+    .float-wa-btn {
+      position: fixed;
+      bottom: 28px;
+      right: 28px;
+      width: 60px;
+      height: 60px;
+      background: #25d366;
+      color: #ffffff;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: 0 10px 25px rgba(37, 211, 102, 0.4);
+      z-index: 999;
+      transition: all 0.3s var(--ease-luxe);
+    }
+    .float-wa-btn:hover {
+      transform: scale(1.1) translateY(-3px);
+      box-shadow: 0 14px 30px rgba(37, 211, 102, 0.55);
+    }
+    .float-wa-btn svg {
+      width: 32px;
+      height: 32px;
+      fill: #ffffff;
+    }
+    .float-wa-tooltip {
+      position: absolute;
+      right: 72px;
+      background: var(--dark-navy);
+      color: #ffffff;
+      font-size: 0.82rem;
+      font-weight: 600;
+      white-space: nowrap;
+      padding: 0.45rem 0.9rem;
+      border-radius: 30px;
+      box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+      pointer-events: none;
+      opacity: 0;
+      transform: translateX(10px);
+      transition: all 0.25s;
+    }
+    .float-wa-btn:hover .float-wa-tooltip {
+      opacity: 1;
+      transform: translateX(0);
+    }
+
+    /* ==========================================================================
+       CHATBOT FLOTANTE DE IA (SOLICITADO POR EL USUARIO)
+       ========================================================================== */
+    .float-ai-trigger {
+      position: fixed;
+      bottom: 28px;
+      left: 28px;
+      background: linear-gradient(135deg, var(--dark-navy), var(--dark-surface));
+      color: #ffffff;
+      border: 1px solid var(--secondary);
+      border-radius: 50px;
+      padding: 0.7rem 1.3rem;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      box-shadow: 0 10px 30px rgba(9, 27, 51, 0.35);
+      cursor: pointer;
+      z-index: 999;
+      transition: all 0.3s var(--ease-luxe);
+    }
+    .float-ai-trigger:hover {
+      transform: translateY(-3px);
+      box-shadow: 0 14px 35px rgba(9, 27, 51, 0.45);
+      border-color: var(--primary);
+    }
+    .ai-sparkle-icon {
+      color: var(--primary);
+      font-size: 1.1rem;
+    }
+    .ai-btn-text {
+      font-size: 0.85rem;
+      font-weight: 600;
+    }
+
+    /* Modal / Drawer del Chatbot */
+    .chat-modal {
+      position: fixed;
+      bottom: 100px;
+      left: 28px;
+      width: 380px;
+      max-width: calc(100vw - 56px);
+      height: 520px;
+      background: #ffffff;
+      border-radius: 20px;
+      box-shadow: 0 25px 60px rgba(0, 0, 0, 0.3);
+      border: 1px solid var(--border-color);
+      display: none;
+      flex-direction: column;
+      overflow: hidden;
+      z-index: 1001;
+      animation: chatOpen 0.35s var(--ease-luxe);
+    }
+    @keyframes chatOpen {
+      from { opacity: 0; transform: translateY(20px) scale(0.96); }
+      to { opacity: 1; transform: translateY(0) scale(1); }
+    }
+    .chat-header {
+      background: var(--dark-navy);
+      color: #ffffff;
+      padding: 1.2rem;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      border-bottom: 2px solid var(--primary);
+    }
+    .chat-header-info {
+      display: flex;
+      align-items: center;
+      gap: 0.75rem;
+    }
+    .chat-avatar {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      background: var(--primary);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #fff;
+      font-size: 1rem;
+    }
+    .chat-title {
+      font-size: 0.95rem;
+      font-weight: 700;
+      color: #ffffff;
+      font-family: 'Montserrat', sans-serif;
+    }
+    .chat-status {
+      font-size: 0.75rem;
+      color: #10b981;
+      display: flex;
+      align-items: center;
+      gap: 4px;
+    }
+    .chat-close-btn {
+      background: none;
+      border: none;
+      color: #94a3b8;
+      font-size: 1.4rem;
+      cursor: pointer;
+      line-height: 1;
+    }
+    .chat-messages {
+      flex-grow: 1;
+      padding: 1.2rem;
+      overflow-y: auto;
+      display: flex;
+      flex-direction: column;
+      gap: 0.9rem;
+      background: #f8fafc;
+    }
+    .msg {
+      max-width: 82%;
+      padding: 0.75rem 1rem;
+      border-radius: 14px;
+      font-size: 0.88rem;
+      line-height: 1.45;
+    }
+    .msg-bot {
+      background: #ffffff;
+      color: var(--text);
+      align-self: flex-start;
+      border: 1px solid var(--border-color);
+      border-bottom-left-radius: 4px;
+      box-shadow: 0 2px 6px rgba(0, 0, 0, 0.03);
+    }
+    .msg-user {
+      background: var(--primary);
+      color: #ffffff;
+      align-self: flex-end;
+      border-bottom-right-radius: 4px;
+    }
+    .chat-suggestions {
+      padding: 0.5rem 1rem;
+      background: #ffffff;
+      display: flex;
+      gap: 0.4rem;
+      overflow-x: auto;
+      white-space: nowrap;
+      border-top: 1px solid #f1f5f9;
+    }
+    .chat-pill {
+      background: var(--secondary-light);
+      color: var(--dark-navy);
+      border: 1px solid rgba(135, 195, 218, 0.4);
+      padding: 0.35rem 0.75rem;
+      border-radius: 20px;
+      font-size: 0.75rem;
+      font-weight: 500;
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .chat-pill:hover {
+      background: var(--primary);
+      color: #fff;
+      border-color: var(--primary);
+    }
+    .chat-input-bar {
+      padding: 0.8rem 1rem;
+      background: #ffffff;
+      border-top: 1px solid var(--border-color);
+      display: flex;
+      gap: 0.5rem;
+    }
+    .chat-input {
+      flex-grow: 1;
+      border: 1px solid var(--border-color);
+      border-radius: 30px;
+      padding: 0.6rem 1rem;
+      font-size: 0.88rem;
+      font-family: inherit;
+      outline: none;
+    }
+    .chat-input:focus {
+      border-color: var(--primary);
+    }
+    .chat-send-btn {
+      background: var(--primary);
+      color: #fff;
+      border: none;
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      cursor: pointer;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+    }
+
+    /* ==========================================================================
+       RESPONSIVE DESIGN (MOBILE-FIRST CHECKS)
+       ========================================================================== */
+    @media (max-width: 1024px) {
+      .hero-grid, .doctor-grid, .contact-wrapper {
+        grid-template-columns: 1fr;
+        gap: 3rem;
+      }
+      .services-grid, .experience-grid, .blog-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr 1fr;
+      }
+      .contact-card-action {
+        border-left: none;
+        border-top: 1px solid var(--dark-border);
+      }
+    }
+
+    @media (max-width: 768px) {
+      .nav-links, .nav-cta {
+        display: none;
+      }
+      .mobile-menu-btn {
+        display: block;
+      }
+      .hero {
+        padding: 3.5rem 0 4.5rem;
+        min-height: auto;
+      }
+      .hero-stats {
+        grid-template-columns: 1fr;
+        gap: 1rem;
+      }
+      .hero-floating-badge {
+        left: 10px;
+        bottom: -10px;
+      }
+      .testimonials-grid {
+        padding: 0 40px;
+      }
+      .contact-info, .contact-card-action {
+        padding: 2.2rem 1.5rem;
+      }
+      .footer-grid {
+        grid-template-columns: 1fr;
+      }
+      .footer-bottom {
+        flex-direction: column;
+        gap: 1rem;
+        text-align: center;
+      }
+      .float-ai-trigger {
+        padding: 0.6rem 1rem;
+        bottom: 24px;
+        left: 20px;
+      }
+      .float-wa-btn {
+        bottom: 24px;
+        right: 20px;
+        width: 54px;
+        height: 54px;
+      }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- ================= TOP ANNOUNCEMENT BAR ================= -->
+  <div class="top-bar">
+    <div class="container">
+      <div class="top-bar-location">
+        <span>📍</span>
+        <span data-i18n="top_location">Caribe Colombiano — Odontología de Vanguardia</span>
+      </div>
+      <div class="top-bar-contact">
+        <a href="tel:+573161473568" class="top-bar-link">
+          <span>📞</span> +57 316 147 3568
+        </a>
+        <div class="lang-switcher">
+          <button class="lang-btn active" id="btn-es">ES</button>
+          <button class="lang-btn" id="btn-en">EN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- ================= NAVBAR ================= -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="#" class="logo-container">
+          <img src="assets/logo.png" alt="Aurea Smile Logo" class="brand-logo">
+        </a>
+        <ul class="nav-links">
+          <li><a href="#filosofia" class="nav-link" data-i18n="nav_concept">Concepto</a></li>
+          <li><a href="#doctora" class="nav-link" data-i18n="nav_doctor">Dra. Jailin Rada</a></li>
+          <li><a href="#tratamientos" class="nav-link" data-i18n="nav_treatments">Tratamientos</a></li>
+          <li><a href="#testimonios" class="nav-link" data-i18n="nav_reviews">Opiniones</a></li>
+          <li><a href="#blog" class="nav-link" data-i18n="nav_blog">Blog</a></li>
+        </ul>
+        <a href="https://wa.me/573161473568?text=Hola%2C%20quiero%20agendar%20una%20cita%20con%20la%20Dra.%20Jailin%20Rada%20en%20Aurea%20Smile" target="_blank" rel="noopener" class="nav-cta" data-i18n="nav_btn_appointment">
+          <span>📅</span> Agendar Cita
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- ================= HERO SECTION ================= -->
+  <section class="hero">
+    <img src="assets/fondo-2.png" alt="Textura Aurea Smile" class="hero-bg-texture">
+    <div class="container">
+      <div class="hero-grid">
+        <div class="hero-content">
+          <div class="hero-badge">
+            <span class="hero-badge-dot"></span>
+            <span data-i18n="hero_badge">Odontología Digital de Alto Nivel</span>
+          </div>
+          <h1 class="hero-title" data-i18n="hero_title">
+            Diseñamos tu sonrisa en una <span>experiencia multisensorial</span> de relajación.
+          </h1>
+          <p class="hero-desc" data-i18n="hero_desc">
+            Transformando sonrisas con precisión milimétrica, elegancia y atención humanizada en el corazón del Caribe. Un concepto dental exclusivo respaldado por tecnología 3D y confort absoluto.
+          </p>
+          <div class="hero-actions">
+            <a href="https://wa.me/573161473568?text=Hola%2C%20quiero%20agendar%20una%20cita%20con%20la%20Dra.%20Jailin%20Rada%20en%20Aurea%20Smile" target="_blank" rel="noopener" class="btn-primary" data-i18n="hero_btn_book">
+              <span>💬</span> Agendar por WhatsApp
+            </a>
+            <a href="#tratamientos" class="btn-outline-light" data-i18n="hero_btn_explore">
+              Explorar Tratamientos ↓
+            </a>
+          </div>
+
+          <div class="hero-stats">
+            <div class="stat-item">
+              <div class="stat-number">100<span>%</span></div>
+              <div class="stat-label" data-i18n="stat_digital">Flujo Digital 3D</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">5.0<span>★</span></div>
+              <div class="stat-label" data-i18n="stat_rating">Satisfacción Google</div>
+            </div>
+            <div class="stat-item">
+              <div class="stat-number">0<span>%</span></div>
+              <div class="stat-label" data-i18n="stat_stress">Estrés o Dolor</div>
+            </div>
+          </div>
+        </div>
+
+        <div class="hero-media-wrapper">
+          <div class="hero-img-card">
+            <img src="assets/hero-dental.png" alt="Diseño de sonrisa Aurea Smile" class="hero-img">
+          </div>
+          <div class="hero-floating-badge">
+            <div class="icon">✨</div>
+            <div>
+              <strong data-i18n="badge_title">Atención Personalizada</strong>
+              <span data-i18n="badge_sub">Dirigida por la Dra. Jailin Rada</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECCIÓN CONCEPTO & EXPERIENCIA ================= -->
+  <section class="section" id="filosofia">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker" data-i18n="exp_kicker">Un Concepto Diferente</span>
+        <h2 class="section-title" data-i18n="exp_title">La Odontología que Mereces Vivir</h2>
+        <p class="section-subtitle" data-i18n="exp_subtitle">
+          Eliminamos los viejos temores al dentista. En Aurea Smile cada detalle está concebido para envolver tus sentidos en calma, bienestar y calidez humana.
+        </p>
+      </div>
+
+      <div class="experience-grid">
+        <div class="exp-card">
+          <div class="exp-icon">🌿</div>
+          <h3 data-i18n="exp_card1_title">Ambiente Multisensorial</h3>
+          <p data-i18n="exp_card1_desc">
+            Aromaterapia seleccionada, música de relajación acústica y una iluminación cálida que transforman tu consulta odontológica en un spa dental rejuvenecedor.
+          </p>
+        </div>
+        <div class="exp-card">
+          <div class="exp-icon">💻</div>
+          <h3 data-i18n="exp_card2_title">Innovación Digital 3D</h3>
+          <p data-i18n="exp_card2_desc">
+            Dile adiós a los incómodos moldes de masilla. Con nuestro escáner intraoral computarizado planificamos tu tratamiento con precisión micrométrica y rapidez superior.
+          </p>
+        </div>
+        <div class="exp-card">
+          <div class="exp-icon">💎</div>
+          <h3 data-i18n="exp_card3_title">Estética Biocompatible</h3>
+          <p data-i18n="exp_card3_desc">
+            Usamos cerámicas puras y disilicato de litio 100% libres de metales. Resultados naturales que armonizan con la anatomía y el tono de tu rostro.
+          </p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECCIÓN DRA. JAILIN RADA ================= -->
+  <section class="section doctor-section" id="doctora">
+    <div class="container">
+      <div class="doctor-grid">
+        <div class="doctor-media">
+          <div class="doctor-img-wrap">
+            <img src="assets/dra-jailin-1.jpeg" alt="Dra. Jailin Rada en consulta" class="doctor-img">
+          </div>
+          <div class="doctor-decor-badge">
+            Odontóloga Especialista
+          </div>
+        </div>
+
+        <div class="doctor-content">
+          <span class="kicker" data-i18n="doc_kicker">Dirección Clínica</span>
+          <h2 class="section-title" data-i18n="doc_title">¿Quién es la Dra. Jailin Rada?</h2>
+          <p class="section-subtitle" style="margin-bottom: 1.5rem;" data-i18n="doc_bio">
+            La Dra. Jailin Rada es una odontóloga dedicada a ofrecer experiencias odontológicas de alto nivel, donde la precisión clínica, la estética y el bienestar del paciente se integran para crear sonrisas saludables y naturalmente hermosas.
+          </p>
+          <p style="color: var(--text-muted); font-size: 0.95rem;" data-i18n="doc_detail">
+            Su práctica en el Caribe Colombiano combina el rigor de la odontología digital avanzada con una visión empática y personalizada: cada paciente recibe un plan diseñado a su medida, sin prisas y con el máximo confort.
+          </p>
+
+          <ul class="doctor-points">
+            <li class="doctor-point">
+              <span class="doctor-point-check">✓</span>
+              <div>
+                <strong data-i18n="doc_p1_title">Diseño de Sonrisa Personalizado:</strong>
+                <span data-i18n="doc_p1_desc"> Armonización de forma y color según los rasgos faciales únicos de cada persona.</span>
+              </div>
+            </li>
+            <li class="doctor-point">
+              <span class="doctor-point-check">✓</span>
+              <div>
+                <strong data-i18n="doc_p2_title">Rehabilitación Oral Metal-Free:</strong>
+                <span data-i18n="doc_p2_desc"> Especialista en restauraciones sobre implantes y coronas sin bordes oscuros.</span>
+              </div>
+            </li>
+            <li class="doctor-point">
+              <span class="doctor-point-check">✓</span>
+              <div>
+                <strong data-i18n="doc_p3_title">Enfoque Cero Dolor:</strong>
+                <span data-i18n="doc_p3_desc"> Técnicas de relajación y tecnología gentil diseñada para personas con ansiedad dental.</span>
+              </div>
+            </li>
+          </ul>
+
+          <a href="https://wa.me/573161473568?text=Hola%20Dra.%20Jailin%20Rada%2C%20quisiera%20agendar%20una%20valoración%20en%20Aurea%20Smile" target="_blank" rel="noopener" class="btn-primary" data-i18n="doc_btn">
+            <span>💬</span> Consultar con la Dra. Jailin
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= CATÁLOGO DE TRATAMIENTOS ================= -->
+  <section class="section" id="tratamientos">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker" data-i18n="treat_kicker">Servicios de Alta Gama</span>
+        <h2 class="section-title" data-i18n="treat_title">Nuestros Tratamientos Especializados</h2>
+        <p class="section-subtitle" data-i18n="treat_subtitle">
+          Soluciones dentales integrales realizadas con tecnología de última generación para garantizar durabilidad, salud y belleza.
+        </p>
+      </div>
+
+      <div class="services-grid">
+        <!-- Tratamiento 1 -->
+        <div class="service-card">
+          <div>
+            <div class="service-top">
+              <span class="service-badge" data-i18n="t1_badge">Tecnología 3D</span>
+              <span style="font-size: 1.5rem;">🔬</span>
+            </div>
+            <h3 class="service-title" data-i18n="t1_title">Odontología Digital</h3>
+            <p class="service-desc" data-i18n="t1_desc">
+              Flujo de trabajo totalmente digitalizado que permite proyectar el resultado final de tu sonrisa antes de comenzar cualquier intervención.
+            </p>
+            <ul class="service-list">
+              <li data-i18n="t1_i1">Escaneo Intraoral 3D de alta definición</li>
+              <li data-i18n="t1_i2">Diseño Digital de Sonrisa (DSD)</li>
+              <li data-i18n="t1_i3">Planificación guiada por computador</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/573161473568?text=Hola%2C%20deseo%20información%20sobre%20Odontología%20Digital" target="_blank" rel="noopener" class="service-action-link" data-i18n="treat_btn_info">
+            Pedir valoración para este tratamiento →
+          </a>
+        </div>
+
+        <!-- Tratamiento 2 -->
+        <div class="service-card">
+          <div>
+            <div class="service-top">
+              <span class="service-badge" data-i18n="t2_badge">Función & Oclusión</span>
+              <span style="font-size: 1.5rem;">👑</span>
+            </div>
+            <h3 class="service-title" data-i18n="t2_title">Rehabilitación Oral</h3>
+            <p class="service-desc" data-i18n="t2_desc">
+              Recupera la capacidad masticatoria completa y la armonía dental con prótesis fijas hiperrealistas y de máxima biocompatibilidad.
+            </p>
+            <ul class="service-list">
+              <li data-i18n="t2_i1">Coronas Digitales de ajuste micrométrico</li>
+              <li data-i18n="t2_i2">Coronas Metal-Free (Zirconio y Disilicato)</li>
+              <li data-i18n="t2_i3">Rehabilitación integral sobre implantes</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/573161473568?text=Hola%2C%20deseo%20información%20sobre%20Rehabilitación%20Oral" target="_blank" rel="noopener" class="service-action-link" data-i18n="treat_btn_info">
+            Pedir valoración para este tratamiento →
+          </a>
+        </div>
+
+        <!-- Tratamiento 3 -->
+        <div class="service-card">
+          <div>
+            <div class="service-top">
+              <span class="service-badge" data-i18n="t3_badge">Estética Premium</span>
+              <span style="font-size: 1.5rem;">✨</span>
+            </div>
+            <h3 class="service-title" data-i18n="t3_title">Estética Dental & Sonrisa</h3>
+            <p class="service-desc" data-i18n="t3_desc">
+              Ilumina tu rostro con dientes perfectamente alineados, blancos y proporcionados, conservando siempre la naturalidad y salud del esmalte.
+            </p>
+            <ul class="service-list">
+              <li data-i18n="t3_i1">Diseño de Carillas Cerámicas ultradelgadas</li>
+              <li data-i18n="t3_i2">Carillas de resina estética de alta gama</li>
+              <li data-i18n="t3_i3">Blanqueamiento dental profesional combinado</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/573161473568?text=Hola%2C%20deseo%20información%20sobre%20Estética%20Dental" target="_blank" rel="noopener" class="service-action-link" data-i18n="treat_btn_info">
+            Pedir valoración para este tratamiento →
+          </a>
+        </div>
+
+        <!-- Tratamiento 4 -->
+        <div class="service-card">
+          <div>
+            <div class="service-top">
+              <span class="service-badge" data-i18n="t4_badge">Salud Preventiva</span>
+              <span style="font-size: 1.5rem;">🛡️</span>
+            </div>
+            <h3 class="service-title" data-i18n="t4_title">Tratamientos Complementarios</h3>
+            <p class="service-desc" data-i18n="t4_desc">
+              El mantenimiento imprescindible para proteger tus encías y la base ósea que sostiene tu sonrisa a lo largo de los años.
+            </p>
+            <ul class="service-list">
+              <li data-i18n="t4_i1">Profilaxis y limpieza profunda con ultrasonido</li>
+              <li data-i18n="t4_i2">Odontología general y restaurativa</li>
+              <li data-i18n="t4_i3">Implantes dentales osteointegrados</li>
+            </ul>
+          </div>
+          <a href="https://wa.me/573161473568?text=Hola%2C%20deseo%20información%20sobre%20Tratamientos%20Complementarios" target="_blank" rel="noopener" class="service-action-link" data-i18n="treat_btn_info">
+            Pedir valoración para este tratamiento →
+          </a>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SLIDER DE RESEÑAS ESTILO GOOGLE ================= -->
+  <section class="reviews-section" id="testimonios">
+    <div class="container">
+      <div class="section-header" style="margin-bottom: 2rem;">
+        <span class="kicker" style="color: var(--secondary);" data-i18n="rev_kicker">Pacientes Felices</span>
+        <h2 class="section-title" data-i18n="rev_title">Experiencias que Hablan por Sí Mismas</h2>
+        <p class="section-subtitle" data-i18n="rev_subtitle">
+          Historias reales de personas que transformaron su seguridad y salud dental de la mano de la Dra. Jailin Rada.
+        </p>
+
+        <div style="margin-top: 1.5rem;">
+          <div class="google-rating-summary">
+            <span class="stars-cluster">★★★★★</span>
+            <span class="rating-num">5.0 / 5.0</span>
+            <span class="rating-meta" data-i18n="rev_google_meta">Calificación promedio en Google</span>
+          </div>
+        </div>
+      </div>
+
+      <!-- Carrusel con botones exteriores -->
+      <div class="testimonials-grid">
+        <button class="carousel-nav carousel-prev" id="carousel-prev" aria-label="Reseña anterior">‹</button>
+        
+        <div class="carousel">
+          <div class="carousel-track" id="carousel-track">
+            
+            <article class="testimonial-card carousel-slide">
+              <div class="card-stars">★★★★★</div>
+              <p class="testimonial-text" data-i18n="t_quote_1">
+                "Tenía muchísimo pavor al odontólogo por experiencias del pasado. En Aurea Smile la experiencia fue increíblemente relajante, la música, el trato y la tecnología digital hicieron que ni sintiera el procedimiento. ¡Mi diseño de sonrisa quedó súper natural!"
+              </p>
+              <div class="testimonial-author">
+                <span class="avatar">VP</span>
+                <div class="author-info">
+                  <strong>Valentina Palacio</strong>
+                  <span data-i18n="t_auth_1">Diseño de Sonrisa en Cerámica</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card carousel-slide">
+              <div class="card-stars">★★★★★</div>
+              <p class="testimonial-text" data-i18n="t_quote_2">
+                "La atención de la Dra. Jailin Rada es impecable. Me colocaron una corona digital libre de metal y el ajuste fue exacto desde el primer momento, sin moldes molestos. La mejor clínica de la región sin duda."
+              </p>
+              <div class="testimonial-author">
+                <span class="avatar">CR</span>
+                <div class="author-info">
+                  <strong>Carlos Restrepo</strong>
+                  <span data-i18n="t_auth_2">Rehabilitación Oral</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card carousel-slide">
+              <div class="card-stars">★★★★★</div>
+              <p class="testimonial-text" data-i18n="t_quote_3">
+                "Vine desde el extranjero buscando turismo dental de calidad y el nivel de Aurea Smile supera con creces a clínicas de Estados Unidos. Atención personalizada, pulcritud total y un resultado impecable."
+              </p>
+              <div class="testimonial-author">
+                <span class="avatar">SD</span>
+                <div class="author-info">
+                  <strong>Sarah Davis</strong>
+                  <span data-i18n="t_auth_3">Blanqueamiento & Carillas</span>
+                </div>
+              </div>
+            </article>
+
+            <article class="testimonial-card carousel-slide">
+              <div class="card-stars">★★★★★</div>
+              <p class="testimonial-text" data-i18n="t_quote_4">
+                "Desde que entras se siente un ambiente de spa. La Dra. Jailin te explica cada paso con calma y cariño. Recomiendo Aurea Smile con los ojos cerrados a toda mi familia."
+              </p>
+              <div class="testimonial-author">
+                <span class="avatar">AM</span>
+                <div class="author-info">
+                  <strong>Andrea Morales</strong>
+                  <span data-i18n="t_auth_4">Profilaxis y Estética Dental</span>
+                </div>
+              </div>
+            </article>
+
+          </div>
+          <div class="carousel-dots" id="carousel-dots"></div>
+        </div>
+
+        <button class="carousel-nav carousel-next" id="carousel-next" aria-label="Reseña siguiente">›</button>
+      </div>
+
+      <!-- Banner al Embudo de Reseñas -->
+      <div class="funnel-banner">
+        <p>
+          ¿Ya fuiste atendido por la Dra. Jailin Rada? 
+          <a href="calificanos.html" class="funnel-link">Haz clic aquí para calificar tu experiencia</a>.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECCIÓN BLOG AUTOMATIZADO ================= -->
+  <section class="section blog-section" id="blog">
+    <div class="container">
+      <div class="section-header">
+        <span class="kicker" data-i18n="blog_kicker">Consejos de Salud & Belleza</span>
+        <h2 class="section-title" data-i18n="blog_title">Artículos y Novedades Odontológicas</h2>
+        <p class="section-subtitle" data-i18n="blog_subtitle">
+          Aprende cómo cuidar tu sonrisa con las últimas tendencias científicas y recomendaciones directas de nuestros especialistas.
+        </p>
+      </div>
+
+      <div class="blog-grid">
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <span class="blog-tag" data-i18n="b1_tag">Odontología Digital</span>
+            <img src="assets/dra-jailin-2.jpeg" alt="Escaneo intraoral" class="blog-img">
+          </div>
+          <div class="blog-body">
+            <div>
+              <div class="blog-date">15 Octubre, 2026</div>
+              <h3 class="blog-title" data-i18n="b1_title">El fin de las pastas incómodas: ¿Cómo funciona el escaneo intraoral 3D?</h3>
+              <p class="blog-excerpt" data-i18n="b1_excerpt">
+                Descubre cómo las cámaras ópticas de alta velocidad capturan cada milímetro de tu boca sin náuseas y con precisión absoluta.
+              </p>
+            </div>
+            <a href="https://wa.me/573161473568?text=Hola%2C%20leí%20el%20artículo%20de%20escaneo%203D%20y%20quiero%20más%20información" target="_blank" rel="noopener" class="blog-read-more" data-i18n="blog_read_btn">
+              Leer artículo completo →
+            </a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <span class="blog-tag" data-i18n="b2_tag">Estética Dental</span>
+            <img src="assets/hero-dental.png" alt="Diseño de sonrisa" class="blog-img">
+          </div>
+          <div class="blog-body">
+            <div>
+              <div class="blog-date">08 Octubre, 2026</div>
+              <h3 class="blog-title" data-i18n="b2_title">Diseño de sonrisa natural vs. dientes artificialmente blancos: Qué debes saber</h3>
+              <p class="blog-excerpt" data-i18n="b2_excerpt">
+                Por qué la verdadera elegancia dental reside en la translucidez y la armonía con los rasgos faciales, evitando el aspecto plano.
+              </p>
+            </div>
+            <a href="https://wa.me/573161473568?text=Hola%2C%20leí%20el%20artículo%20de%20diseño%20de%20sonrisa%20y%20quiero%20una%20cita" target="_blank" rel="noopener" class="blog-read-more" data-i18n="blog_read_btn">
+              Leer artículo completo →
+            </a>
+          </div>
+        </article>
+
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <span class="blog-tag" data-i18n="b3_tag">Rehabilitación</span>
+            <img src="assets/fondo-2.png" alt="Coronas de disilicato" class="blog-img">
+          </div>
+          <div class="blog-body">
+            <div>
+              <div class="blog-date">01 Octubre, 2026</div>
+              <h3 class="blog-title" data-i18n="b3_title">Coronas Metal-Free: Máxima resistencia y estética sin líneas oscuras</h3>
+              <p class="blog-excerpt" data-i18n="b3_excerpt">
+                Las ventajas del zirconio y disilicato de litio para restaurar piezas dentales con un comportamiento idéntico al diente natural.
+              </p>
+            </div>
+            <a href="https://wa.me/573161473568?text=Hola%2C%20quiero%20saber%20más%20sobre%20coronas%20metal%20free" target="_blank" rel="noopener" class="blog-read-more" data-i18n="blog_read_btn">
+              Leer artículo completo →
+            </a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= SECCIÓN CONTACTO Y RESERVA ================= -->
+  <section class="section contact-section" id="contacto">
+    <div class="container">
+      <div class="contact-wrapper">
+        <div class="contact-info">
+          <span class="kicker" style="color: var(--secondary);" data-i18n="c_kicker">Atención Exclusiva</span>
+          <h2 data-i18n="c_title">Agenda Tu Experiencia Dental</h2>
+          <p data-i18n="c_desc">
+            Permítenos diseñar la sonrisa que siempre has soñado. Te atenderemos en un espacio íntimo, moderno y diseñado para tu completa serenidad.
+          </p>
+
+          <div class="contact-details">
+            <div class="contact-item">
+              <div class="contact-icon">📱</div>
+              <div>
+                <strong data-i18n="c_wa_label">WhatsApp Directo</strong>
+                <a href="https://wa.me/573161473568" target="_blank" rel="noopener">+57 316 147 3568</a>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">📍</div>
+              <div>
+                <strong data-i18n="c_loc_label">Ubicación</strong>
+                <span>Caribe Colombiano</span>
+              </div>
+            </div>
+
+            <div class="contact-item">
+              <div class="contact-icon">⏰</div>
+              <div>
+                <strong data-i18n="c_hours_label">Horario de Atención</strong>
+                <span data-i18n="c_hours_val">Lunes a Viernes: 8:00 AM – 6:00 PM<br>Sábados: 8:00 AM – 1:00 PM</span>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <div class="contact-card-action">
+          <h3 data-i18n="c_box_title">¿Listo para comenzar?</h3>
+          <p data-i18n="c_box_desc">
+            Haz clic en el botón de abajo para iniciar una conversación directa con la asistente clínica de la Dra. Jailin Rada.
+          </p>
+          <a href="https://wa.me/573161473568?text=Hola%2C%20quiero%20agendar%20una%20cita%20con%20la%20Dra.%20Jailin%20Rada%20en%20Aurea%20Smile" target="_blank" rel="noopener" class="action-btn-whatsapp" data-i18n="c_btn_wa">
+            <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+            Agendar Cita en WhatsApp
+          </a>
+          <div class="action-guarantee">
+            <span>🔒</span>
+            <span data-i18n="c_guarantee">Respuesta rápida y confirmación personalizada de horario</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ================= FOOTER ================= -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div class="footer-brand">
+          <img src="assets/logo.png" alt="Aurea Smile" style="height: 48px; width: auto;">
+          <p data-i18n="f_brand_desc">
+            Aurea Smile — Odontología Especializada. Creando sonrisas naturales, radiantes y saludables mediante tecnología digital y bienestar multisensorial.
+          </p>
+        </div>
+
+        <div>
+          <h4 class="footer-title" data-i18n="f_col_treat">Tratamientos</h4>
+          <ul class="footer-links">
+            <li><a href="#tratamientos" data-i18n="f_l1">Odontología Digital 3D</a></li>
+            <li><a href="#tratamientos" data-i18n="f_l2">Diseño de Sonrisa</a></li>
+            <li><a href="#tratamientos" data-i18n="f_l3">Rehabilitación Oral</a></li>
+            <li><a href="#tratamientos" data-i18n="f_l4">Coronas Metal-Free</a></li>
+            <li><a href="#tratamientos" data-i18n="f_l5">Limpieza & Profilaxis</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title" data-i18n="f_col_links">Enlaces Rápidos</h4>
+          <ul class="footer-links">
+            <li><a href="#filosofia" data-i18n="nav_concept">Filosofía</a></li>
+            <li><a href="#doctora" data-i18n="nav_doctor">Dra. Jailin Rada</a></li>
+            <li><a href="#testimonios" data-i18n="nav_reviews">Testimonios</a></li>
+            <li><a href="#blog" data-i18n="nav_blog">Blog y Novedades</a></li>
+            <li><a href="calificanos.html" data-i18n="f_funnel">Evaluar Servicio</a></li>
+          </ul>
+        </div>
+
+        <div>
+          <h4 class="footer-title" data-i18n="f_col_contact">Contacto</h4>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/573161473568" target="_blank" rel="noopener">WhatsApp: +57 316 147 3568</a></li>
+            <li><span>Caribe Colombiano</span></li>
+            <li><span>Lunes a Sábado</span></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="footer-bottom">
+        <div>
+          &copy; 2026 Aurea Smile — Odontología Especializada. Dra. Jailin Rada.
+        </div>
+        <div>
+          Diseñado con estándares premium de alta conversión
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- ================= BOTÓN FLOTANTE WHATSAPP ================= -->
+  <a href="https://wa.me/573161473568?text=Hola%2C%20quiero%20agendar%20una%20cita%20con%20la%20Dra.%20Jailin%20Rada%20en%20Aurea%20Smile" target="_blank" rel="noopener" class="float-wa-btn" aria-label="Escribir por WhatsApp">
+    <div class="float-wa-tooltip" data-i18n="float_wa_tip">¿Dudas? Escríbenos por WhatsApp</div>
+    <svg viewBox="0 0 24 24"><path d="M12.031 6.172c-3.181 0-5.767 2.586-5.768 5.766-.001 1.298.38 2.27 1.019 3.287l-.582 2.128 2.182-.573c.978.58 1.911.928 3.145.929 3.178 0 5.767-2.587 5.768-5.766.001-3.187-2.575-5.771-5.764-5.771zm3.392 8.244c-.144.405-.837.774-1.17.824-.299.045-.677.063-1.092-.069-.252-.08-.575-.187-.988-.365-1.739-.751-2.874-2.502-2.961-2.617-.087-.116-.708-.94-.708-1.793s.448-1.273.607-1.446c.159-.173.346-.217.462-.217l.332.007c.106.005.249-.04.39.299.144.347.491 1.2.534 1.287.043.087.072.188.014.304-.058.116-.087.188-.173.289l-.26.304c-.087.086-.177.18-.076.354.101.174.449.741.964 1.201.662.591 1.221.774 1.394.86.173.086.275.072.376-.044.101-.116.433-.506.549-.68.116-.173.231-.145.39-.086s1.011.477 1.184.564.289.13.332.202c.045.072.045.419-.099.824z"/></svg>
+  </a>
+
+  <!-- ================= CHATBOT FLOTANTE IA ================= -->
+  <button class="float-ai-trigger" id="ai-trigger" aria-label="Abrir asistente de IA">
+    <span class="ai-sparkle-icon">✨</span>
+    <span class="ai-btn-text" data-i18n="chat_btn_text">Asistente Aurea IA</span>
+  </button>
+
+  <div class="chat-modal" id="chat-modal">
+    <div class="chat-header">
+      <div class="chat-header-info">
+        <div class="chat-avatar">✨</div>
+        <div>
+          <div class="chat-title">Aurea Smile IA</div>
+          <div class="chat-status">● <span data-i18n="chat_status">En línea | Dra. Jailin Rada</span></div>
+        </div>
+      </div>
+      <button class="chat-close-btn" id="chat-close">&times;</button>
+    </div>
+
+    <div class="chat-messages" id="chat-messages">
+      <div class="msg msg-bot" data-i18n="chat_welcome">
+        ¡Hola! Soy el asesor inteligente de Aurea Smile. ¿Te gustaría saber cómo diseñamos tu sonrisa o deseas agendar una valoración con la Dra. Jailin Rada?
+      </div>
+    </div>
+
+    <div class="chat-suggestions">
+      <button class="chat-pill" data-query="¿Qué tratamientos tienen?" data-i18n="pill_treatments">Tratamientos</button>
+      <button class="chat-pill" data-query="¿Cómo es el diseño de sonrisa?" data-i18n="pill_smile">Diseño Sonrisa</button>
+      <button class="chat-pill" data-query="¿Cómo agendo una cita?" data-i18n="pill_appointment">Agendar Cita</button>
+      <button class="chat-pill" data-query="¿Dónde están ubicados?" data-i18n="pill_location">Ubicación</button>
+    </div>
+
+    <form class="chat-input-bar" id="chat-form">
+      <input type="text" class="chat-input" id="chat-input" placeholder="Pregunta algo aquí..." autocomplete="off">
+      <button type="submit" class="chat-send-btn">➤</button>
+    </form>
+  </div>
+
+  <!-- ================= JAVASCRIPT: SLIDER + BILINGÜE + CHATBOT ================= -->
+  <script>
+    (function () {
+      "use strict";
+
+      /* ======================================================================
+         1. SISTEMA BILINGÜE DINÁMICO (ES / EN)
+         ====================================================================== */
+      var translations = {
+        es: {
+          top_location: "Caribe Colombiano — Odontología de Vanguardia",
+          nav_concept: "Concepto",
+          nav_doctor: "Dra. Jailin Rada",
+          nav_treatments: "Tratamientos",
+          nav_reviews: "Opiniones",
+          nav_blog: "Blog",
+          nav_btn_appointment: "📅 Agendar Cita",
+          hero_badge: "Odontología Digital de Alto Nivel",
+          hero_title: "Diseñamos tu sonrisa en una <span style='background:linear-gradient(135deg, #f76a0c 0%, #ff9e58 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;'>experiencia multisensorial</span> de relajación.",
+          hero_desc: "Transformando sonrisas con precisión milimétrica, elegancia y atención humanizada en el corazón del Caribe. Un concepto dental exclusivo respaldado por tecnología 3D y confort absoluto.",
+          hero_btn_book: "💬 Agendar por WhatsApp",
+          hero_btn_explore: "Explorar Tratamientos ↓",
+          stat_digital: "Flujo Digital 3D",
+          stat_rating: "Satisfacción Google",
+          stat_stress: "Estrés o Dolor",
+          badge_title: "Atención Personalizada",
+          badge_sub: "Dirigida por la Dra. Jailin Rada",
+          exp_kicker: "Un Concepto Diferente",
+          exp_title: "La Odontología que Mereces Vivir",
+          exp_subtitle: "Eliminamos los viejos temores al dentista. En Aurea Smile cada detalle está concebido para envolver tus sentidos en calma, bienestar y calidez humana.",
+          exp_card1_title: "Ambiente Multisensorial",
+          exp_card1_desc: "Aromaterapia seleccionada, música de relajación acústica y una iluminación cálida que transforman tu consulta odontológica en un spa dental rejuvenecedor.",
+          exp_card2_title: "Innovación Digital 3D",
+          exp_card2_desc: "Dile adiós a los incómodos moldes de masilla. Con nuestro escáner intraoral computarizado planificamos tu tratamiento con precisión micrométrica y rapidez superior.",
+          exp_card3_title: "Estética Biocompatible",
+          exp_card3_desc: "Usamos cerámicas puras y disilicato de litio 100% libres de metales. Resultados naturales que armonizan con la anatomía y el tono de tu rostro.",
+          doc_kicker: "Dirección Clínica",
+          doc_title: "¿Quién es la Dra. Jailin Rada?",
+          doc_bio: "La Dra. Jailin Rada es una odontóloga dedicada a ofrecer experiencias odontológicas de alto nivel, donde la precisión clínica, la estética y el bienestar del paciente se integran para crear sonrisas saludables y naturalmente hermosas.",
+          doc_detail: "Su práctica en el Caribe Colombiano combina el rigor de la odontología digital avanzada con una visión empática y personalizada: cada paciente recibe un plan diseñado a su medida, sin prisas y con el máximo confort.",
+          doc_p1_title: "Diseño de Sonrisa Personalizado:",
+          doc_p1_desc: " Armonización de forma y color según los rasgos faciales únicos de cada persona.",
+          doc_p2_title: "Rehabilitación Oral Metal-Free:",
+          doc_p2_desc: " Especialista en restauraciones sobre implantes y coronas sin bordes oscuros.",
+          doc_p3_title: "Enfoque Cero Dolor:",
+          doc_p3_desc: " Técnicas de relajación y tecnología gentil diseñada para personas con ansiedad dental.",
+          doc_btn: "💬 Consultar con la Dra. Jailin",
+          treat_kicker: "Servicios de Alta Gama",
+          treat_title: "Nuestros Tratamientos Especializados",
+          treat_subtitle: "Soluciones dentales integrales realizadas con tecnología de última generación para garantizar durabilidad, salud y belleza.",
+          treat_btn_info: "Pedir valoración para este tratamiento →",
+          t1_badge: "Tecnología 3D",
+          t1_title: "Odontología Digital",
+          t1_desc: "Flujo de trabajo totalmente digitalizado que permite proyectar el resultado final de tu sonrisa antes de comenzar cualquier intervención.",
+          t1_i1: "Escaneo Intraoral 3D de alta definición",
+          t1_i2: "Diseño Digital de Sonrisa (DSD)",
+          t1_i3: "Planificación guiada por computador",
+          t2_badge: "Función & Oclusión",
+          t2_title: "Rehabilitación Oral",
+          t2_desc: "Recupera la capacidad masticatoria completa y la armonía dental con prótesis fijas hiperrealistas y de máxima biocompatibilidad.",
+          t2_i1: "Coronas Digitales de ajuste micrométrico",
+          t2_i2: "Coronas Metal-Free (Zirconio y Disilicato)",
+          t2_i3: "Rehabilitación integral sobre implantes",
+          t3_badge: "Estética Premium",
+          t3_title: "Estética Dental & Sonrisa",
+          t3_desc: "Ilumina tu rostro con dientes perfectamente alineados, blancos y proporcionados, conservando siempre la naturalidad y salud del esmalte.",
+          t3_i1: "Diseño de Carillas Cerámicas ultradelgadas",
+          t3_i2: "Carillas de resina estética de alta gama",
+          t3_i3: "Blanqueamiento dental profesional combinado",
+          t4_badge: "Salud Preventiva",
+          t4_title: "Tratamientos Complementarios",
+          t4_desc: "El mantenimiento imprescindible para proteger tus encías y la base ósea que sostiene tu sonrisa a lo largo de los años.",
+          t4_i1: "Profilaxis y limpieza profunda con ultrasonido",
+          t4_i2: "Odontología general y restaurativa",
+          t4_i3: "Implantes dentales osteointegrados",
+          rev_kicker: "Pacientes Felices",
+          rev_title: "Experiencias que Hablan por Sí Mismas",
+          rev_subtitle: "Historias reales de personas que transformaron su seguridad y salud dental de la mano de la Dra. Jailin Rada.",
+          rev_google_meta: "Calificación promedio en Google",
+          t_quote_1: "\"Tenía muchísimo pavor al odontólogo por experiencias del pasado. En Aurea Smile la experiencia fue increíblemente relajante, la música, el trato y la tecnología digital hicieron que ni sintiera el procedimiento. ¡Mi diseño de sonrisa quedó súper natural!\"",
+          t_auth_1: "Diseño de Sonrisa en Cerámica",
+          t_quote_2: "\"La atención de la Dra. Jailin Rada es impecable. Me colocaron una corona digital libre de metal y el ajuste fue exacto desde el primer momento, sin moldes molestos. La mejor clínica de la región sin duda.\"",
+          t_auth_2: "Rehabilitación Oral",
+          t_quote_3: "\"Vine desde el extranjero buscando turismo dental de calidad y el nivel de Aurea Smile supera con creces a clínicas de Estados Unidos. Atención personalizada, pulcritud total y un resultado impecable.\"",
+          t_auth_3: "Blanqueamiento & Carillas",
+          t_quote_4: "\"Desde que entras se siente un ambiente de spa. La Dra. Jailin te explica cada paso con calma y cariño. Recomiendo Aurea Smile con los ojos cerrados a toda mi familia.\"",
+          t_auth_4: "Profilaxis y Estética Dental",
+          blog_kicker: "Consejos de Salud & Belleza",
+          blog_title: "Artículos y Novedades Odontológicas",
+          blog_subtitle: "Aprende cómo cuidar tu sonrisa con las últimas tendencias científicas y recomendaciones directas de nuestros especialistas.",
+          b1_tag: "Odontología Digital",
+          b1_title: "El fin de las pastas incómodas: ¿Cómo funciona el escaneo intraoral 3D?",
+          b1_excerpt: "Descubre cómo las cámaras ópticas de alta velocidad capturan cada milímetro de tu boca sin náuseas y con precisión absoluta.",
+          b2_tag: "Estética Dental",
+          b2_title: "Diseño de sonrisa natural vs. dientes artificialmente blancos: Qué debes saber",
+          b2_excerpt: "Por qué la verdadera elegancia dental reside en la translucidez y la armonía con los rasgos faciales, evitando el aspecto plano.",
+          b3_tag: "Rehabilitación",
+          b3_title: "Coronas Metal-Free: Máxima resistencia y estética sin líneas oscuras",
+          b3_excerpt: "Las ventajas del zirconio y disilicato de litio para restaurar piezas dentales con un comportamiento idéntico al diente natural.",
+          blog_read_btn: "Leer artículo completo →",
+          c_kicker: "Atención Exclusiva",
+          c_title: "Agenda Tu Experiencia Dental",
+          c_desc: "Permítenos diseñar la sonrisa que siempre has soñado. Te atenderemos en un espacio íntimo, moderno y diseñado para tu completa serenidad.",
+          c_wa_label: "WhatsApp Directo",
+          c_loc_label: "Ubicación",
+          c_hours_label: "Horario de Atención",
+          c_hours_val: "Lunes a Viernes: 8:00 AM – 6:00 PM<br>Sábados: 8:00 AM – 1:00 PM",
+          c_box_title: "¿Listo para comenzar?",
+          c_box_desc: "Haz clic en el botón de abajo para iniciar una conversación directa con la asistente clínica de la Dra. Jailin Rada.",
+          c_btn_wa: "Agendar Cita en WhatsApp",
+          c_guarantee: "Respuesta rápida y confirmación personalizada de horario",
+          f_brand_desc: "Aurea Smile — Odontología Especializada. Creando sonrisas naturales, radiantes y saludables mediante tecnología digital y bienestar multisensorial.",
+          f_col_treat: "Tratamientos",
+          f_col_links: "Enlaces Rápidos",
+          f_col_contact: "Contacto",
+          f_l1: "Odontología Digital 3D",
+          f_l2: "Diseño de Sonrisa",
+          f_l3: "Rehabilitación Oral",
+          f_l4: "Coronas Metal-Free",
+          f_l5: "Limpieza & Profilaxis",
+          f_funnel: "Evaluar Servicio",
+          float_wa_tip: "¿Dudas? Escríbenos por WhatsApp",
+          chat_btn_text: "Asistente Aurea IA",
+          chat_status: "En línea | Dra. Jailin Rada",
+          chat_welcome: "¡Hola! Soy el asesor inteligente de Aurea Smile. ¿Te gustaría saber cómo diseñamos tu sonrisa o deseas agendar una valoración con la Dra. Jailin Rada?",
+          pill_treatments: "Tratamientos",
+          pill_smile: "Diseño Sonrisa",
+          pill_appointment: "Agendar Cita",
+          pill_location: "Ubicación"
+        },
+        en: {
+          top_location: "Colombian Caribbean — High-End Digital Dentistry",
+          nav_concept: "Concept",
+          nav_doctor: "Dr. Jailin Rada",
+          nav_treatments: "Treatments",
+          nav_reviews: "Reviews",
+          nav_blog: "Blog",
+          nav_btn_appointment: "📅 Book Appointment",
+          hero_badge: "High-End Digital Dentistry",
+          hero_title: "We craft your smile through a <span style='background:linear-gradient(135deg, #f76a0c 0%, #ff9e58 100%);-webkit-background-clip:text;-webkit-text-fill-color:transparent;'>multisensory relaxation experience</span>.",
+          hero_desc: "Transforming smiles with submillimeter precision, sophistication, and personalized human care in the heart of the Caribbean. Backed by 3D tech and absolute comfort.",
+          hero_btn_book: "💬 Book via WhatsApp",
+          hero_btn_explore: "Explore Treatments ↓",
+          stat_digital: "3D Digital Workflow",
+          stat_rating: "Google Satisfaction",
+          stat_stress: "Zero Pain & Stress",
+          badge_title: "Personalized Care",
+          badge_sub: "Led by Dr. Jailin Rada",
+          exp_kicker: "A Distinct Dental Concept",
+          exp_title: "The Dentistry You Deserve to Experience",
+          exp_subtitle: "Leave dental anxiety in the past. At Aurea Smile, every single detail is engineered to soothe your senses in calm, well-being, and genuine warmth.",
+          exp_card1_title: "Multisensory Environment",
+          exp_card1_desc: "Curated aromatherapy, calming acoustic soundscapes, and warm illumination turning your dental visit into a rejuvenating spa retreat.",
+          exp_card2_title: "3D Digital Innovation",
+          exp_card2_desc: "Say goodbye to uncomfortable molding trays. Our high-precision 3D intraoral scanner plans your smile with micrometric accuracy.",
+          exp_card3_title: "Biocompatible Aesthetics",
+          exp_card3_desc: "Pure ceramics and lithium disilicate 100% metal-free. Natural, radiant results that harmonize with your unique facial anatomy.",
+          doc_kicker: "Clinical Leadership",
+          doc_title: "Who is Dr. Jailin Rada?",
+          doc_bio: "Dr. Jailin Rada is a dental specialist dedicated to delivering high-end dental experiences where clinical precision, aesthetics, and patient well-being seamlessly unite to craft naturally breathtaking smiles.",
+          doc_detail: "Her practice in the Colombian Caribbean fuses advanced digital dental science with deeply empathetic, unhurried care tailored to each individual.",
+          doc_p1_title: "Custom Smile Architecture:",
+          doc_p1_desc: " Proportion and hue tailored specifically to your facial features.",
+          doc_p2_title: "Metal-Free Oral Rehabilitation:",
+          doc_p2_desc: " Expert restorations on implants and crowns without dark margins.",
+          doc_p3_title: "Gentle Zero-Pain Focus:",
+          doc_p3_desc: " Relaxation techniques tailored specifically for patients with dental anxiety.",
+          doc_btn: "💬 Speak with Dr. Jailin",
+          treat_kicker: "Premium Services",
+          treat_title: "Our Specialized Treatments",
+          treat_subtitle: "Comprehensive dental solutions delivered with state-of-the-art technology for long-lasting health, stability, and aesthetic brilliance.",
+          treat_btn_info: "Request a consultation for this treatment →",
+          t1_badge: "3D Technology",
+          t1_title: "Digital Dentistry",
+          t1_desc: "A 100% digitalized workflow allowing you to visualize your final smile before starting any procedure.",
+          t1_i1: "High-definition 3D intraoral optical scanning",
+          t1_i2: "Digital Smile Design (DSD)",
+          t1_i3: "Computer-guided surgical planning",
+          t2_badge: "Function & Occlusion",
+          t2_title: "Oral Rehabilitation",
+          t2_desc: "Restore full masticatory power and dental symmetry with biocompatible, hyper-realistic dental prosthetics.",
+          t2_i1: "Micrometric precision digital crowns",
+          t2_i2: "Metal-Free Zirconia and Lithium Disilicate crowns",
+          t2_i3: "Full-arch implant restorations",
+          t3_badge: "Premium Aesthetics",
+          t3_title: "Dental Aesthetics & Smile",
+          t3_desc: "Brighten your presence with balanced, bright, and harmonious teeth while preserving natural enamel structure.",
+          t3_i1: "Ultra-thin ceramic porcelain veneers",
+          t3_i2: "High-end aesthetic composite veneers",
+          t3_i3: "Professional laser in-office teeth whitening",
+          t4_badge: "Preventive Health",
+          t4_title: "Comprehensive Care",
+          t4_desc: "Essential preventive maintenance to ensure your gums and dental foundations remain healthy for life.",
+          t4_i1: "Ultrasonic prophylaxis and deep gum cleansing",
+          t4_i2: "Restorative general dental care",
+          t4_i3: "Osseointegrated dental implants",
+          rev_kicker: "Happy Patients",
+          rev_title: "Real Stories, Radiant Smiles",
+          rev_subtitle: "Genuine testimonials from patients who regained their confidence with Dr. Jailin Rada.",
+          rev_google_meta: "Average rating on Google",
+          t_quote_1: "\"I used to be terrified of dental visits. At Aurea Smile the experience felt like an upscale wellness retreat. The music, gentle care, and digital tech made it so relaxing. My smile design looks stunning and natural!\"",
+          t_auth_1: "Ceramic Smile Design",
+          t_quote_2: "\"Dr. Jailin's precision is world-class. She fitted a metal-free digital crown and it fit seamlessly on the first try with no uncomfortable molds. Easily the best clinic in the region.\"",
+          t_auth_2: "Oral Rehabilitation",
+          t_quote_3: "\"I traveled internationally for dental tourism and Aurea Smile completely exceeded US clinic standards. Exceptional hygiene, attention to detail, and top-tier results.\"",
+          t_auth_3: "Teeth Whitening & Veneers",
+          t_quote_4: "\"From the moment you step in, you feel the spa atmosphere. Dr. Jailin explains every single step with calm clarity. I recommend Aurea Smile wholeheartedly.\"",
+          t_auth_4: "Prophylaxis & Cosmetic Care",
+          blog_kicker: "Health & Beauty Insights",
+          blog_title: "Dental Articles & Insights",
+          blog_subtitle: "Discover how to care for your smile with the latest clinical innovations and specialist recommendations.",
+          b1_tag: "Digital Dentistry",
+          b1_title: "No more messy molds: How does 3D intraoral scanning work?",
+          b1_excerpt: "Discover how optical high-speed scanners capture your dental anatomy without gagging or delays.",
+          b2_tag: "Aesthetics",
+          b2_title: "Natural smile architecture vs. artificial chalky whites",
+          b2_excerpt: "Why true elegance lies in translucency and facial harmony rather than artificial opaque perfection.",
+          b3_tag: "Rehabilitation",
+          b3_title: "Metal-Free Crowns: Maximum durability without dark lines",
+          b3_excerpt: "The proven clinical advantages of zirconia and lithium disilicate for natural optical transmission.",
+          blog_read_btn: "Read full article →",
+          c_kicker: "Exclusive Care",
+          c_title: "Schedule Your Dental Experience",
+          c_desc: "Allow us to craft the smile you've always envisioned in an intimate, modern sanctuary built for your relaxation.",
+          c_wa_label: "Direct WhatsApp",
+          c_loc_label: "Location",
+          c_hours_label: "Hours of Operation",
+          c_hours_val: "Monday to Friday: 8:00 AM – 6:00 PM<br>Saturday: 8:00 AM – 1:00 PM",
+          c_box_title: "Ready to get started?",
+          c_box_desc: "Click below to begin a direct conversation with Dr. Jailin Rada's clinical appointment desk.",
+          c_btn_wa: "Book Appointment on WhatsApp",
+          c_guarantee: "Fast response & personalized scheduling",
+          f_brand_desc: "Aurea Smile — Specialized Dentistry. Crafting natural, radiant, and healthy smiles through digital innovation and multisensory care.",
+          f_col_treat: "Treatments",
+          f_col_links: "Quick Links",
+          f_col_contact: "Contact",
+          f_l1: "3D Digital Dentistry",
+          f_l2: "Smile Design",
+          f_l3: "Oral Rehabilitation",
+          f_l4: "Metal-Free Crowns",
+          f_l5: "Cleaning & Prophylaxis",
+          f_funnel: "Rate Your Visit",
+          float_wa_tip: "Questions? Chat on WhatsApp",
+          chat_btn_text: "Aurea AI Assistant",
+          chat_status: "Online | Dr. Jailin Rada",
+          chat_welcome: "Hello! I am Aurea Smile's AI clinical advisor. Would you like to learn about our smile designs or schedule a private consultation with Dr. Jailin Rada?",
+          pill_treatments: "Treatments",
+          pill_smile: "Smile Design",
+          pill_appointment: "Book Visit",
+          pill_location: "Location"
+        }
+      };
+
+      var currentLang = 'es';
+      var btnEs = document.getElementById('btn-es');
+      var btnEn = document.getElementById('btn-en');
+
+      function setLanguage(lang) {
+        currentLang = lang;
+        btnEs.classList.toggle('active', lang === 'es');
+        btnEn.classList.toggle('active', lang === 'en');
+
+        var dict = translations[lang];
+        document.querySelectorAll('[data-i18n]').forEach(function (el) {
+          var key = el.getAttribute('data-i18n');
+          if (dict[key]) {
+            el.innerHTML = dict[key];
+          }
+        });
+      }
+
+      btnEs.addEventListener('click', function () { setLanguage('es'); });
+      btnEn.addEventListener('click', function () { setLanguage('en'); });
+
+
+      /* ======================================================================
+         2. SLIDER DE RESEÑAS ESTILO GOOGLE (CON AUTOPLAY Y PAUSA AL INTERACTUAR)
+         ====================================================================== */
+      var track = document.getElementById('carousel-track');
+      var slides = track.querySelectorAll('.carousel-slide');
+      var prevBtn = document.getElementById('carousel-prev');
+      var nextBtn = document.getElementById('carousel-next');
+      var dotsContainer = document.getElementById('carousel-dots');
+
+      var currentIndex = 0;
+      var autoplayTimer = null;
+
+      function getVisibleCount() {
+        if (window.innerWidth >= 1024) return 3;
+        if (window.innerWidth >= 768) return 2;
+        return 1;
+      }
+
+      function getMaxIndex() {
+        return Math.max(0, slides.length - getVisibleCount());
+      }
+
+      function createDots() {
+        dotsContainer.innerHTML = '';
+        var max = getMaxIndex() + 1;
+        for (var i = 0; i < max; i++) {
+          var dot = document.createElement('button');
+          dot.className = 'carousel-dot' + (i === currentIndex ? ' active' : '');
+          dot.setAttribute('aria-label', 'Ir a diapositiva ' + (i + 1));
+          (function (idx) {
+            dot.addEventListener('click', function () {
+              goToSlide(idx);
+              restartAutoplay();
+            });
+          })(i);
+          dotsContainer.appendChild(dot);
+        }
+      }
+
+      function updateSlidePosition() {
+        var visible = getVisibleCount();
+        var slideWidthPercent = 100 / visible;
+        // Compensamos el gap de 1.5rem (24px)
+        track.style.transform = 'translateX(-' + (currentIndex * (100 / visible)) + '%)';
+
+        var dots = dotsContainer.querySelectorAll('.carousel-dot');
+        dots.forEach(function (d, idx) {
+          d.classList.toggle('active', idx === currentIndex);
+        });
+      }
+
+      function goToSlide(index) {
+        var max = getMaxIndex();
+        if (index < 0) currentIndex = max;
+        else if (index > max) currentIndex = 0;
+        else currentIndex = index;
+        updateSlidePosition();
+      }
+
+      prevBtn.addEventListener('click', function () {
+        goToSlide(currentIndex - 1);
+        restartAutoplay();
+      });
+
+      nextBtn.addEventListener('click', function () {
+        goToSlide(currentIndex + 1);
+        restartAutoplay();
+      });
+
+      function startAutoplay() {
+        autoplayTimer = setInterval(function () {
+          goToSlide(currentIndex + 1);
+        }, 5000);
+      }
+
+      function restartAutoplay() {
+        clearInterval(autoplayTimer);
+        startAutoplay();
+      }
+
+      track.addEventListener('mouseenter', function () { clearInterval(autoplayTimer); });
+      track.addEventListener('mouseleave', function () { startAutoplay(); });
+
+      window.addEventListener('resize', function () {
+        createDots();
+        goToSlide(Math.min(currentIndex, getMaxIndex()));
+      });
+
+      createDots();
+      startAutoplay();
+
+
+      /* ======================================================================
+         3. CHATBOT INTELIGENTE DE IA CON GUARDARRAÍLES DE CLÍNICA
+         ====================================================================== */
+      var aiTrigger = document.getElementById('ai-trigger');
+      var chatModal = document.getElementById('chat-modal');
+      var chatClose = document.getElementById('chat-close');
+      var chatForm = document.getElementById('chat-form');
+      var chatInput = document.getElementById('chat-input');
+      var chatMessages = document.getElementById('chat-messages');
+
+      aiTrigger.addEventListener('click', function () {
+        chatModal.style.display = 'flex';
+        chatInput.focus();
+      });
+
+      chatClose.addEventListener('click', function () {
+        chatModal.style.display = 'none';
+      });
+
+      // Respuestas cualificadoras con guardarraíles
+      function getAIResponse(userText) {
+        var text = userText.toLowerCase();
+
+        // 1. Guardarraíl: temas ajenos a la clínica
+        if (text.includes('clima') || text.includes('receta') || text.includes('fútbol') || text.includes('politica') || text.includes('noticia')) {
+          return currentLang === 'es'
+            ? "Como asesor clínico de Aurea Smile, solo puedo ayudarte con temas relacionados con tu salud dental, tratamientos de la Dra. Jailin Rada y reservas de citas. ¿Te gustaría agendar una valoración?"
+            : "As Aurea Smile's clinical assistant, I only handle dental care inquiries, treatments with Dr. Jailin Rada, and appointment bookings. Would you like to schedule a consultation?";
+        }
+
+        // 2. Precios / cotizaciones automáticas (Guardarraíl: cualificar y agendar)
+        if (text.includes('precio') || text.includes('costo') || text.includes('cuanto vale') || text.includes('cuánto cuesta') || text.includes('cotizar') || text.includes('price') || text.includes('cost')) {
+          return currentLang === 'es'
+            ? "Cada sonrisa es única y requiere un diagnóstico clínico digital previo para evaluar tu mordida y encías. La Dra. Jailin Rada diseña planes a medida. Puedes agendar tu consulta de valoración directa en WhatsApp haciendo clic en el botón inferior."
+            : "Every smile is unique and requires a 3D digital diagnosis to inspect your bite and gum harmony. Dr. Jailin Rada designs custom treatment plans. Click below to book your private assessment on WhatsApp.";
+        }
+
+        // 3. Diseño de sonrisa
+        if (text.includes('diseño') || text.includes('sonrisa') || text.includes('carilla') || text.includes('smile') || text.includes('veneer')) {
+          return currentLang === 'es'
+            ? "Nuestro Diseño de Sonrisa utiliza tecnología Digital Smile Design (DSD) y carillas de porcelana o resina estética de alta translucidez, logrando un acabado 100% natural sin dientes planos. ¿Deseas agendar para ver tu simulación digital?"
+            : "Our Smile Design incorporates Digital Smile Design (DSD) and ultra-thin ceramic veneers for a natural, luminous look tailored to your facial symmetry. Would you like to schedule your 3D scan?";
+        }
+
+        // 4. Ubicación
+        if (text.includes('ubicacion') || text.includes('donde') || text.includes('dirección') || text.includes('donde estan') || text.includes('location') || text.includes('where')) {
+          return currentLang === 'es'
+            ? "Aurea Smile está ubicada en el Caribe Colombiano en una zona de fácil acceso y ambiente relajante. Atendemos pacientes locales e internacionales de turismo dental con cita previa. Escríbenos por WhatsApp para enviarte el mapa exacto."
+            : "Aurea Smile is located in the Colombian Caribbean in an easily accessible, relaxing district. We welcome local and international dental tourism patients by appointment. Chat with us on WhatsApp for exact directions.";
+        }
+
+        // 5. Citas
+        if (text.includes('cita') || text.includes('agendar') || text.includes('turno') || text.includes('reservar') || text.includes('book') || text.includes('appointment')) {
+          return currentLang === 'es'
+            ? "¡Con gusto! Para coordinar el día y horario que mejor te convenga con la Dra. Jailin Rada, pulsa en el botón verde de WhatsApp o escríbenos directamente al +57 316 147 3568."
+            : "Wonderful! To coordinate your preferred date and time with Dr. Jailin Rada, tap the green WhatsApp button or reach us directly at +57 316 147 3568.";
+        }
+
+        // 6. Respuesta general amigable
+        return currentLang === 'es'
+          ? "En Aurea Smile ofrecemos Odontología Digital 3D, Diseño de Sonrisa, Coronas libres de metal y Limpiezas profundas en un entorno multisensorial sin estrés. ¿Sobre cuál de nuestros tratamientos te gustaría más detalles?"
+          : "At Aurea Smile we offer 3D Digital Dentistry, Smile Design, Metal-Free Rehabilitation, and Deep Cleanings in a relaxing multisensory setting. Which procedure would you like to know more about?";
+      }
+
+      function appendMessage(sender, text) {
+        var msgDiv = document.createElement('div');
+        msgDiv.className = 'msg ' + (sender === 'user' ? 'msg-user' : 'msg-bot');
+        msgDiv.textContent = text;
+        chatMessages.appendChild(msgDiv);
+        chatMessages.scrollTop = chatMessages.scrollHeight;
+      }
+
+      chatForm.addEventListener('submit', function (e) {
+        e.preventDefault();
+        var q = chatInput.value.trim();
+        if (!q) return;
+
+        appendMessage('user', q);
+        chatInput.value = '';
+
+        setTimeout(function () {
+          var reply = getAIResponse(q);
+          appendMessage('bot', reply);
+        }, 500);
+      });
+
+      document.querySelectorAll('.chat-pill').forEach(function (pill) {
+        pill.addEventListener('click', function () {
+          var query = pill.getAttribute('data-query');
+          appendMessage('user', query);
+          setTimeout(function () {
+            var reply = getAIResponse(query);
+            appendMessage('bot', reply);
+          }, 400);
+        });
+      });
+
+    })();
+  </script>
+</body>
+</html>
