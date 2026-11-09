@@ -1,0 +1,761 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Limpiezas Dentales — Aurea Smile | Dra. Jailin Rada</title>
+  <meta name="description" content="Información médica sobre Limpiezas Dentales: procedimiento clínico por etapas, indicaciones, beneficios, cuidados y consulta directa con la Dra. Jailin Rada en Cartagena.">
+  <link rel="canonical" href="https://aureasmile.com/tratamientos/limpiezas-dentales/">
+  <meta name="theme-color" content="#091C34">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Limpiezas Dentales — Aurea Smile | Dra. Jailin Rada">
+  <meta property="og:description" content="Información médica sobre Limpiezas Dentales: procedimiento clínico por etapas, indicaciones, beneficios, cuidados y consulta con la Dra. Jailin Rada.">
+  <meta property="og:type" content="article">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy-deep: #091C34;
+      --navy-surface: #0E2746;
+      --navy-border: rgba(213, 184, 139, 0.2);
+      --pearl-white: #F6F8FA;
+      --white: #FFFFFF;
+      --pearl-border: #E5EBF2;
+      --champagne: #D5B88B;
+      --champagne-light: #F4EADA;
+      --champagne-dark: #B69562;
+      --orange-cta: #F47721;
+      --orange-cta-hover: #DE6412;
+      --orange-glow: rgba(244, 119, 33, 0.35);
+      --text-primary: #121D2F;
+      --text-muted: #59677B;
+      --text-on-dark: #F6F8FA;
+      --text-on-dark-muted: #9EAFCE;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-xl: 30px;
+      --radius-full: 9999px;
+      --shadow-sm: 0 2px 10px rgba(9, 28, 52, 0.04);
+      --shadow-md: 0 14px 35px rgba(9, 28, 52, 0.07);
+      --ease-luxe: cubic-bezier(0.16, 1, 0.3, 1);
+      --container-max: 1220px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--white);
+      color: var(--text-primary);
+      line-height: 1.6;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Top Utility Bar */
+    .top-bar {
+      background: var(--navy-surface);
+      color: var(--text-on-dark-muted);
+      font-size: 0.8rem;
+      padding: 0.45rem 0;
+      border-bottom: 1px solid var(--navy-border);
+    }
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top-bar-location {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .top-bar-actions {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .top-bar-link {
+      color: var(--text-on-dark-muted);
+      transition: color 0.2s;
+    }
+    .top-bar-link:hover { color: var(--champagne); }
+
+    .lang-switcher {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-full);
+      padding: 2px;
+      border: 1px solid rgba(213, 184, 139, 0.25);
+    }
+    .lang-btn {
+      background: none;
+      border: none;
+      color: var(--text-on-dark-muted);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 2px 9px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: var(--champagne);
+      color: var(--navy-deep);
+    }
+
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(246, 248, 250, 0.96);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--pearl-border);
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 78px;
+    }
+    .brand-logo {
+      height: 46px;
+      width: auto;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+      list-style: none;
+    }
+    .nav-link {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--navy-deep);
+      transition: color 0.2s;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: var(--orange-cta);
+    }
+    .btn-header-cta {
+      background: var(--orange-cta);
+      color: #fff !important;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 0.65rem 1.3rem;
+      border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.25s var(--ease-luxe);
+      box-shadow: 0 4px 14px var(--orange-glow);
+    }
+    .btn-header-cta:hover {
+      background: var(--orange-cta-hover);
+      transform: translateY(-2px);
+    }
+
+    /* Detail Header */
+    .detail-header {
+      background: linear-gradient(135deg, var(--navy-deep) 0%, #112d53 100%);
+      color: #fff;
+      padding: 3.5rem 0 3rem;
+      border-bottom: 3px solid var(--champagne);
+    }
+    .breadcrumbs {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.84rem;
+      color: var(--text-on-dark-muted);
+      margin-bottom: 1.2rem;
+      flex-wrap: wrap;
+    }
+    .breadcrumbs a {
+      color: var(--champagne);
+      transition: color 0.2s;
+    }
+    .breadcrumbs a:hover {
+      color: #fff;
+    }
+    .badge-pill {
+      display: inline-block;
+      background: rgba(213, 184, 139, 0.15);
+      border: 1px solid var(--champagne);
+      color: var(--champagne-light);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.35rem 0.85rem;
+      border-radius: var(--radius-full);
+      margin-bottom: 1rem;
+    }
+    .detail-title {
+      font-size: clamp(2.2rem, 3.8vw, 3.2rem);
+      color: #fff;
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.015em;
+    }
+    .detail-summary {
+      font-size: 1.12rem;
+      color: var(--text-on-dark-muted);
+      max-width: 820px;
+      line-height: 1.7;
+    }
+
+    /* Main layout */
+    .detail-layout {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 3.5rem;
+      padding: 4.5rem 0;
+    }
+
+    /* Section blocks */
+    .section-block {
+      margin-bottom: 3.5rem;
+      scroll-margin-top: 100px;
+    }
+    .section-heading {
+      font-size: 1.55rem;
+      color: var(--navy-deep);
+      margin-bottom: 1.4rem;
+      display: flex;
+      align-items: center;
+      gap: 0.65rem;
+      border-bottom: 2px solid var(--pearl-border);
+      padding-bottom: 0.75rem;
+    }
+    .section-heading span {
+      color: var(--champagne-dark);
+      font-size: 1.3rem;
+    }
+
+    /* Review banner */
+    .review-banner {
+      background: var(--pearl-white);
+      border-left: 4px solid var(--champagne-dark);
+      padding: 1.2rem 1.6rem;
+      border-radius: var(--radius-sm);
+      display: flex;
+      gap: 1rem;
+      margin-bottom: 2.5rem;
+      color: var(--navy-deep);
+      font-size: 0.92rem;
+    }
+
+    /* Evaluation Box */
+    .eval-box {
+      background: var(--pearl-white);
+      border: 1px solid var(--pearl-border);
+      border-radius: var(--radius-md);
+      padding: 1.6rem 2rem;
+      font-size: 1rem;
+      line-height: 1.7;
+      color: var(--text-primary);
+    }
+
+    /* Step Timeline */
+    .step-timeline {
+      display: grid;
+      gap: 1.5rem;
+    }
+    .step-card {
+      display: flex;
+      gap: 1.4rem;
+      background: #fff;
+      border: 1px solid var(--pearl-border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1.8rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .step-num {
+      width: 44px;
+      height: 44px;
+      background: var(--pearl-white);
+      color: var(--navy-deep);
+      font-weight: 800;
+      font-size: 1.15rem;
+      border-radius: var(--radius-full);
+      border: 2px solid var(--champagne);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      flex-shrink: 0;
+    }
+    .step-title {
+      font-size: 1.15rem;
+      margin-bottom: 0.4rem;
+      color: var(--navy-deep);
+    }
+    .step-desc {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+    }
+
+    /* Lists */
+    .clinical-list {
+      list-style: none;
+      display: grid;
+      gap: 0.8rem;
+    }
+    .clinical-list li {
+      position: relative;
+      padding-left: 1.6rem;
+      color: var(--text-primary);
+    }
+    .clinical-list li::before {
+      content: '✓';
+      position: absolute;
+      left: 0;
+      color: var(--champagne-dark);
+      font-weight: bold;
+    }
+
+    .limitations-list {
+      list-style: none;
+      display: grid;
+      gap: 0.8rem;
+    }
+    .limitations-list li {
+      position: relative;
+      padding-left: 1.6rem;
+      color: var(--text-primary);
+    }
+    .limitations-list li::before {
+      content: 'ℹ';
+      position: absolute;
+      left: 0;
+      color: var(--navy-deep);
+      font-weight: bold;
+    }
+
+    /* FAQs */
+    .faq-item {
+      background: #fff;
+      border: 1px solid var(--pearl-border);
+      border-radius: var(--radius-md);
+      margin-bottom: 1rem;
+      overflow: hidden;
+    }
+    .faq-question {
+      padding: 1.2rem 1.6rem;
+      font-weight: 700;
+      color: var(--navy-deep);
+      cursor: pointer;
+      list-style: none;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      user-select: none;
+    }
+    .faq-question::after {
+      content: '+';
+      font-size: 1.3rem;
+      color: var(--champagne-dark);
+    }
+    .faq-item[open] .faq-question::after {
+      content: '−';
+    }
+    .faq-answer {
+      padding: 0 1.6rem 1.4rem;
+      color: var(--text-muted);
+      line-height: 1.7;
+    }
+
+    /* Sticky Sidebar */
+    .sticky-sidebar {
+      position: sticky;
+      top: 105px;
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .cta-card {
+      background: linear-gradient(135deg, var(--navy-deep) 0%, #15345d 100%);
+      color: #fff;
+      border-radius: var(--radius-lg);
+      padding: 2.2rem 1.8rem;
+      text-align: center;
+      border: 1px solid rgba(213, 184, 139, 0.25);
+      box-shadow: var(--shadow-md);
+    }
+    .cta-card h3 {
+      color: #fff;
+      font-size: 1.35rem;
+      margin-bottom: 0.6rem;
+    }
+    .cta-card p {
+      color: var(--text-on-dark-muted);
+      font-size: 0.9rem;
+      margin-bottom: 1.5rem;
+    }
+    .btn-wa-action {
+      background: var(--orange-cta);
+      color: #fff !important;
+      font-weight: 700;
+      font-size: 0.95rem;
+      padding: 0.9rem 1.5rem;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.6rem;
+      box-shadow: 0 4px 16px var(--orange-glow);
+    }
+    .btn-wa-action:hover { background: var(--orange-cta-hover); transform: translateY(-2px); }
+
+    .related-box {
+      background: var(--pearl-white);
+      border: 1px solid var(--pearl-border);
+      border-radius: var(--radius-lg);
+      padding: 1.8rem;
+    }
+    .related-card {
+      display: block;
+      padding: 1rem;
+      background: #fff;
+      border: 1px solid var(--pearl-border);
+      border-radius: var(--radius-sm);
+      margin-top: 0.8rem;
+      transition: all 0.25s var(--ease-luxe);
+    }
+    .related-card:hover { border-color: var(--champagne); transform: translateY(-2px); }
+
+    /* Footer */
+    .footer {
+      background: var(--navy-deep);
+      color: var(--text-on-dark-muted);
+      padding: 2.5rem 0;
+      font-size: 0.88rem;
+      border-top: 1px solid rgba(213, 184, 139, 0.2);
+    }
+    .footer-bottom {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    @media (max-width: 900px) {
+      .detail-layout { grid-template-columns: 1fr; }
+      .sticky-sidebar { position: static; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Utility Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-location">
+        <span>📍</span> <span data-i18n="top_location">Cartagena de Indias, Colombia • Centro Histórico</span>
+      </div>
+      <div class="top-bar-actions">
+        <a href="tel:+573000000000" class="top-bar-link">📞 +57 (300) 000-0000</a>
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn active" id="btn-es">ES</button>
+          <button type="button" class="lang-btn" id="btn-en">EN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="../../" class="brand-link">
+          <img src="../../assets/logo-aurea.png" alt="Aurea Smile Logo" class="brand-logo">
+        </a>
+        <ul class="nav-links">
+          <li><a href="../../#concepto" class="nav-link" data-i18n="nav_concept">Por qué elegirnos</a></li>
+          <li><a href="../../#doctora" class="nav-link" data-i18n="nav_doctor">Dra. Jailin Rada</a></li>
+          <li><a href="../" class="nav-link active" data-i18n="nav_treatments">Tratamientos</a></li>
+          <li><a href="../../#testimonios" class="nav-link" data-i18n="nav_reviews">Opiniones</a></li>
+          <li><a href="../../blog/" class="nav-link" data-i18n="nav_blog">Blog</a></li>
+        </ul>
+        <div>
+          <a href="https://wa.me/573000000000?text=Hola%20Dra.%20Jailin%20Rada,%20deseo%20consultar%20sobre%20Limpiezas Dentales" target="_blank" rel="noopener" class="btn-header-cta" data-i18n="nav_cta">
+            <span>💬</span> <span>Consultar por WhatsApp</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Detail Header -->
+  <section class="detail-header">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="../../" data-i18n="bc_home">Inicio</a> <span>/</span> <a href="../" data-i18n="bc_treat">Tratamientos</a> <span>/</span> <a href="../#tratamientos-complementarios" data-i18n="bc_cat">Tratamientos Complementarios</a> <span>/</span> <span data-i18n="treatment_title">Limpiezas Dentales</span>
+      </div>
+      <span class="badge-pill" data-i18n="badge_text">Profilaxis & Detox Oral</span>
+      <h1 class="detail-title" data-i18n="treatment_title">Limpiezas Dentales</h1>
+      <p class="detail-summary" data-i18n="summary_text">Tratamiento preventivo y profiláctico profundo con ultrasonido y aeropulido para eliminar placa bacteriana calcificada (tártaro) y manchas extrínsecas sin agredir el esmalte.</p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="container">
+    <div class="detail-layout">
+      <article>
+        
+        <div class="review-banner">
+          <span>🩺</span>
+          <div>
+            <strong data-i18n="note_label">Nota de Supervisión Clínica:</strong>
+            <span data-i18n="note_text">Protocolos clínicos y materiales de Limpiezas Dentales supervisados por la Dra. Jailin Rada.</span>
+          </div>
+        </div>
+
+        <!-- Indicaciones habituales -->
+        <section class="section-block">
+          <h2 class="section-heading"><span>🎯</span> <span data-i18n="sec1_heading">Indicaciones Habituales</span></h2>
+          <ul class="clinical-list" id="indicaciones-list">
+            <li>Mantenimiento regular cada 6 meses para todas las personas.</li><li>Presencia de sarro visible supragingival o subgingival incipiente.</li><li>Encías enrojecidas, edematosas o sangrantes al cepillado (gingivitis inicial).</li><li>Manchas por consumo habitual de té, café, vino o tabaco.</li>
+          </ul>
+        </section>
+
+        <!-- Evaluación previa -->
+        <section class="section-block">
+          <h2 class="section-heading"><span>🔬</span> <span data-i18n="sec2_heading">Evaluación Previa & Diagnóstico</span></h2>
+          <div class="eval-box" data-i18n="eval_text">
+            Sondaje periodontal básico para verificar ausencia de bolsas patológicas y registro del índice de placa.
+          </div>
+        </section>
+
+        <!-- Procedimiento por etapas -->
+        <section class="section-block">
+          <h2 class="section-heading"><span>📋</span> <span data-i18n="sec3_heading">Explicación del Procedimiento por Etapas</span></h2>
+          <div class="step-timeline" id="steps-container">
+            
+        <div class="step-card">
+          <div class="step-num">1</div>
+          <div>
+            <h4 class="step-title">1. Ultrasonido Piezoeléctrico</h4>
+            <p class="step-desc">Microvibraciones acuáticas que desprenden el tártaro adherido sin rayar las superficies dentales.</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">2</div>
+          <div>
+            <h4 class="step-title">2. Limpieza Interproximal</h4>
+            <p class="step-desc">Retiro de depósitos bacterianos entre los espacios interdentales con instrumental de precisión.</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">3</div>
+          <div>
+            <h4 class="step-title">3. Pulido con Aeropulidor o Pasta Profiláctica</h4>
+            <p class="step-desc">Eliminación de manchas superficiales y alisado microscópico para dificultar nueva fijación bacteriana.</p>
+          </div>
+        </div>
+        <div class="step-card">
+          <div class="step-num">4</div>
+          <div>
+            <h4 class="step-title">4. Fluorización o Aplicación de Minerales</h4>
+            <p class="step-desc">Refuerzo del esmalte para prevenir sensibilidad posprofilaxis.</p>
+          </div>
+        </div>
+          </div>
+        </section>
+
+        <!-- Beneficios -->
+        <section class="section-block">
+          <h2 class="section-heading"><span>✨</span> <span data-i18n="sec4_heading">Beneficios Posibles</span></h2>
+          <ul class="clinical-list" id="beneficios-list">
+            <li>Prevención directa de la pérdida de hueso y enfermedad periodontal.</li><li>Aliento fresco y sensación de limpieza bucal profunda inmediata.</li><li>Dientes más brillantes y limpios al retirar manchas pigmentadas.</li><li>Detección precoz de posibles caries o problemas invisibles a simple vista.</li>
+          </ul>
+        </section>
+
+        <!-- Limitaciones y consideraciones -->
+        <section class="section-block">
+          <h2 class="section-heading"><span>⚖️</span> <span data-i18n="sec5_heading">Consideraciones, Limitaciones y Riesgos</span></h2>
+          <ul class="limitations-list" id="limitaciones-list">
+            <li>En presencia de periodontitis con bolsas profundas, se requiere raspado y alisado radicular periodontal específico.</li><li>No sustituye la higiene diaria con cepillo e hilo dental en casa.</li>
+          </ul>
+        </section>
+
+        <!-- Cuidados posteriores -->
+        <section class="section-block">
+          <h2 class="section-heading"><span>🛡️</span> <span data-i18n="sec6_heading">Cuidados Posteriores y Mantenimiento</span></h2>
+          <ul class="clinical-list" id="cuidados-list">
+            <li>Esperar 30 minutos antes de ingerir bebidas o alimentos si se aplicó flúor concentrado.</li><li>Continuar con cepillado mínimo 2 veces al día y uso diario de seda dental.</li>
+          </ul>
+        </section>
+
+        <!-- FAQs -->
+        <section class="section-block">
+          <h2 class="section-heading"><span>❓</span> <span data-i18n="sec7_heading">Preguntas Frecuentes</span></h2>
+          <div id="faqs-container">
+            
+        <details class="faq-item">
+          <summary class="faq-question">¿La limpieza desgasta el diente?</summary>
+          <div class="faq-answer">No. El ultrasonido actúa exclusivamente sobre el cálculo calcificado mediante vibración mecánica y agua, sin erosionar el esmalte sano.</div>
+        </details>
+          </div>
+        </section>
+
+      </article>
+
+      <!-- Sidebar -->
+      <aside>
+        <div class="sticky-sidebar">
+          <div class="cta-card">
+            <h3 data-i18n="sb_cta_title">¿Deseas valorar tu caso?</h3>
+            <p data-i18n="sb_cta_desc">Conversa directamente con el equipo clínico de la Dra. Jailin Rada para resolver dudas sobre Limpiezas Dentales.</p>
+            <a href="https://wa.me/573000000000?text=Hola%20Dra.%20Jailin%20Rada,%20deseo%20consultar%20sobre%20Limpiezas Dentales" target="_blank" rel="noopener" class="btn-wa-action" data-i18n="sb_cta_btn">
+              <span>💬</span> <span>Consultar por WhatsApp</span>
+            </a>
+            <div style="font-size: 0.78rem; color: var(--text-on-dark-muted); margin-top: 1rem;" data-i18n="sb_cta_note">
+              Atención personalizada en Cartagena
+            </div>
+          </div>
+
+          <div class="related-box">
+            <h4 style="color:var(--navy-deep); font-size:1.1rem; margin-bottom:1rem;" data-i18n="related_title">Tratamientos Relacionados</h4>
+            <div id="related-cards-container">
+              
+        <a href="../diseno-de-sonrisa/" class="related-card">
+          <span style="font-size: 0.72rem; color: var(--champagne-dark); font-weight: 700; text-transform: uppercase;">Digital Smile Design</span>
+          <strong style="color: var(--navy-deep); font-size: 1.05rem; display: block; margin: 0.3rem 0;">Diseño de Sonrisa</strong>
+          <span style="color: var(--orange-cta); font-size: 0.85rem; font-weight: 600;">Ver tratamiento →</span>
+        </a>
+        <a href="../blanqueamiento-dental/" class="related-card">
+          <span style="font-size: 0.72rem; color: var(--champagne-dark); font-weight: 700; text-transform: uppercase;">Aclaramiento Clínico</span>
+          <strong style="color: var(--navy-deep); font-size: 1.05rem; display: block; margin: 0.3rem 0;">Blanqueamiento Dental</strong>
+          <span style="color: var(--orange-cta); font-size: 0.85rem; font-weight: 600;">Ver tratamiento →</span>
+        </a>
+        <a href="../diseno-de-carillas/" class="related-card">
+          <span style="font-size: 0.72rem; color: var(--champagne-dark); font-weight: 700; text-transform: uppercase;">Láminas Cerámicas & Resina</span>
+          <strong style="color: var(--navy-deep); font-size: 1.05rem; display: block; margin: 0.3rem 0;">Diseño de Carillas</strong>
+          <span style="color: var(--orange-cta); font-size: 0.85rem; font-weight: 600;">Ver tratamiento →</span>
+        </a>
+            </div>
+            <div style="margin-top:1.2rem; text-align:center;">
+              <a href="../" data-i18n="sb_all_treatments" style="color:var(--champagne-dark); font-weight:700; font-size:0.88rem;">← Ver catálogo completo</a>
+            </div>
+          </div>
+        </div>
+      </aside>
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-bottom">
+        <div data-i18n="footer_rights">&copy; 2026 Aurea Smile. Todos los derechos reservados.</div>
+        <div data-i18n="footer_credits">Diseño y desarrollo web por <a href="https://canedostudio.com/" target="_blank" rel="noopener" style="color:var(--champagne); font-weight:600;">Canedo Studio</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Bilingüe con Persistencia -->
+  <script>
+    (function() {
+      var dict = {"es": {"meta_title": "Limpiezas Dentales — Aurea Smile | Dra. Jailin Rada", "meta_desc": "Información médica sobre Limpiezas Dentales: procedimiento clínico por etapas, indicaciones, beneficios, cuidados y consulta con la Dra. Jailin Rada en Cartagena.", "top_location": "Cartagena de Indias, Colombia • Centro Histórico", "nav_concept": "Por qué elegirnos", "nav_doctor": "Dra. Jailin Rada", "nav_treatments": "Tratamientos", "nav_reviews": "Opiniones", "nav_blog": "Blog", "nav_cta": "Consultar por WhatsApp", "bc_home": "Inicio", "bc_treat": "Tratamientos", "bc_cat": "Tratamientos Complementarios", "treatment_title": "Limpiezas Dentales", "badge_text": "Profilaxis & Detox Oral", "summary_text": "Tratamiento preventivo y profiláctico profundo con ultrasonido y aeropulido para eliminar placa bacteriana calcificada (tártaro) y manchas extrínsecas sin agredir el esmalte.", "note_label": "Nota de Supervisión Clínica:", "note_text": "Protocolos clínicos y materiales de Limpiezas Dentales supervisados por la Dra. Jailin Rada.", "sec1_heading": "Indicaciones Habituales", "sec2_heading": "Evaluación Previa & Diagnóstico", "eval_text": "Sondaje periodontal básico para verificar ausencia de bolsas patológicas y registro del índice de placa.", "sec3_heading": "Explicación del Procedimiento por Etapas", "sec4_heading": "Beneficios Posibles", "sec5_heading": "Consideraciones, Limitaciones y Riesgos", "sec6_heading": "Cuidados Posteriores y Mantenimiento", "sec7_heading": "Preguntas Frecuentes", "sb_cta_title": "¿Deseas valorar tu caso?", "sb_cta_desc": "Conversa directamente con el equipo clínico de la Dra. Jailin Rada para resolver dudas sobre Limpiezas Dentales.", "sb_cta_btn": "Consultar por WhatsApp", "sb_cta_note": "Atención personalizada en Cartagena", "related_title": "Tratamientos Relacionados", "sb_all_treatments": "← Ver catálogo completo", "footer_rights": "© 2026 Aurea Smile. Todos los derechos reservados.", "footer_credits": "Diseño y desarrollo web por <a href=\"https://canedostudio.com/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--champagne); font-weight:600;\">Canedo Studio</a>", "ind_html": "<li>Mantenimiento regular cada 6 meses para todas las personas.</li><li>Presencia de sarro visible supragingival o subgingival incipiente.</li><li>Encías enrojecidas, edematosas o sangrantes al cepillado (gingivitis inicial).</li><li>Manchas por consumo habitual de té, café, vino o tabaco.</li>", "steps_html": "\n        <div class=\"step-card\">\n          <div class=\"step-num\">1</div>\n          <div>\n            <h4 class=\"step-title\">1. Ultrasonido Piezoeléctrico</h4>\n            <p class=\"step-desc\">Microvibraciones acuáticas que desprenden el tártaro adherido sin rayar las superficies dentales.</p>\n          </div>\n        </div>\n        <div class=\"step-card\">\n          <div class=\"step-num\">2</div>\n          <div>\n            <h4 class=\"step-title\">2. Limpieza Interproximal</h4>\n            <p class=\"step-desc\">Retiro de depósitos bacterianos entre los espacios interdentales con instrumental de precisión.</p>\n          </div>\n        </div>\n        <div class=\"step-card\">\n          <div class=\"step-num\">3</div>\n          <div>\n            <h4 class=\"step-title\">3. Pulido con Aeropulidor o Pasta Profiláctica</h4>\n            <p class=\"step-desc\">Eliminación de manchas superficiales y alisado microscópico para dificultar nueva fijación bacteriana.</p>\n          </div>\n        </div>\n        <div class=\"step-card\">\n          <div class=\"step-num\">4</div>\n          <div>\n            <h4 class=\"step-title\">4. Fluorización o Aplicación de Minerales</h4>\n            <p class=\"step-desc\">Refuerzo del esmalte para prevenir sensibilidad posprofilaxis.</p>\n          </div>\n        </div>", "ben_html": "<li>Prevención directa de la pérdida de hueso y enfermedad periodontal.</li><li>Aliento fresco y sensación de limpieza bucal profunda inmediata.</li><li>Dientes más brillantes y limpios al retirar manchas pigmentadas.</li><li>Detección precoz de posibles caries o problemas invisibles a simple vista.</li>", "lim_html": "<li>En presencia de periodontitis con bolsas profundas, se requiere raspado y alisado radicular periodontal específico.</li><li>No sustituye la higiene diaria con cepillo e hilo dental en casa.</li>", "cuid_html": "<li>Esperar 30 minutos antes de ingerir bebidas o alimentos si se aplicó flúor concentrado.</li><li>Continuar con cepillado mínimo 2 veces al día y uso diario de seda dental.</li>", "faqs_html": "\n        <details class=\"faq-item\">\n          <summary class=\"faq-question\">¿La limpieza desgasta el diente?</summary>\n          <div class=\"faq-answer\">No. El ultrasonido actúa exclusivamente sobre el cálculo calcificado mediante vibración mecánica y agua, sin erosionar el esmalte sano.</div>\n        </details>", "related_html": "\n        <a href=\"../diseno-de-sonrisa/\" class=\"related-card\">\n          <span style=\"font-size: 0.72rem; color: var(--champagne-dark); font-weight: 700; text-transform: uppercase;\">Digital Smile Design</span>\n          <strong style=\"color: var(--navy-deep); font-size: 1.05rem; display: block; margin: 0.3rem 0;\">Diseño de Sonrisa</strong>\n          <span style=\"color: var(--orange-cta); font-size: 0.85rem; font-weight: 600;\">Ver tratamiento →</span>\n        </a>\n        <a href=\"../blanqueamiento-dental/\" class=\"related-card\">\n          <span style=\"font-size: 0.72rem; color: var(--champagne-dark); font-weight: 700; text-transform: uppercase;\">Aclaramiento Clínico</span>\n          <strong style=\"color: var(--navy-deep); font-size: 1.05rem; display: block; margin: 0.3rem 0;\">Blanqueamiento Dental</strong>\n          <span style=\"color: var(--orange-cta); font-size: 0.85rem; font-weight: 600;\">Ver tratamiento →</span>\n        </a>\n        <a href=\"../diseno-de-carillas/\" class=\"related-card\">\n          <span style=\"font-size: 0.72rem; color: var(--champagne-dark); font-weight: 700; text-transform: uppercase;\">Láminas Cerámicas & Resina</span>\n          <strong style=\"color: var(--navy-deep); font-size: 1.05rem; display: block; margin: 0.3rem 0;\">Diseño de Carillas</strong>\n          <span style=\"color: var(--orange-cta); font-size: 0.85rem; font-weight: 600;\">Ver tratamiento →</span>\n        </a>"}, "en": {"meta_title": "Deep Dental Cleanings — Aurea Smile | Dr. Jailin Rada", "meta_desc": "Clinical medical details on Deep Dental Cleanings: step-by-step procedure, indications, benefits, aftercare, and boutique consultation with Dr. Jailin Rada in Cartagena.", "top_location": "Cartagena de Indias, Colombia • Historic Center", "nav_concept": "Why Choose Us", "nav_doctor": "Dr. Jailin Rada", "nav_treatments": "Treatments", "nav_reviews": "Reviews", "nav_blog": "Blog", "nav_cta": "Inquire via WhatsApp", "bc_home": "Home", "bc_treat": "Treatments", "bc_cat": "Complementary Care", "treatment_title": "Deep Dental Cleanings", "badge_text": "Preventive Ultrasonic Prophylaxis", "summary_text": "Comprehensive professional prophylaxis incorporating high-frequency ultrasound, gentle air-polishing, and remineralizing therapy to prevent periodontal disease and tooth decay.", "note_label": "Clinical Supervision Notice:", "note_text": "Preventive protocol performed with gentle, comfort-focused care at Aurea Smile.", "sec1_heading": "Clinical Indications", "sec2_heading": "Initial Diagnosis & Assessment", "eval_text": "Comprehensive periodontal probing, plaque score mapping, screening for tartar deposits, and soft tissue evaluation.", "sec3_heading": "Step-by-Step Procedure", "sec4_heading": "Clinical Benefits", "sec5_heading": "Considerations, Risks & Limitations", "sec6_heading": "Aftercare & Long-Term Maintenance", "sec7_heading": "Frequently Asked Questions", "sb_cta_title": "Would you like a clinical assessment?", "sb_cta_desc": "Connect directly with Dr. Jailin Rada's clinical desk to discuss Deep Dental Cleanings and your smile goals.", "sb_cta_btn": "Inquire via WhatsApp", "sb_cta_note": "Personalized boutique care in Cartagena", "related_title": "Related Treatments", "sb_all_treatments": "← View full catalog", "footer_rights": "© 2026 Aurea Smile. All rights reserved.", "footer_credits": "Web design & development by <a href=\"https://canedostudio.com/\" target=\"_blank\" rel=\"noopener\" style=\"color:var(--champagne); font-weight:600;\">Canedo Studio</a>", "ind_html": "<li>All patients every 6 months as essential preventive maintenance.</li><li>Gingivitis, gum bleeding during brushing, and bad breath (halitosis).</li><li>Extrinsic stains caused by coffee, tea, red wine, or tobacco.</li><li>Maintenance of patients with braces, ceramic veneers, or dental implants.</li>", "steps_html": "\n        <div class=\"step-card\">\n          <div class=\"step-num\">1</div>\n          <div>\n            <h4 class=\"step-title\">1. Ultrasonic Tartar Removal</h4>\n            <p class=\"step-desc\">High-frequency ultrasonic scaler gently detaching calculus and bacterial tartar without scratching enamel.</p>\n          </div>\n        </div>\n        <div class=\"step-card\">\n          <div class=\"step-num\">2</div>\n          <div>\n            <h4 class=\"step-title\">2. Subgingival & Interdental Deplaquing</h4>\n            <p class=\"step-desc\">Gentle micro-curettes clearing bacterial biofilm from interdental spaces and gum pockets.</p>\n          </div>\n        </div>\n        <div class=\"step-card\">\n          <div class=\"step-num\">3</div>\n          <div>\n            <h4 class=\"step-title\">3. Air-Polishing & Stain Removal</h4>\n            <p class=\"step-desc\">High-gloss polishing using micro-fine glycine or bicarbonate spray to remove dark extrinsic stains.</p>\n          </div>\n        </div>\n        <div class=\"step-card\">\n          <div class=\"step-num\">4</div>\n          <div>\n            <h4 class=\"step-title\">4. Enamel Fluoride Remineralization</h4>\n            <p class=\"step-desc\">Application of bioactive fluoride varnish strengthening enamel crystalline hydroxyapatite.</p>\n          </div>\n        </div>", "ben_html": "<li>Immediately stops gum bleeding and prevents irreversible periodontal bone loss.</li><li>Eliminates bad breath caused by subgingival anaerobic bacterial colonies.</li><li>Leaves teeth smoothly polished, naturally brighter, and clean.</li><li>Essential foundation before performing any cosmetic or restorative treatment.</li>", "lim_html": "<li>Does not alter intrinsic genetic tooth color (requires whitening).</li><li>Advanced periodontitis with deep bone pockets requires specialized root planing.</li>", "cuid_html": "<li>Brush at least twice daily with soft bristles and floss daily.</li><li>Avoid dark staining foods for 2 hours following air-polishing.</li><li>Schedule your next preventative cleaning in 6 months.</li>", "faqs_html": "\n        <details class=\"faq-item\">\n          <summary class=\"faq-question\">Does ultrasonic cleaning wear down tooth enamel?</summary>\n          <div class=\"faq-answer\">No. The ultrasonic tip vibrates at acoustic micro-frequencies to shatter brittle tartar deposits without harming resilient tooth enamel.</div>\n        </details>\n        <details class=\"faq-item\">\n          <summary class=\"faq-question\">How often should I get a dental cleaning?</summary>\n          <div class=\"faq-answer\">Every 6 months for healthy patients, and every 3 to 4 months for patients with a history of periodontal disease.</div>\n        </details>", "related_html": "\n        <a href=\"../diseno-de-sonrisa/\" class=\"related-card\">\n          <span style=\"font-size: 0.72rem; color: var(--champagne-dark); font-weight: 700; text-transform: uppercase;\">Digital Smile Design (DSD)</span>\n          <strong style=\"color: var(--navy-deep); font-size: 1.05rem; display: block; margin: 0.3rem 0;\">Digital Smile Design</strong>\n          <span style=\"color: var(--orange-cta); font-size: 0.85rem; font-weight: 600;\">View treatment details →</span>\n        </a>\n        <a href=\"../blanqueamiento-dental/\" class=\"related-card\">\n          <span style=\"font-size: 0.72rem; color: var(--champagne-dark); font-weight: 700; text-transform: uppercase;\">Professional Clinical Brightening</span>\n          <strong style=\"color: var(--navy-deep); font-size: 1.05rem; display: block; margin: 0.3rem 0;\">Professional Teeth Whitening</strong>\n          <span style=\"color: var(--orange-cta); font-size: 0.85rem; font-weight: 600;\">View treatment details →</span>\n        </a>\n        <a href=\"../diseno-de-carillas/\" class=\"related-card\">\n          <span style=\"font-size: 0.72rem; color: var(--champagne-dark); font-weight: 700; text-transform: uppercase;\">Micro-Ceramic Veneers</span>\n          <strong style=\"color: var(--navy-deep); font-size: 1.05rem; display: block; margin: 0.3rem 0;\">Ceramic Dental Veneers</strong>\n          <span style=\"color: var(--orange-cta); font-size: 0.85rem; font-weight: 600;\">View treatment details →</span>\n        </a>"}};
+
+      var btnEs = document.getElementById('btn-es');
+      var btnEn = document.getElementById('btn-en');
+
+      function getSavedLanguage() {
+        try {
+          var saved = localStorage.getItem('aurea_smile_lang');
+          if (saved === 'en' || saved === 'es') return saved;
+        } catch(e) {}
+        return 'es';
+      }
+
+      function setLang(lang) {
+        try {
+          localStorage.setItem('aurea_smile_lang', lang);
+        } catch(e) {}
+        document.documentElement.lang = lang;
+
+        if (btnEs) btnEs.classList.toggle('active', lang === 'es');
+        if (btnEn) btnEn.classList.toggle('active', lang === 'en');
+
+        // Document title & meta
+        if (dict[lang] && dict[lang].meta_title) {
+          document.title = dict[lang].meta_title;
+        }
+        var metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc && dict[lang] && dict[lang].meta_desc) {
+          metaDesc.setAttribute('content', dict[lang].meta_desc);
+        }
+
+        // Text replacements
+        document.querySelectorAll('[data-i18n]').forEach(function(el) {
+          var k = el.getAttribute('data-i18n');
+          if (dict[lang] && dict[lang][k] !== undefined) {
+            el.innerHTML = dict[lang][k];
+          }
+        });
+
+        // Dynamic HTML lists
+        var indEl = document.getElementById('indicaciones-list');
+        if (indEl && dict[lang] && dict[lang].ind_html) indEl.innerHTML = dict[lang].ind_html;
+
+        var stepsEl = document.getElementById('steps-container');
+        if (stepsEl && dict[lang] && dict[lang].steps_html) stepsEl.innerHTML = dict[lang].steps_html;
+
+        var benEl = document.getElementById('beneficios-list');
+        if (benEl && dict[lang] && dict[lang].ben_html) benEl.innerHTML = dict[lang].ben_html;
+
+        var limEl = document.getElementById('limitaciones-list');
+        if (limEl && dict[lang] && dict[lang].lim_html) limEl.innerHTML = dict[lang].lim_html;
+
+        var cuidEl = document.getElementById('cuidados-list');
+        if (cuidEl && dict[lang] && dict[lang].cuid_html) cuidEl.innerHTML = dict[lang].cuid_html;
+
+        var faqsEl = document.getElementById('faqs-container');
+        if (faqsEl && dict[lang] && dict[lang].faqs_html) faqsEl.innerHTML = dict[lang].faqs_html;
+
+        var relEl = document.getElementById('related-cards-container');
+        if (relEl && dict[lang] && dict[lang].related_html) relEl.innerHTML = dict[lang].related_html;
+      }
+
+      if (btnEs) btnEs.addEventListener('click', function() { setLang('es'); });
+      if (btnEn) btnEn.addEventListener('click', function() { setLang('en'); });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        setLang(getSavedLanguage());
+      });
+    })();
+  </script>
+</body>
+</html>

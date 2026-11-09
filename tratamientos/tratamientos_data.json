@@ -1,0 +1,1196 @@
+[
+  {
+    "id": "aline",
+    "slug": "aline",
+    "name": "Aline",
+    "category": "Odontología Digital",
+    "categorySlug": "odontologia-digital",
+    "badge": "Ortodoncia Invisible 3D",
+    "icon": "✨",
+    "summary": "Alineadores transparentes biomecánicamente planificados mediante escaneo intraoral 3D para corregir malposiciones dentales sin brackets metálicos.",
+    "indications": [
+      "Apiñamiento dental leve, moderado o severo.",
+      "Espaciamientos indeseados (diastemas).",
+      "Mordidas cruzadas o sobremordidas corregibles con ortodoncia invisible.",
+      "Pacientes adultos que buscan discreción absoluta, estética y comodidad durante el tratamiento."
+    ],
+    "evaluation": "Evaluación digital exhaustiva con escáner 3D de alta precisión, registro fotográfico facial y estudio cefalométrico computarizado. Se realiza una simulación virtual del movimiento de cada pieza dental antes de fabricar las placas.",
+    "procedure": [
+      {
+        "step": "1. Escaneo Digital y Planificación",
+        "desc": "Captura micrométrica de la arcada completa sin pastas incómodas y diseño del plan de movimientos progresivos."
+      },
+      {
+        "step": "2. Fabricación Guiada de Alineadores",
+        "desc": "Impresión 3D de alta fidelidad de cada juego de alineadores transparentes de grado médico biocompatible."
+      },
+      {
+        "step": "3. Entrega y Colocación de Ataches",
+        "desc": "Fijación de micro-relieves de resina estética en puntos de anclaje anatómicos para dirigir las fuerzas de rotación."
+      },
+      {
+        "step": "4. Seguimiento y Refinamiento",
+        "desc": "Controles clínicos periódicos con la Dra. Jailin Rada para validar la evolución de cada micro-movimiento hasta la posición ideal."
+      }
+    ],
+    "benefits": [
+      "Completamente removibles para comer y mantener una higiene oral impecable.",
+      "Prácticamente invisibles a distancia de conversación social.",
+      "Sin alambres metálicos ni rozaduras mucosas.",
+      "Predictibilidad de resultados visualizada desde la primera consulta."
+    ],
+    "limitations": [
+      "Requiere disciplina y compromiso de uso estricto (mínimo 20 a 22 horas diarias).",
+      "Casos con discrepancias esqueléticas severas pueden requerir ortodoncia quirúrgica previa.",
+      "Debe retirarse para consumir bebidas calientes, azucaradas o alimentos."
+    ],
+    "aftercare": [
+      "Limpiar los alineadores diariamente con agua tibia y jabón neutro.",
+      "Cepillado y uso de hilo dental riguroso antes de volver a colocarlos.",
+      "Uso de retenedores nocturnos indicados al concluir el tratamiento para preservar la estabilidad de la sonrisa."
+    ],
+    "faqs": [
+      {
+        "q": "¿Cuánto tiempo dura el tratamiento?",
+        "a": "La duración promedio varía entre 6 y 18 meses, según la complejidad de la maloclusión y la constancia de uso evaluada en consulta."
+      },
+      {
+        "q": "¿Afecta la pronunciación al hablar?",
+        "a": "Durante las primeras 24-48 horas puede haber una leve adaptación fonética, la cual desaparece rápidamente."
+      }
+    ],
+    "needs_doctor_review": true,
+    "review_note": "Denominación comercial y protocolos específicos de Aline sujetos a validación de la Dra. Jailin Rada."
+  },
+  {
+    "id": "t-brux",
+    "slug": "t-brux",
+    "name": "T-brux",
+    "category": "Odontología Digital",
+    "categorySlug": "odontologia-digital",
+    "badge": "Protección Oclusal Digital",
+    "icon": "🛡️",
+    "summary": "Placa oclusal neuromuscular de alta precisión digital diseñada para neutralizar el apretamiento y rechinamiento dental, protegiendo dientes, restauraciones y la articulación temporomandibular (ATM).",
+    "indications": [
+      "Bruxismo céntrico y excéntrico (nocturno o diurno).",
+      "Desgaste patológico del esmalte dental y bordes incisales.",
+      "Tensión o dolor matutino en músculos maseteros y articulación temporomandibular.",
+      "Protección de rehabilitaciones complejas, carillas cerámicas o coronas sobre implantes."
+    ],
+    "evaluation": "Análisis cinemático de la oclusión mediante registro intraoral digital. Se identifican interferencias oclusales, facetas de desgaste y el grado de hiperactividad muscular masticatoria.",
+    "procedure": [
+      {
+        "step": "1. Escaneo Oclusal 3D",
+        "desc": "Registro de la relación intermaxilar en posición fisiológica óptima sin distorsión de materiales de impresión tradicionales."
+      },
+      {
+        "step": "2. Diseño CAD Paramétrico",
+        "desc": "Modelado por ordenador de la superficie con guías caninas y desoclusión anterior balanceada."
+      },
+      {
+        "step": "3. Fresado Robótico o Impresión Biomédica",
+        "desc": "Confección en resina termopolimerizable de alta densidad y resistencia al impacto."
+      },
+      {
+        "step": "4. Calibración en Boca",
+        "desc": "Ajuste fino de contactos con papel de articular milimétrico para garantizar relajación muscular inmediata."
+      }
+    ],
+    "benefits": [
+      "Alivio progresivo de cefaleas tensionales y dolores musculares faciales.",
+      "Protege contra fracturas dentales y micro-fisuras del esmalte.",
+      "Ajuste pasivo y cómodo sin presión excesiva sobre piezas dentarias.",
+      "Material hipoalergénico de alta durabilidad y fácil mantenimiento."
+    ],
+    "limitations": [
+      "No cura la causa de origen tensional o de estrés, actúa como dispositivo ortopédico protector.",
+      "Requiere control y ajuste periódico debido al desgaste funcional natural del dispositivo."
+    ],
+    "aftercare": [
+      "Lavar cada mañana con agua fría y cepillo de cerdas suaves.",
+      "Guardar en su caja ventilada provista tras el secado.",
+      "No sumergir en agua hirviendo ni utilizar sustancias químicas abrasivas."
+    ],
+    "faqs": [
+      {
+        "q": "¿Es dura o blanda?",
+        "a": "Clínicamente se confecciona en material rígido o semirrígido calibrado, ya que los materiales blandos estimulan el reflejo de mordida y pueden empeorar el bruxismo."
+      },
+      {
+        "q": "¿Cuándo debo usarla?",
+        "a": "Principalmente durante las horas de sueño, o en momentos diurnos de alta concentración o tensión identificados en consulta."
+      }
+    ],
+    "needs_doctor_review": true,
+    "review_note": "Especificaciones exactas de formulación clínica T-brux sujetas a confirmación por la Dra. Jailin Rada."
+  },
+  {
+    "id": "t-quiet",
+    "slug": "t-quiet",
+    "name": "T-quiet",
+    "category": "Odontología Digital",
+    "categorySlug": "odontologia-digital",
+    "badge": "Medicina Dental del Sueño",
+    "icon": "🌙",
+    "summary": "Dispositivo de avance mandibular (DAM) digitalizado para el tratamiento del ronquido crónico y apneas obstructivas leves a moderadas, mejorando la oxigenación y la calidad del descanso.",
+    "indications": [
+      "Ronquido habitual sonoro que interrumpe el descanso propio o de la pareja.",
+      "Síndrome de apnea-hipopnea obstructiva del sueño (SAHOS) leve a moderado diagnosticado.",
+      "Pacientes con intolerancia o rechazo al equipo de presión positiva CPAP.",
+      "Somnolencia diurna y fatiga asociadas a microdespertares respiratorios."
+    ],
+    "evaluation": "Evaluación interdisciplinar de la vía aérea superior, anatomía palatina, posición lingual y estado de la articulación temporomandibular con apoyo radiológico digital.",
+    "procedure": [
+      {
+        "step": "1. Diagnóstico de la Vía Aérea",
+        "desc": "Inspección clínica y análisis del registro polisomnográfico o estudio respiratorio del sueño del paciente."
+      },
+      {
+        "step": "2. Escaneo y Calibración del Avance",
+        "desc": "Determinación milimétrica del avance mandibular confortable que despeja la faringe sin sobrecargar la ATM."
+      },
+      {
+        "step": "3. Confección Digitalizada",
+        "desc": "Fabricación ergonómica personalizada en materiales biocompatibles resistentes."
+      },
+      {
+        "step": "4. Titulación y Control",
+        "desc": "Ajuste milimétrico progresivo según la respuesta respiratoria y sintomatología del paciente."
+      }
+    ],
+    "benefits": [
+      "Reducción drástica del ronquido nocturno desde las primeras noches de uso.",
+      "Mejora sustancial en la saturación de oxígeno y vitalidad al despertar.",
+      "Dispositivo compacto, silencioso y cómodo para viajes.",
+      "No requiere conexión eléctrica ni mascarillas invasivas."
+    ],
+    "limitations": [
+      "No sustituye el tratamiento médico en apneas obstructivas severas sin indicación expresa del especialista en sueño.",
+      "Requiere un soporte dental y periodontal saludable para anclar el dispositivo."
+    ],
+    "aftercare": [
+      "Higiene diaria meticulosa con limpiadores específicos para prótesis.",
+      "Revisiones de control dental cada 6 meses para verificar estabilidad oclusal."
+    ],
+    "faqs": [
+      {
+        "q": "¿Duele la mandíbula al despertar?",
+        "a": "Puede sentirse una leve tensión muscular en los primeros días, para lo cual se indican sencillos ejercicios matutinos de reintegración oclusal."
+      }
+    ],
+    "needs_doctor_review": true,
+    "review_note": "Protocolo clínico y requisitos polisomnográficos de T-quiet preparados para revisión de la Dra. Jailin Rada."
+  },
+  {
+    "id": "coronas-digitales",
+    "slug": "coronas-digitales",
+    "name": "Coronas Digitales",
+    "category": "Odontología Digital",
+    "categorySlug": "odontologia-digital",
+    "badge": "CAD/CAM de Precisión",
+    "icon": "💎",
+    "summary": "Restauraciones fijas completas diseñadas por computadora (CAD) y fresadas con tecnología robótica (CAM) para devolver anatomía, función y estética idéntica al diente natural.",
+    "indications": [
+      "Dientes con gran pérdida de estructura por caries profunda o traumatismos.",
+      "Piezas con tratamiento de endodoncia previo que requieren protección cuspídea.",
+      "Sustitución de restauraciones antiguas desajustadas o pigmentadas.",
+      "Corrección de anomalías severas de forma, color o alineación."
+    ],
+    "evaluation": "Exploración clínica con magnificación y radiovisiografía digital para verificar soporte periodontal, longitud radicular y ausencia de patologías periapicales.",
+    "procedure": [
+      {
+        "step": "1. Preparación Mínimamente Invasiva",
+        "desc": "Tallado biológico conservador del remanente dental bajo magnificación visual."
+      },
+      {
+        "step": "2. Escaneo Óptico 3D",
+        "desc": "Lectura intraoral micrométrica de la línea de terminación sin siliconas pesadas."
+      },
+      {
+        "step": "3. Diseño y Maquinado Robótico",
+        "desc": "Modelado CAD de cúspides y surcos con fresado de alta precisión en bloques de zirconio o cerámica vítrea."
+      },
+      {
+        "step": "4. Cementación Adhesiva",
+        "desc": "Fijación química definitiva con resinas adhesivas de última generación y ajuste oclusal milimétrico."
+      }
+    ],
+    "benefits": [
+      "Sellado marginal superior que previene filtraciones y caries secundarias.",
+      "Excelente integración estética con traslúcidos y degradados idénticos al esmalte.",
+      "Biocompatibilidad total que respeta la salud gingival.",
+      "Tiempo de fabricación y pruebas significativamente menor."
+    ],
+    "limitations": [
+      "Requiere un remanente dentario mínimo para sostener la estructura con garantías de longevidad.",
+      "Si la raíz está fracturada, puede ser necesaria la extracción e implante."
+    ],
+    "aftercare": [
+      "Uso habitual de seda dental o cepillos interproximales alrededor de la corona.",
+      "Higiene profesional semestral para mantener el margen libre de placa bacteriana."
+    ],
+    "faqs": [
+      {
+        "q": "¿Se nota la diferencia con mis dientes naturales?",
+        "a": "No, el modelado digital reproduce con fidelidad los matices de color, textura y traslúcidos de las piezas vecinas."
+      }
+    ],
+    "needs_doctor_review": false
+  },
+  {
+    "id": "coronas-metal-free",
+    "slug": "coronas-metal-free",
+    "name": "Coronas Metal-Free",
+    "category": "Rehabilitación Oral",
+    "categorySlug": "rehabilitacion-oral",
+    "badge": "Zirconio & Disilicato",
+    "icon": "👑",
+    "summary": "Coronas estéticas de vanguardia fabricadas en zirconio de alta translucidez o disilicato de litio, eliminando sombras grises y líneas oscuras en el borde de la encía.",
+    "indications": [
+      "Sustitución de coronas metal-porcelana antiguas con márgenes oscuros.",
+      "Dientes anteriores con exigencia estética extrema.",
+      "Dientes posteriores con alta demanda de carga masticatoria.",
+      "Pacientes con alergias o sensibilidad a aleaciones metálicas dentales."
+    ],
+    "evaluation": "Análisis biomimético del diente, grosor del biotipo gingival y evaluación de hábitos parafuncionales como bruxismo.",
+    "procedure": [
+      {
+        "step": "1. Diagnóstico y Selección del Material",
+        "desc": "Elección entre disilicato de litio (máxima traslucidez anterior) o zirconio multicapa (máxima resistencia posterior)."
+      },
+      {
+        "step": "2. Preparación y Escaneo Digital",
+        "desc": "Tallado con terminación en hombro o chaflán suave y captura óptica 3D."
+      },
+      {
+        "step": "3. Personalización Artística",
+        "desc": "Maquillaje cerámico y sinterización para replicar mamelones y texturas superficiales."
+      },
+      {
+        "step": "4. Protocolo Adhesivo",
+        "desc": "Tratamiento de la superficie interna (grabado/silanizado o arenado) y cementado adhesivo."
+      }
+    ],
+    "benefits": [
+      "Encías rosadas y naturales sin halos grises por corrosión metálica.",
+      "Comportamiento de reflexión lumínica idéntico al diente natural.",
+      "Altísima biocompatibilidad y resistencia a la abrasión.",
+      "Mayor conservación del tejido dental respecto a coronas tradicionales."
+    ],
+    "limitations": [
+      "Requiere una técnica de cementación adhesiva estricta y aislamiento absoluto.",
+      "No recomendada sobre sustratos extremadamente pigmentados sin un tratamiento previo de enmascaramiento."
+    ],
+    "aftercare": [
+      "Higiene dental estándar con pasta dental no abrasiva.",
+      "Uso de férula protectora si el paciente presenta hábito de bruxismo."
+    ],
+    "faqs": [
+      {
+        "q": "¿El zirconio es tan resistente como el metal?",
+        "a": "El zirconio odontológico estabilizado con itrio tiene una resistencia a la flexión superior a 1000 MPa, superando en resistencia mecánica a muchas aleaciones metálicas."
+      }
+    ],
+    "needs_doctor_review": false
+  },
+  {
+    "id": "coronas-sobre-implante",
+    "slug": "coronas-sobre-implante",
+    "name": "Coronas sobre Implante",
+    "category": "Rehabilitación Oral",
+    "categorySlug": "rehabilitacion-oral",
+    "badge": "Prótesis Fija Implantológica",
+    "icon": "🔩",
+    "summary": "Restauraciones fijas atornilladas o cementadas sobre pilares de implantes osteointegrados, diseñadas digitalmente para reponer piezas perdidas con firmeza y naturalidad.",
+    "indications": [
+      "Pérdida de uno o más dientes naturales con implante osteointegrado exitoso.",
+      "Necesidad de restituir el punto de contacto masticatorio y preservar el hueso alveolar.",
+      "Prevención de inclinación de piezas dentales adyacentes."
+    ],
+    "evaluation": "Evaluación radiográfica 3D (tomografía) y clínica para constatar la osteointegración completa del implante y el perfil de emergencia gingival.",
+    "procedure": [
+      {
+        "step": "1. Conformación del Perfil Gingival",
+        "desc": "Moldeado de la encía periimplantaria con corona provisional para un perfil estético natural."
+      },
+      {
+        "step": "2. Escaneo con Scan Body",
+        "desc": "Transferencia digital exacta de la posición tridimensional del implante en la boca."
+      },
+      {
+        "step": "3. Diseño CAD del Pilar y Corona",
+        "desc": "Modelado personalizado del aditamento protésico y corona con chimenea de acceso atornillada."
+      },
+      {
+        "step": "4. Torque Protésico y Sellado",
+        "desc": "Fijación con torque controlado mediante dinamómetro clínico y sellado estético del orificio de acceso."
+      }
+    ],
+    "benefits": [
+      "Firmeza masticatoria indistinguible de un diente natural.",
+      "Facilidad de mantenimiento y desmontaje higiénico en revisiones periódicas (diseño atornillado).",
+      "No compromete ni requiere tallar los dientes vecinos sanos.",
+      "Estimulación funcional del hueso maxilar que previene su reabsorción."
+    ],
+    "limitations": [
+      "Requiere haber completado el período biológico de cicatrización e integración ósea.",
+      "La higiene deficiente puede derivar en periimplantitis y pérdida del implante."
+    ],
+    "aftercare": [
+      "Uso de enhebradores dentales, superfloss o irrigador bucal alrededor del pilar del implante.",
+      "Mantenimiento clínico periodontal y radiográfico cada 6 meses."
+    ],
+    "faqs": [
+      {
+        "q": "¿Se puede aflojar una corona sobre implante?",
+        "a": "El diseño de conexión cónica y el torque calibrado minimizan este riesgo. Si ocurriese, se soluciona fácilmente en clínica sin dañar la pieza."
+      }
+    ],
+    "needs_doctor_review": false
+  },
+  {
+    "id": "protesis-total",
+    "slug": "protesis-total",
+    "name": "Prótesis Total",
+    "category": "Rehabilitación Oral",
+    "categorySlug": "rehabilitacion-oral",
+    "badge": "Rehabilitación Edéntula",
+    "icon": "🦷",
+    "summary": "Dispositivos protésicos completos de última generación para pacientes desdentados, concebidos con análisis fisionómico para restaurar la altura facial, soporte labial y fonética.",
+    "indications": [
+      "Pérdida total de dientes en la arcada superior, inferior o ambas.",
+      "Reemplazo de prótesis antiguas desajustadas, desgastadas o inestables.",
+      "Pacientes que buscan recuperar la función masticatoria y el perfil facial."
+    ],
+    "evaluation": "Estudio anatómico de los rebordes alveolares, paladar, inserciones musculares y dimensión vertical de oclusión con registros estéticos faciales.",
+    "procedure": [
+      {
+        "step": "1. Impresión Anatómica y Sellado Periférico",
+        "desc": "Registro de los fondos de surco para maximizar la retención y estabilidad por succión biológica."
+      },
+      {
+        "step": "2. Registro de Mordida y Rodillos de Cera",
+        "desc": "Determinación de la altura estética facial, línea media y soporte del labio superior."
+      },
+      {
+        "step": "3. Prueba Estética y Fonética en Boca",
+        "desc": "Validación con el paciente de la forma, tamaño y tonalidad de los dientes antes del acrilizado definitivo."
+      },
+      {
+        "step": "4. Instalación y Equilibrado Oclusal",
+        "desc": "Entrega, eliminación de presiones excesivas y ajuste de la mordida."
+      }
+    ],
+    "benefits": [
+      "Recuperación inmediata de la masticación de alimentos variados.",
+      "Rejuvenecimiento del tercio inferior del rostro al restaurar el soporte de labios y mejillas.",
+      "Dientes con anatomía multicapa que emulan esmalte natural.",
+      "Posibilidad de combinación con implantes (sobredentadura) para máxima retención."
+    ],
+    "limitations": [
+      "Requiere un período de adaptación neuromuscular (habitualmente de 2 a 4 semanas).",
+      "La arcada inferior presenta menor estabilidad ósea anatómica en comparación con la superior."
+    ],
+    "aftercare": [
+      "Retirar y cepillar la prótesis después de cada comida con limpiador neutro.",
+      "Retirarla durante la noche para permitir la oxigenación y descanso de la mucosa oral.",
+      "Revisiones anuales para evaluar necesidad de rebase por remodelado óseo."
+    ],
+    "faqs": [
+      {
+        "q": "¿Podré comer normalmente?",
+        "a": "Sí, comenzando los primeros días con alimentos suaves y masticación bilateral pausada para adquirir el balance muscular."
+      }
+    ],
+    "needs_doctor_review": false
+  },
+  {
+    "id": "diseno-de-sonrisa",
+    "slug": "diseno-de-sonrisa",
+    "name": "Diseño de Sonrisa",
+    "category": "Estética Dental",
+    "categorySlug": "estetica-dental",
+    "badge": "Digital Smile Design",
+    "icon": "✨",
+    "summary": "Planificación estética integral que armoniza la forma, proporción, color y posición de los dientes con la línea de la sonrisa, los labios y los rasgos faciales únicos del paciente.",
+    "indications": [
+      "Dientes cortos, desgastados, asimétricos o desproporcionados.",
+      "Sonrisas con alteraciones de color que no responden a blanqueamiento.",
+      "Espacios interdentales (diastemas) o malposiciones leves a moderadas.",
+      "Deseo de proyectar una imagen radiante, profesional y natural."
+    ],
+    "evaluation": "Protocolo fotográfico facial y dental en alta resolución, escaneo intraoral 3D y análisis de la dinámica de los labios durante la sonrisa espontánea.",
+    "procedure": [
+      {
+        "step": "1. Sesión de Diagnóstico Fotográfico y 3D",
+        "desc": "Registro de parámetros fisionómicos, curvatura labial y proporciones áureas dentofaciales."
+      },
+      {
+        "step": "2. Simulación Digital de Sonrisa (DSD)",
+        "desc": "Diseño por ordenador del resultado estético esperado."
+      },
+      {
+        "step": "3. Mockup en Boca (Prueba de Sonrisa)",
+        "desc": "Colocación de un prototipo reversible sobre los dientes para que el paciente observe su nueva sonrisa antes de intervenir."
+      },
+      {
+        "step": "4. Ejecución del Plan Definitivo",
+        "desc": "Realización del tratamiento concertado (carillas cerámicas, resinas estratificadas o gingivoplastia)."
+      }
+    ],
+    "benefits": [
+      "Predictibilidad absoluta: ves y apruebas el resultado antes de comenzar.",
+      "Diseño 100% personalizado que respeta tu personalidad y fisionomía.",
+      "Enfoque biomimético que preserva al máximo la estructura dental sana.",
+      "Impacto positivo probado en la autoconfianza y bienestar personal."
+    ],
+    "limitations": [
+      "Debe existir salud gingival y periodontal previa impecable antes de cualquier paso estético.",
+      "En casos de maloclusiones complejas puede requerirse ortodoncia previa para alinear la base ósea."
+    ],
+    "aftercare": [
+      "Mantenimiento higiénico riguroso y limpiezas profesionales cada 6 meses.",
+      "Evitar morder objetos duros o abrir envases con los dientes.",
+      "Uso de placa protectora nocturna en caso de hábitos de apretamiento."
+    ],
+    "faqs": [
+      {
+        "q": "¿El diseño de sonrisa desgasta mis dientes?",
+        "a": "En Aurea Smile seguimos un protocolo de mínima invasión. Muchos casos se resuelven con micro-preparación o adición sin alterar el esmalte sano."
+      }
+    ],
+    "needs_doctor_review": false
+  },
+  {
+    "id": "blanqueamiento-dental",
+    "slug": "blanqueamiento-dental",
+    "name": "Blanqueamiento Dental",
+    "category": "Estética Dental",
+    "categorySlug": "estetica-dental",
+    "badge": "Aclaramiento Clínico",
+    "icon": "🌟",
+    "summary": "Procedimiento clínico seguro que aclara varios tonos el color intrínseco del esmalte dental mediante agentes oxidantes biocompatibles supervisados por la Dra. Jailin Rada.",
+    "indications": [
+      "Dientes con oscurecimiento o amarillamiento por envejecimiento o hábitos (café, té, tabaco).",
+      "Manchas intrínsecas leves por medicamentos o fluorosis.",
+      "Previo a tratamientos de carillas o coronas para optimizar el sustrato dental base.",
+      "Pacientes que desean una sonrisa más luminosa y fresca sin alterar la estructura dental."
+    ],
+    "evaluation": "Inspección de caries activas, restauraciones desajustadas, grietas en esmalte, grado de retracción gingival y sensibilidad previa.",
+    "procedure": [
+      {
+        "step": "1. Profilaxis y Medición de Color",
+        "desc": "Limpieza de manchas extrínsecas y registro del tono inicial con guía cromática fotográfica."
+      },
+      {
+        "step": "2. Protección Gingival",
+        "desc": "Aislamiento cuidadoso de encías y tejidos blandos con barrera gingival fotopolimerizable."
+      },
+      {
+        "step": "3. Aplicación del Gel Aclarador",
+        "desc": "Colocación de peróxido de hidrógeno o carbamida de concentración clínica controlada en sesiones programadas."
+      },
+      {
+        "step": "4. Remineralización y Protocolo Antisenbilidad",
+        "desc": "Aplicación de agentes desensibilizantes y fosfatos para sellar los túbulos dentinarios."
+      }
+    ],
+    "benefits": [
+      "Aclaramiento visible de múltiples tonos en una sola sesión clínica.",
+      "Técnica no invasiva que no desgasta ni debilita el esmalte dental.",
+      "Supervisión odontológica continua que previene quemaduras químicas o sensibilidad descontrolada.",
+      "Resultados duraderos con pautas sencillas de mantenimiento."
+    ],
+    "limitations": [
+      "No aclara resinas existentes, carillas o coronas protésicas.",
+      "Puede generar sensibilidad transitoria durante las 24 a 48 horas posteriores.",
+      "No indicado en mujeres embarazadas ni en menores de edad."
+    ],
+    "aftercare": [
+      "Seguir la dieta blanca durante 48 a 72 horas (evitar café, vino tinto, salsas oscuras, bebidas cola).",
+      "Usar dentífricos desensibilizantes si se experimenta ligera molestia térmica.",
+      "Mantener una higiene bucodental regular."
+    ],
+    "faqs": [
+      {
+        "q": "¿El blanqueamiento daña el esmalte?",
+        "a": "No. Con formulaciones profesionales con pH neutro supervisadas clínicamente, los prismas de esmalte permanecen intactos."
+      }
+    ],
+    "needs_doctor_review": false
+  },
+  {
+    "id": "diseno-de-carillas",
+    "slug": "diseno-de-carillas",
+    "name": "Diseño de Carillas",
+    "category": "Estética Dental",
+    "categorySlug": "estetica-dental",
+    "badge": "Láminas Cerámicas & Resina",
+    "icon": "🌸",
+    "summary": "Finas láminas cerámicas o de composite de alta gama adheridas al frente del diente para transformar textura, color, forma y alineación con un acabado sumamente natural.",
+    "indications": [
+      "Dientes con tinciones severas rebeldes al blanqueamiento (tetraciclinas, hipoplasias).",
+      "Anomalías de forma (dientes conoides, bordes incisales fracturados o irregulares).",
+      "Cierre de diastemas o corrección de inclinaciones dentarias leves.",
+      "Rejuvenecimiento estético de la sonrisa."
+    ],
+    "evaluation": "Evaluación del patrón masticatorio, espesor del esmalte vestibular disponible y simulación mock-up digital.",
+    "procedure": [
+      {
+        "step": "1. Diseño Personalizado",
+        "desc": "Definición milimétrica de grosor, contornos y ángulos de transición lumínica."
+      },
+      {
+        "step": "2. Preparación Ultraconservadora",
+        "desc": "Micro-desgaste superficial (0.3 a 0.5 mm) confinado al esmalte o técnica sin tallado según el caso."
+      },
+      {
+        "step": "3. Confección de Alta Precisión",
+        "desc": "Estratificación manual o prensado cerámico con gradientes de opalescencia y fluorescencia."
+      },
+      {
+        "step": "4. Cementación Adhesiva Definitiva",
+        "desc": "Protocolo adhesivo con cementos de resina estables en color bajo aislamiento absoluto."
+      }
+    ],
+    "benefits": [
+      "Estabilidad de color inalterable en carillas cerámicas a lo largo de los años.",
+      "Reflexión de la luz indistinguible del esmalte dental biológico.",
+      "Alta resistencia a la fractura una vez polimerizadas adhesivamente al diente.",
+      "Respeto máximo a la encía con márgenes perfectamente pulidos."
+    ],
+    "limitations": [
+      "Procedimiento irreversible si requiere tallado del esmalte.",
+      "Contraindicado en pacientes con hábitos parafuncionales descontrolados sin férula de descarga."
+    ],
+    "aftercare": [
+      "Evitar morder alimentos muy duros directamente con los dientes anteriores (huesos, mariscos, frutos secos con cáscara).",
+      "Utilizar férula de protección nocturna recomendada por la doctora.",
+      "Mantenimiento y pulido anual en clínica."
+    ],
+    "faqs": [
+      {
+        "q": "¿Cuánto duran las carillas de porcelana?",
+        "a": "Con la técnica adecuada y cuidados de higiene, tienen una tasa de supervivencia superior al 95% a los 10-15 años."
+      }
+    ],
+    "needs_doctor_review": false
+  },
+  {
+    "id": "limpiezas-dentales",
+    "slug": "limpiezas-dentales",
+    "name": "Limpiezas Dentales",
+    "category": "Estética Dental",
+    "categorySlug": "estetica-dental",
+    "badge": "Profilaxis & Detox Oral",
+    "icon": "✨",
+    "summary": "Tratamiento preventivo y profiláctico profundo con ultrasonido y aeropulido para eliminar placa bacteriana calcificada (tártaro) y manchas extrínsecas sin agredir el esmalte.",
+    "indications": [
+      "Mantenimiento regular cada 6 meses para todas las personas.",
+      "Presencia de sarro visible supragingival o subgingival incipiente.",
+      "Encías enrojecidas, edematosas o sangrantes al cepillado (gingivitis inicial).",
+      "Manchas por consumo habitual de té, café, vino o tabaco."
+    ],
+    "evaluation": "Sondaje periodontal básico para verificar ausencia de bolsas patológicas y registro del índice de placa.",
+    "procedure": [
+      {
+        "step": "1. Ultrasonido Piezoeléctrico",
+        "desc": "Microvibraciones acuáticas que desprenden el tártaro adherido sin rayar las superficies dentales."
+      },
+      {
+        "step": "2. Limpieza Interproximal",
+        "desc": "Retiro de depósitos bacterianos entre los espacios interdentales con instrumental de precisión."
+      },
+      {
+        "step": "3. Pulido con Aeropulidor o Pasta Profiláctica",
+        "desc": "Eliminación de manchas superficiales y alisado microscópico para dificultar nueva fijación bacteriana."
+      },
+      {
+        "step": "4. Fluorización o Aplicación de Minerales",
+        "desc": "Refuerzo del esmalte para prevenir sensibilidad posprofilaxis."
+      }
+    ],
+    "benefits": [
+      "Prevención directa de la pérdida de hueso y enfermedad periodontal.",
+      "Aliento fresco y sensación de limpieza bucal profunda inmediata.",
+      "Dientes más brillantes y limpios al retirar manchas pigmentadas.",
+      "Detección precoz de posibles caries o problemas invisibles a simple vista."
+    ],
+    "limitations": [
+      "En presencia de periodontitis con bolsas profundas, se requiere raspado y alisado radicular periodontal específico.",
+      "No sustituye la higiene diaria con cepillo e hilo dental en casa."
+    ],
+    "aftercare": [
+      "Esperar 30 minutos antes de ingerir bebidas o alimentos si se aplicó flúor concentrado.",
+      "Continuar con cepillado mínimo 2 veces al día y uso diario de seda dental."
+    ],
+    "faqs": [
+      {
+        "q": "¿La limpieza desgasta el diente?",
+        "a": "No. El ultrasonido actúa exclusivamente sobre el cálculo calcificado mediante vibración mecánica y agua, sin erosionar el esmalte sano."
+      }
+    ],
+    "needs_doctor_review": false
+  },
+  {
+    "id": "cirugia-oral",
+    "slug": "cirugia-oral",
+    "name": "Cirugía Oral",
+    "category": "Tratamientos Complementarios",
+    "categorySlug": "tratamientos-complementarios",
+    "badge": "Procedimientos Quirúrgicos",
+    "icon": "🩺",
+    "summary": "Procedimientos quirúrgicos ambulatorios de precisión, desde extracciones complejas de cordales (muelas del juicio) hasta plastias gingivales y regularizaciones óseas.",
+    "indications": [
+      "Muelas del juicio (cordales) retenidas, impactadas o en mala posición.",
+      "Piezas dentales con destrucción radicular irrecuperable.",
+      "Frenillos labiales o linguales anormales (frenectomías).",
+      "Regularización del reborde alveolar previa a rehabilitación protésica."
+    ],
+    "evaluation": "Estudio tomográfico 3D (Cone Beam) para valorar la proximidad de raíces con el nervio dentario inferior o seno maxilar.",
+    "procedure": [
+      {
+        "step": "1. Anestesia Local Guiada",
+        "desc": "Bloqueo anestésico indoloro y confortable de la zona quirúrgica."
+      },
+      {
+        "step": "2. Abordaje Mínimamente Invasivo",
+        "desc": "Incisión limpia y ostectomía conservadora con instrumental de microcirugía."
+      },
+      {
+        "step": "3. Extracción o Modelado",
+        "desc": "Retiro atraumático de la pieza preservando la tabla ósea circundante."
+      },
+      {
+        "step": "4. Sutura Atraumática y Hemostasia",
+        "desc": "Afrontamiento meticuloso de tejidos con suturas de alta biocompatibilidad."
+      }
+    ],
+    "benefits": [
+      "Eliminación definitiva de focos infecciosos, quistes o apiñamientos por cordales.",
+      "Preservación de la arquitectura ósea para futuros implantes.",
+      "Procedimiento seguro en entorno quirúrgico privado y estéril.",
+      "Rápida recuperación con pautas analgésicas y antiinflamatorias modernas."
+    ],
+    "limitations": [
+      "Requiere reposo relativo de 48 a 72 horas y dieta blanda.",
+      "Contraindicaciones relativas en pacientes con alteraciones de coagulación no compensadas."
+    ],
+    "aftercare": [
+      "Aplicación de hielo local intermitente en las primeras 24 horas.",
+      "Evitar esfuerzos físicos intensos, calor directo y consumo de tabaco.",
+      "Tomar la medicación prescrita en los horarios indicados."
+    ],
+    "faqs": [
+      {
+        "q": "¿Es doloroso?",
+        "a": "Durante la intervención no se siente dolor gracias a la anestesia local de última generación. En el posoperatorio, las molestias se controlan eficazmente con la pauta analgésica indicada."
+      }
+    ],
+    "needs_doctor_review": false
+  },
+  {
+    "id": "endodoncia",
+    "slug": "endodoncia",
+    "name": "Endodoncia",
+    "category": "Tratamientos Complementarios",
+    "categorySlug": "tratamientos-complementarios",
+    "badge": "Terapia de Conductos",
+    "icon": "🔬",
+    "summary": "Tratamiento especializado para salvar dientes con la pulpa inflamada o infectada, desinfectando y sellando herméticamente el sistema de conductos radiculares.",
+    "indications": [
+      "Dolor dental agudo espontáneo o con estímulos térmicos persistentes (pulpitis irreversible).",
+      "Infección periapical o absceso dental visible radiográficamente.",
+      "Traumatismo dental severo con compromiso pulpar.",
+      "Necesidad protésica en piezas con anatomía comprometida."
+    ],
+    "evaluation": "Pruebas de sensibilidad pulpar térmica y eléctrica, percusión, palpación y radiografías periapicales digitales.",
+    "procedure": [
+      {
+        "step": "1. Aislamiento Absoluto",
+        "desc": "Colocación de dique de goma para garantizar campo estéril sin contacto con saliva."
+      },
+      {
+        "step": "2. Instrumentación Mecanizada Rotatoria",
+        "desc": "Limpieza y conformación anatómica de los conductos con limas de níquel-titanio de máxima flexibilidad."
+      },
+      {
+        "step": "3. Irrigación Ultrasónica",
+        "desc": "Desinfección profunda para neutralizar colonias bacterianas microscópicas."
+      },
+      {
+        "step": "4. Obturación Termoplástica 3D",
+        "desc": "Sellado tridimensional con gutapercha termoplástica y cemento biocerámico sellador."
+      }
+    ],
+    "benefits": [
+      "Salva el diente natural evitando su extracción y pérdida ósea.",
+      "Alivio inmediato y definitivo del dolor dental pulsátil.",
+      "Elimina infecciones que podrían diseminarse a estructuras faciales.",
+      "Mantiene la propiocepción y sensación natural al masticar."
+    ],
+    "limitations": [
+      "Dientes con fracturas radiculares verticales no son viables para endodoncia.",
+      "Tras la endodoncia, el diente requiere una reconstrucción o corona para evitar fracturas biomecánicas."
+    ],
+    "aftercare": [
+      "Evitar masticar alimentos duros del lado tratado hasta colocar la restauración definitiva.",
+      "Control radiográfico a los 6 y 12 meses para constatar la curación ósea periapical."
+    ],
+    "faqs": [
+      {
+        "q": "¿La endodoncia debilita el diente?",
+        "a": "El diente pierde hidratación interna pero mantiene su solidez si se restaura oportunamente con una corona o incrustación protectora."
+      }
+    ],
+    "needs_doctor_review": false
+  },
+  {
+    "id": "periodoncia",
+    "slug": "periodoncia",
+    "name": "Periodoncia",
+    "category": "Tratamientos Complementarios",
+    "categorySlug": "tratamientos-complementarios",
+    "badge": "Salud de Encías y Hueso",
+    "icon": "🌿",
+    "summary": "Diagnóstico, tratamiento y control de las patologías que afectan a las encías y al hueso alveolar de soporte, frenando la inflamación y la movilidad dental.",
+    "indications": [
+      "Sangrado de encías espontáneo o durante el cepillado.",
+      "Retracción de encías que expone la raíz del diente.",
+      "Sensación de movilidad o separación progresiva entre los dientes.",
+      "Mal aliento constante (halitosis) de origen periodontal."
+    ],
+    "evaluation": "Periodontograma digital completo registrando profundidad de sondaje en 6 puntos por diente, sangrado al sondaje y nivel de pérdida ósea.",
+    "procedure": [
+      {
+        "step": "1. Periodontograma y Diagnóstico",
+        "desc": "Mapeo milimétrico de la pérdida de soporte óseo y bolsas periodontales."
+      },
+      {
+        "step": "2. Raspado y Alisado Radicular (RAR)",
+        "desc": "Descontaminación mecánica subgingival de la superficie radicular bajo anestesia local."
+      },
+      {
+        "step": "3. Terapia Coadyuvante Antimicrobiana",
+        "desc": "Irrigación con antisépticos y pautas específicas de modulación del biofilm oral."
+      },
+      {
+        "step": "4. Mantenimiento Periodontal",
+        "desc": "Revisiones programadas cada 3 a 6 meses para prevenir reactivaciones de la disbiosis."
+      }
+    ],
+    "benefits": [
+      "Detiene la progresión de la periodontitis y evita la caída de dientes.",
+      "Elimina el sangrado y desinflama los tejidos gingivales.",
+      "Impacto positivo en la salud sistémica (diabetes, riesgo cardiovascular).",
+      "Mejora estética de la encía y combate el mal aliento."
+    ],
+    "limitations": [
+      "La periodontitis es una enfermedad crónica: requiere control de mantenimiento de por vida.",
+      "El hueso perdido no siempre se puede regenerar sin cirugías regenerativas avanzadas."
+    ],
+    "aftercare": [
+      "Uso de cepillos interdentales calibrados y cepillo eléctrico de cerdas suaves.",
+      "Asistir puntualmente a los mantenimientos periodontales pautados."
+    ],
+    "faqs": [
+      {
+        "q": "¿Las encías sangrantes son normales?",
+        "a": "Nunca. El sangrado es el signo cardinal de inflamación e infección bacteriana que debe tratarse cuanto antes."
+      }
+    ],
+    "needs_doctor_review": false
+  },
+  {
+    "id": "odontologia-general",
+    "slug": "odontologia-general",
+    "name": "Odontología General",
+    "category": "Tratamientos Complementarios",
+    "categorySlug": "tratamientos-complementarios",
+    "badge": "Diagnóstico & Restauración",
+    "icon": "🔍",
+    "summary": "Atención odontológica integral de prevención, diagnóstico temprano y restauración funcional de caries mediante resinas compuestas estéticas biomiméticas.",
+    "indications": [
+      "Detección y tratamiento de lesiones de caries incipientes o avanzadas.",
+      "Reemplazo de calzas desajustadas, fracturadas o amalgamas antiguas.",
+      "Sellado de fisuras en piezas con alto riesgo de caries.",
+      "Revisión dental periódica anual o semestral."
+    ],
+    "evaluation": "Exploración visual con cámara intraoral HD y radiografías coronales (bitewing) para detectar caries interproximales ocultas.",
+    "procedure": [
+      {
+        "step": "1. Diagnóstico Clínico y Fotográfico",
+        "desc": "Localización precisa de la lesión cariosa con magnificación óptica."
+      },
+      {
+        "step": "2. Eliminación Selectiva de Caries",
+        "desc": "Remoción conservadora preservando la dentina sana remineralizable."
+      },
+      {
+        "step": "3. Aislamiento y Adhesión Química",
+        "desc": "Grabado ácido selectivo y sistema adhesivo de última generación."
+      },
+      {
+        "step": "4. Estratificación Anatómica y Pulido",
+        "desc": "Colocación de resina estética por capas reproduciendo los surcos y fosas naturales."
+      }
+    ],
+    "benefits": [
+      "Frena la destrucción dental antes de que alcance el nervio (pulpa).",
+      "Restauraciones invisibles que mimetizan el color exacto del diente.",
+      "Tratamiento rápido, indoloro y de alta longevidad clínica.",
+      "Preservación de la anatomía masticatoria original."
+    ],
+    "limitations": [
+      "En cavidades muy extensas puede ser preferible una incrustación cerámica para mayor resistencia estructural.",
+      "Las resinas requieren higiene constante para evitar filtraciones en los márgenes."
+    ],
+    "aftercare": [
+      "Higiene bucodental completa con pasta dental fluorada.",
+      "Evitar masticar alimentos extremadamente duros en dientes recién obturados."
+    ],
+    "faqs": [
+      {
+        "q": "¿Duele empastar una muela?",
+        "a": "Con la técnica de anestesia tópica y local moderna no se experimenta dolor durante el procedimiento."
+      }
+    ],
+    "needs_doctor_review": false
+  },
+  {
+    "id": "ortodoncia",
+    "slug": "ortodoncia",
+    "name": "Ortodoncia",
+    "category": "Tratamientos Complementarios",
+    "categorySlug": "tratamientos-complementarios",
+    "badge": "Alineación & Oclusión",
+    "icon": "📐",
+    "summary": "Corrección biomecánica de la posición de los dientes y huesos maxilares para lograr una mordida perfectamente funcional, estética y estable en el tiempo.",
+    "indications": [
+      "Dientes torcidos, apiñados o rotados.",
+      "Problemas oclusales: mordida abierta, profunda, cruzada o invertida.",
+      "Desarmonías intermaxilares que dificultan la masticación o dicción.",
+      "Preparación de la arcada para rehabilitaciones protésicas futuras."
+    ],
+    "evaluation": "Estudio ortodóncico completo: fotos faciales e intraorales, modelos 3D computarizados, telerradiografía lateral y trazado cefalométrico.",
+    "procedure": [
+      {
+        "step": "1. Diagnóstico Cefalométrico 3D",
+        "desc": "Definición del plan de fuerzas, anclajes y objetivos biomecánicos."
+      },
+      {
+        "step": "2. Instalación de la Aparatología",
+        "desc": "Cementado preciso de brackets estéticos de zafiro/cerámicos o planificación con alineadores."
+      },
+      {
+        "step": "3. Fases de Alineación y Cierre de Espacios",
+        "desc": "Activaciones periódicas controladas con arcos de níquel-titanio termoactivados."
+      },
+      {
+        "step": "4. Finalización y Retención",
+        "desc": "Detallado de la oclusión y colocación de retenedores fijos y removibles para garantizar estabilidad."
+      }
+    ],
+    "benefits": [
+      "Mordida equilibrada que protege la ATM y previene desgastes anómalos.",
+      "Facilita la higiene dental eliminando zonas de apiñamiento propensas a caries.",
+      "Sonrisa simétrica y amplia alineada con el contorno de los labios.",
+      "Mejora la función masticatoria y la digestión de alimentos."
+    ],
+    "limitations": [
+      "Tratamiento de media a larga duración (habitualmente de 12 a 24 meses).",
+      "Exige extremar la higiene para evitar descalcificaciones o manchas alrededor de los brackets."
+    ],
+    "aftercare": [
+      "Uso de cepillos ortodóncicos específicos, cepillos interproximales y enjuague bucal.",
+      "Evitar morder alimentos pegajosos o duros que puedan despegar la aparatología.",
+      "Uso riguroso de la retención al finalizar."
+    ],
+    "faqs": [
+      {
+        "q": "¿Los brackets dañan los dientes?",
+        "a": "Los brackets no dañan los dientes por sí mismos; el riesgo proviene de una higiene deficiente que acumule placa bacteriana alrededor."
+      }
+    ],
+    "needs_doctor_review": false
+  },
+  {
+    "id": "rehabilitacion-oral",
+    "slug": "rehabilitacion-oral",
+    "name": "Rehabilitación Oral",
+    "category": "Tratamientos Complementarios",
+    "categorySlug": "tratamientos-complementarios",
+    "badge": "Plan Integral Funcional",
+    "icon": "🏛️",
+    "summary": "Disciplina odontológica que combina prótesis fija, removible y oclusión para reconstruir bocas severamente desgastadas o mutiladas, devolviendo salud y función masticatoria plena.",
+    "indications": [
+      "Pérdida múltiple de piezas dentales en diferentes zonas de la boca.",
+      "Desgaste dentario masivo por atrición, erosión ácida o bruxismo grave.",
+      "Pérdida de la dimensión vertical oclusal (colapso facial del tercio inferior).",
+      "Fracaso de tratamientos odontológicos antiguos combinados."
+    ],
+    "evaluation": "Articulación de modelos en relación céntrica, encerado de diagnóstico analógico o digital y análisis tomográfico general.",
+    "procedure": [
+      {
+        "step": "1. Estabilización Previa",
+        "desc": "Saneamiento de encías, caries y raíces no viables antes de la reconstrucción."
+      },
+      {
+        "step": "2. Encerado Diagnóstico y Mock-up",
+        "desc": "Planificación milimétrica de las nuevas alturas cuspídeas y prueba de función provisional."
+      },
+      {
+        "step": "3. Fase Quirúrgica y Protésica Provisional",
+        "desc": "Colocación de implantes y prótesis transitorias para adaptar los músculos y la ATM."
+      },
+      {
+        "step": "4. Prótesis Definitivas de Alta Gama",
+        "desc": "Confección y cementado o atornillado de restauraciones en zirconio, disilicato o metal-free."
+      }
+    ],
+    "benefits": [
+      "Recuperación total de la capacidad para masticar cualquier tipo de alimento.",
+      "Rejuvenecimiento facial evidente al restaurar la altura mandibular adecuada.",
+      "Distribución equilibrada de fuerzas que detiene el desgaste dental continuo.",
+      "Integración biológica y estética de máxima excelencia clínica."
+    ],
+    "limitations": [
+      "Es un tratamiento complejo por etapas que requiere un compromiso temporal por parte del paciente.",
+      "Requiere una inversión programada según la magnitud de los procedimientos interdisciplinares."
+    ],
+    "aftercare": [
+      "Revisiones clínicas periódicas cada 6 meses.",
+      "Uso obligatorio de placa oclusal de protección nocturna para salvaguardar la rehabilitación.",
+      "Higiene oral meticulosa con ayudas auxiliares (irrigadores, enhebradores)."
+    ],
+    "faqs": [
+      {
+        "q": "¿Cuánto dura un tratamiento integral?",
+        "a": "Dependiendo de si requiere tiempos de osteointegración de implantes, oscila típicamente entre 3 y 8 meses."
+      }
+    ],
+    "needs_doctor_review": false
+  },
+  {
+    "id": "odontologia-estetica",
+    "slug": "odontologia-estetica",
+    "name": "Odontología Estética",
+    "category": "Tratamientos Complementarios",
+    "categorySlug": "tratamientos-complementarios",
+    "badge": "Armonización Facial y Dental",
+    "icon": "✨",
+    "summary": "Conjunto de procedimientos avanzados enfocados en embellecer la sonrisa, respetando los cánones de proporción, luminosidad, simetría y naturalidad de cada rostro.",
+    "indications": [
+      "Asimetrías visibles en los márgenes de las encías o bordes de los dientes.",
+      "Microdoncia, alteraciones de esmalte o fracturas estéticas superficiales.",
+      "Deseo de optimizar la expresión y luminosidad bucofacial de manera coordinada."
+    ],
+    "evaluation": "Análisis morfológico del rostro, línea bipupilar, línea de la sonrisa y exposición dental en reposo y sonrisa plena.",
+    "procedure": [
+      {
+        "step": "1. Mapeo Morfopsicológico",
+        "desc": "Estudio de las proporciones faciales y expectativas individuales del paciente."
+      },
+      {
+        "step": "2. Armonización Gingival (Gingivoplastia)",
+        "desc": "Remodelado de encía con láser o electrobisturí si existe sonrisa gingival o asimetría."
+      },
+      {
+        "step": "3. Terapias de Micro-estratificación",
+        "desc": "Modelado de resinas estéticas o láminas cerámicas de alta definición óptica."
+      },
+      {
+        "step": "4. Control Lumínico y Texturizado",
+        "desc": "Creación de microtexturas superficiales que dispersan la luz con naturalidad viva."
+      }
+    ],
+    "benefits": [
+      "Transformación armónica que se funde naturalmente con la expresión facial.",
+      "Tratamientos personalizados sin resultados artificiales o excesivamente monocromáticos.",
+      "Aumento probado de la confianza en situaciones laborales y sociales."
+    ],
+    "limitations": [
+      "Debe primar siempre la salud biológica y función sobre la estética pura.",
+      "Requiere mantenimiento clínico periódico para preservar el brillo superficial de los materiales."
+    ],
+    "aftercare": [
+      "Control semestral de pulido dental.",
+      "Evitar hábitos nocivos como morder bolígrafos, hielo o uñas."
+    ],
+    "faqs": [
+      {
+        "q": "¿Se verá una sonrisa artificial?",
+        "a": "En Aurea Smile evitamos dientes blancos tiza o planos. Diseñamos con degradados de traslucidez y anatomía viva idéntica a la naturaleza humana."
+      }
+    ],
+    "needs_doctor_review": false
+  },
+  {
+    "id": "odontopediatria",
+    "slug": "odontopediatria",
+    "name": "Odontopediatría",
+    "category": "Tratamientos Complementarios",
+    "categorySlug": "tratamientos-complementarios",
+    "badge": "Salud Dental Infantil",
+    "icon": "🧸",
+    "summary": "Cuidado odontológico preventivo y terapéutico especializado para bebés, niños y adolescentes en un entorno empático, lúdico y libre de temores.",
+    "indications": [
+      "Primera visita dental al erupcionar el primer diente o al cumplir un año de edad.",
+      "Tratamiento y prevención de caries de la primera infancia.",
+      "Traumatismos dentales por caídas o golpes en edad escolar.",
+      "Control de hábitos nocivos: succión digital (chuparse el dedo), uso prolongado de chupete o deglución atípica."
+    ],
+    "evaluation": "Evaluación del desarrollo maxilofacial, conteo y registro de piezas temporales, riesgo cariogénico y pautas dietéticas familiares.",
+    "procedure": [
+      {
+        "step": "1. Adaptación Psicológica (Decir-Mostrar-Hacer)",
+        "desc": "Ambiente cálido y progresivo para que el niño sienta curiosidad y confianza, no miedo."
+      },
+      {
+        "step": "2. Profilaxis Infantil y Fluorización",
+        "desc": "Remoción suave de placa bacteriana y colocación de barniz de flúor remineralizante."
+      },
+      {
+        "step": "3. Sellantes de Fosas y Fisuras",
+        "desc": "Aplicación de resina protectora fluida en muelas definitivas para blindarlas contra la caries."
+      },
+      {
+        "step": "4. Educación en Higiene para Padres y Niños",
+        "desc": "Instrucción lúdica sobre cepillado adecuado supervisado en el hogar."
+      }
+    ],
+    "benefits": [
+      "Crecimiento de dientes definitivos sanos en posiciones correctas.",
+      "Relación positiva de por vida con la odontología, sin fobias ni traumas.",
+      "Prevención temprana de problemas ortodóncicos más costosos de tratar en la adultez.",
+      "Tratamientos mínimamente invasivos y adaptados a la psicología infantil."
+    ],
+    "limitations": [
+      "Requiere la colaboración y constancia activa de los padres o tutores en la higiene diaria.",
+      "En casos de fobia severa se recurre a sesiones cortas de desensibilización progresiva."
+    ],
+    "aftercare": [
+      "Supervisión del cepillado dental por un adulto hasta los 8-9 años de edad.",
+      "Control odontopediátrico cada 6 meses para acompañar el recambio dentario."
+    ],
+    "faqs": [
+      {
+        "q": "¿Por qué tratar un diente de leche si se va a caer?",
+        "a": "Los dientes temporales cumplen funciones críticas: permiten masticar, guían el habla y mantienen el espacio vital para los dientes permanentes que vienen debajo."
+      }
+    ],
+    "needs_doctor_review": false
+  },
+  {
+    "id": "radiologia-oral",
+    "slug": "radiologia-oral",
+    "name": "Radiología Oral",
+    "category": "Tratamientos Complementarios",
+    "categorySlug": "tratamientos-complementarios",
+    "badge": "Diagnóstico por Imagen 2D/3D",
+    "icon": "📷",
+    "summary": "Estudios radiográficos digitales y tomografías computarizadas de haz cónico (CBCT) con ultra baja dosis de radiación para diagnósticos anatómicos de máxima certidumbre.",
+    "indications": [
+      "Planificación quirúrgica de implantes dentales y cirugía de cordales.",
+      "Detección de quistes, tumores o lesiones óseas asintomáticas.",
+      "Evaluación del soporte óseo en pacientes periodontales.",
+      "Diagnóstico endodóncico de conductos calcificados o reabsorciones radiculares."
+    ],
+    "evaluation": "Determinación estricta de la indicación clínica bajo el principio de radioprotección ALARA (tan baja como sea razonablemente posible).",
+    "procedure": [
+      {
+        "step": "1. Posicionamiento Anatómico Guiado",
+        "desc": "Alineación cómoda del paciente con referencias láser de haz óptico."
+      },
+      {
+        "step": "2. Disparo con Sensores Digitales de Alta Sensibilidad",
+        "desc": "Captura instantánea con dosis de radiación hasta un 80% menor que la radiología analógica tradicional."
+      },
+      {
+        "step": "3. Reconstrucción Tridimensional por Software",
+        "desc": "Visualización volumétrica en tiempo real de huesos, nervios, raíces y senos maxilares."
+      },
+      {
+        "step": "4. Informe y Planificación Quirúrgica Virtual",
+        "desc": "Entrega digital del estudio para el equipo clínico tratante."
+      }
+    ],
+    "benefits": [
+      "Detección inmediata de patologías invisibles en la exploración clínica visual.",
+      "Ultra-baja exposición a radiación gracias a sensores digitales de última tecnología.",
+      "Imágenes instantáneas sin esperas ni líquidos químicos contaminantes de revelado.",
+      "Permite planificar cirugías guiadas por computador con precisión submimétrica."
+    ],
+    "limitations": [
+      "No recomendada en mujeres embarazadas salvo urgencia médica justificada y con mandil plomado.",
+      "Artefactos metálicos en boca pueden generar ligeras distorsiones en cortes tomográficos específicos."
+    ],
+    "aftercare": [
+      "No requiere cuidados posteriores especiales al ser un estudio diagnóstico no invasivo."
+    ],
+    "faqs": [
+      {
+        "q": "¿Es peligrosa la radiación de una radiografía dental?",
+        "a": "Una radiografía periapical digital moderna emite una dosis similar a la radiación natural que recibimos en un vuelo comercial de 30 minutos: extraordinariamente baja y segura."
+      }
+    ],
+    "needs_doctor_review": false
+  },
+  {
+    "id": "implantes-dentales",
+    "slug": "implantes-dentales",
+    "name": "Implantes Dentales",
+    "category": "Tratamientos Complementarios",
+    "categorySlug": "tratamientos-complementarios",
+    "badge": "Osteointegración & Cirugía Guiada",
+    "icon": "🔩",
+    "summary": "Raíces artificiales de titanio grado médico o zirconio biocompatible integradas en el hueso maxilar para sostener coronas, puentes o prótesis completas con máxima fijación y estética.",
+    "indications": [
+      "Pérdida de un solo diente, múltiples piezas o ausencia dental total.",
+      "Dificultad o incomodidad con prótesis removibles convencionales inestables.",
+      "Deseo de recuperar dientes fijos sin tallar las piezas contiguas sanas.",
+      "Pérdida ósea progresiva por ausencia prolongada de piezas dentales."
+    ],
+    "evaluation": "Tomografía volumétrica 3D (CBCT) y escaneo intraoral para evaluar volumen, densidad ósea y trayectoria de estructuras anatómicas nobles.",
+    "procedure": [
+      {
+        "step": "1. Planificación Quirúrgica Virtual 3D",
+        "desc": "Diseño por computador de la posición óptima del implante y confección de férula quirúrgica guía."
+      },
+      {
+        "step": "2. Cirugía Guiada de Mínima Invasión",
+        "desc": "Inserción precisa del implante en el lecho óseo con anestesia local confortable."
+      },
+      {
+        "step": "3. Período de Osteointegración",
+        "desc": "Proceso biológico de adhesión celular ósea a la superficie del titanio (habitualmente de 8 a 12 semanas)."
+      },
+      {
+        "step": "4. Carga Protésica y Corona Definitiva",
+        "desc": "Colocación de la corona de zirconio o cerámica personalizada con ajuste oclusal perfecto."
+      }
+    ],
+    "benefits": [
+      "Sensación, fuerza y apariencia exactamente iguales a un diente natural sano.",
+      "Preserva los dientes vecinos intactos al no requerir tallado de piezas sanas.",
+      "Detiene la reabsorción ósea de los maxilares al transmitir fuerzas al hueso.",
+      "Tasa de éxito clínico superior al 98% a largo plazo con el mantenimiento correcto."
+    ],
+    "limitations": [
+      "Pacientes con pérdida ósea severa pueden requerir injertos óseos o elevación de seno maxilar previos.",
+      "El consumo excesivo de tabaco y la diabetes no controlada aumentan el riesgo de fracaso del implante."
+    ],
+    "aftercare": [
+      "Dieta blanda y fría durante las primeras 48 horas postoperatorias.",
+      "Higiene periimplantaria exhaustiva con cepillos interproximales y enjuagues antisépticos prescritos.",
+      "Revisiones clínicas y profilaxis profesional semestral."
+    ],
+    "faqs": [
+      {
+        "q": "¿Existe rechazo del implante?",
+        "a": "El titanio es biológicamente inerte y no genera reacciones de rechazo alérgico. Rara vez puede no lograrse la osteointegración (fallo biológico <2%), caso en el cual se sustituye fácilmente tras cicatrización."
+      }
+    ],
+    "needs_doctor_review": false
+  }
+]

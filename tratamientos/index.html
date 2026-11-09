@@ -1,0 +1,702 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Catálogo Completo de Tratamientos — Aurea Smile</title>
+  <meta name="description" content="Explora nuestro catálogo de 21 tratamientos odontológicos especializados: Odontología Digital 3D, Rehabilitación Oral, Estética Dental y Tratamientos Complementarios con la Dra. Jailin Rada en Cartagena.">
+  <link rel="canonical" href="https://aureasmile.com/tratamientos/">
+  <meta name="theme-color" content="#091C34">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Catálogo de Tratamientos | Aurea Smile - Dra. Jailin Rada">
+  <meta property="og:description" content="Conoce en detalle cada procedimiento odontológico: indicaciones, etapas paso a paso, beneficios, limitaciones y cuidados posteriores.">
+  <meta property="og:type" content="website">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:ital,wght@0,300;0,400;0,500;0,600;0,700;1,400&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy-deep: #091C34;
+      --navy-surface: #0E2746;
+      --navy-border: rgba(213, 184, 139, 0.2);
+      --pearl-white: #F6F8FA;
+      --white: #FFFFFF;
+      --pearl-border: #E5EBF2;
+      --champagne: #D5B88B;
+      --champagne-light: #F4EADA;
+      --champagne-dark: #B69562;
+      --orange-cta: #F47721;
+      --orange-cta-hover: #DE6412;
+      --orange-glow: rgba(244, 119, 33, 0.35);
+      --text-primary: #121D2F;
+      --text-muted: #59677B;
+      --text-on-dark: #F6F8FA;
+      --text-on-dark-muted: #9EAFCE;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-xl: 30px;
+      --radius-full: 9999px;
+      --shadow-sm: 0 2px 10px rgba(9, 28, 52, 0.04);
+      --shadow-md: 0 14px 35px rgba(9, 28, 52, 0.07);
+      --shadow-lg: 0 24px 50px rgba(9, 28, 52, 0.12);
+      --ease-luxe: cubic-bezier(0.16, 1, 0.3, 1);
+      --container-max: 1220px;
+    }
+
+    *, *::before, *::after { box-sizing: border-box; margin: 0; padding: 0; }
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--white);
+      color: var(--text-primary);
+      line-height: 1.7;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+    h1, h2, h3, h4 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--navy-deep);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+    a { text-decoration: none; color: inherit; transition: all 0.25s var(--ease-luxe); }
+    img { max-width: 100%; height: auto; display: block; }
+    .container { width: 100%; max-width: var(--container-max); margin: 0 auto; padding: 0 1.5rem; }
+
+    /* Top bar */
+    .top-bar {
+      background: var(--navy-deep);
+      color: var(--text-on-dark-muted);
+      font-size: 0.84rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid rgba(213, 184, 139, 0.15);
+    }
+    .top-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .top-bar-link { color: var(--text-on-dark); display: inline-flex; align-items: center; gap: 0.4rem; font-weight: 500; }
+    .top-bar-link:hover { color: var(--champagne); }
+
+    .lang-switcher {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-full);
+      padding: 2px;
+      border: 1px solid rgba(213, 184, 139, 0.25);
+    }
+    .lang-btn {
+      background: none;
+      border: none;
+      color: var(--text-on-dark-muted);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 2px 9px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: var(--champagne);
+      color: var(--navy-deep);
+    }
+
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(246, 248, 250, 0.96);
+      backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--pearl-border);
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 78px;
+    }
+    .brand-logo { height: 46px; }
+    .nav-links { display: flex; align-items: center; gap: 1.8rem; list-style: none; }
+    .nav-link { font-size: 0.92rem; font-weight: 600; color: var(--navy-deep); }
+    .nav-link:hover, .nav-link.active { color: var(--orange-cta); }
+    .btn-header-cta {
+      background: var(--orange-cta);
+      color: #fff !important;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 0.65rem 1.35rem;
+      border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 16px var(--orange-glow);
+    }}
+    .btn-header-cta:hover { background: var(--orange-cta-hover); transform: translateY(-2px); }
+
+    /* Hero Catálogo */
+    .catalog-hero {
+      background: radial-gradient(circle at 80% 20%, rgba(213, 184, 139, 0.14) 0%, transparent 60%),
+                  linear-gradient(180deg, var(--navy-deep) 0%, var(--navy-surface) 100%);
+      color: #fff;
+      padding: 5rem 0 4rem;
+      text-align: center;
+      border-bottom: 1px solid rgba(213, 184, 139, 0.2);
+    }
+    .breadcrumbs {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.84rem;
+      color: var(--text-on-dark-muted);
+      margin-bottom: 1.5rem;
+    }
+    .breadcrumbs a { color: var(--champagne); }
+    .kicker {
+      font-size: clamp(0.75rem, 0.9vw, 0.84rem);
+      letter-spacing: 0.14em;
+      text-transform: uppercase;
+      color: var(--champagne);
+      font-weight: 700;
+      display: block;
+      margin-bottom: 0.8rem;
+    }
+    .hero-title {
+      color: #fff;
+      font-size: clamp(2rem, 3.8vw, 3.2rem);
+      margin-bottom: 1.2rem;
+      letter-spacing: -0.015em;
+    }
+    .hero-subtitle {
+      color: var(--text-on-dark-muted);
+      font-size: 1.1rem;
+      max-width: 720px;
+      margin: 0 auto;
+      line-height: 1.7;
+    }
+
+    /* Categorías y Tarjetas */
+    .catalog-content {
+      padding: 4.5rem 0 6rem;
+      background: var(--pearl-white);
+    }
+    .category-block {
+      margin-bottom: 4.5rem;
+    }
+    .category-header {
+      display: flex;
+      align-items: center;
+      gap: 1rem;
+      margin-bottom: 2rem;
+      padding-bottom: 1rem;
+      border-bottom: 2px solid var(--pearl-border);
+    }
+    .category-icon {
+      font-size: 2rem;
+      background: #fff;
+      width: 52px;
+      height: 52px;
+      border-radius: var(--radius-md);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      box-shadow: var(--shadow-sm);
+      border: 1px solid var(--pearl-border);
+    }
+    .category-title {
+      font-size: 1.8rem;
+      color: var(--navy-deep);
+    }
+    .treatments-grid {
+      display: grid;
+      grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+      gap: 1.8rem;
+    }
+    .treatment-card {
+      background: #fff;
+      border: 1px solid var(--pearl-border);
+      border-radius: var(--radius-lg);
+      padding: 2rem 1.8rem;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      justify-content: space-between;
+      transition: all 0.3s var(--ease-luxe);
+      position: relative;
+    }
+    .treatment-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--champagne);
+    }
+    .card-badge {
+      display: inline-block;
+      align-self: flex-start;
+      background: var(--pearl-white);
+      color: var(--champagne-dark);
+      font-size: 0.74rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.08em;
+      padding: 0.35rem 0.75rem;
+      border-radius: var(--radius-full);
+      margin-bottom: 1.2rem;
+      border: 1px solid var(--pearl-border);
+    }
+    .card-title {
+      font-size: 1.35rem;
+      margin-bottom: 0.75rem;
+      color: var(--navy-deep);
+    }
+    .card-summary {
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+      margin-bottom: 1.8rem;
+      flex-grow: 1;
+    }
+    .card-link {
+      color: var(--orange-cta);
+      font-weight: 700;
+      font-size: 0.92rem;
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+    }
+    .treatment-card:hover .card-link {
+      color: var(--orange-cta-hover);
+      transform: translateX(4px);
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--navy-deep);
+      color: var(--text-on-dark-muted);
+      padding: 4rem 0 2rem;
+      border-top: 1px solid rgba(213, 184, 139, 0.2);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 2fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 1.5rem;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      font-size: 0.85rem;
+      flex-wrap: wrap;
+      gap: 1rem;
+    }
+
+    @media (max-width: 900px) {
+      .nav-links { display: none; }
+      .footer-grid { grid-template-columns: 1fr; gap: 2rem; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div style="display:flex; align-items:center; gap:0.5rem;">
+        <span>📍</span>
+        <span data-i18n="top_location">Cartagena de Indias, Colombia • Centro Histórico</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:1.2rem;">
+        <a href="https://wa.me/573161473568" target="_blank" rel="noopener" class="top-bar-link">
+          <span>📞</span> +57 316 147 3568
+        </a>
+        <div class="lang-switcher">
+          <button class="lang-btn active" id="btn-es">ES</button>
+          <button class="lang-btn" id="btn-en">EN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="../" class="logo-container" aria-label="Aurea Smile - Inicio">
+          <img src="../assets/logo.png" alt="Aurea Smile Logo" class="brand-logo">
+        </a>
+        <ul class="nav-links">
+          <li><a href="../#filosofia" class="nav-link" data-i18n="nav_concept">Por qué elegirnos</a></li>
+          <li><a href="../#doctora" class="nav-link" data-i18n="nav_doctor">Dra. Jailin Rada</a></li>
+          <li><a href="#catalogo" class="nav-link active" data-i18n="nav_treatments">Tratamientos</a></li>
+          <li><a href="../#testimonios" class="nav-link" data-i18n="nav_reviews">Opiniones</a></li>
+          <li><a href="../blog/" class="nav-link" data-i18n="nav_blog">Blog</a></li>
+        </ul>
+        <div>
+          <a href="https://wa.me/573161473568?text=Hola%2C%20deseo%20consultar%20sobre%20tratamientos%20en%20Aurea%20Smile" target="_blank" rel="noopener" class="btn-header-cta">
+            <span>📅</span> <span data-i18n="nav_cta">Consultar Valoración</span>
+          </a>
+        </div>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Catálogo -->
+  <section class="catalog-hero" id="catalogo">
+    <div class="container">
+      <div class="breadcrumbs">
+        <a href="../" data-i18n="bc_home">Inicio</a> <span>/</span> <span data-i18n="bc_treat">Tratamientos</span>
+      </div>
+      <span class="kicker" data-i18n="hero_kicker">Odontología Boutique de Alta Gama</span>
+      <h1 class="hero-title" data-i18n="hero_title">Catálogo Completo de Tratamientos</h1>
+      <p class="hero-subtitle" data-i18n="hero_subtitle">
+        21 procedimientos clínicos desarrollados con rigor científico, tecnología digital y un profundo respeto por la biología y el confort de cada paciente.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Content -->
+  <main class="catalog-content">
+    <div class="container">
+
+      <div class="category-block" id="odontologia-digital">
+        <div class="category-header">
+          <div class="category-icon">💻</div>
+          <div>
+            <span class="kicker" style="color:var(--champagne-dark); margin-bottom:0.2rem;" data-i18n="cat1_kicker">Flujo CAD/CAM & Simulación</span>
+            <h2 class="category-title" data-i18n="cat1_title">1. Odontología Digital 3D</h2>
+            <p style="color:var(--text-muted); font-size:0.95rem; margin-top:0.4rem;" data-i18n="cat1_desc">Diagnóstico tridimensional y biomecánica asistida por ordenador para máxima predictibilidad clínica.</p>
+          </div>
+        </div>
+        <div class="treatments-grid">
+
+          <div class="treatment-card" data-slug="aline">
+            <div>
+              <span class="card-badge" data-t-field="badge">Ortodoncia Invisible 3D</span>
+              <h3 class="card-title" data-t-field="title">Aline</h3>
+              <p class="card-summary" data-t-field="summary">Alineadores transparentes biomecánicamente planificados mediante escaneo intraoral 3D para corregir malposiciones dentales sin brackets metálicos.</p>
+            </div>
+            <a href="aline/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+          <div class="treatment-card" data-slug="t-brux">
+            <div>
+              <span class="card-badge" data-t-field="badge">Protección Oclusal Digital</span>
+              <h3 class="card-title" data-t-field="title">T-brux</h3>
+              <p class="card-summary" data-t-field="summary">Placa oclusal neuromuscular de alta precisión digital diseñada para neutralizar el apretamiento y rechinamiento dental, protegiendo dientes, restauraciones y la articulación temporomandibular (ATM).</p>
+            </div>
+            <a href="t-brux/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+          <div class="treatment-card" data-slug="t-quiet">
+            <div>
+              <span class="card-badge" data-t-field="badge">Medicina Dental del Sueño</span>
+              <h3 class="card-title" data-t-field="title">T-quiet</h3>
+              <p class="card-summary" data-t-field="summary">Dispositivo de avance mandibular (DAM) digitalizado para el tratamiento del ronquido crónico y apneas obstructivas leves a moderadas, mejorando la oxigenación y la calidad del descanso.</p>
+            </div>
+            <a href="t-quiet/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+          <div class="treatment-card" data-slug="coronas-digitales">
+            <div>
+              <span class="card-badge" data-t-field="badge">CAD/CAM de Precisión</span>
+              <h3 class="card-title" data-t-field="title">Coronas Digitales</h3>
+              <p class="card-summary" data-t-field="summary">Restauraciones fijas completas diseñadas por computadora (CAD) y fresadas con tecnología robótica (CAM) para devolver anatomía, función y estética idéntica al diente natural.</p>
+            </div>
+            <a href="coronas-digitales/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="category-block" id="rehabilitacion-oral">
+        <div class="category-header">
+          <div class="category-icon">👑</div>
+          <div>
+            <span class="kicker" style="color:var(--champagne-dark); margin-bottom:0.2rem;" data-i18n="cat2_kicker">Función Masticatoria & Biocompatibilidad</span>
+            <h2 class="category-title" data-i18n="cat2_title">2. Rehabilitación Oral</h2>
+            <p style="color:var(--text-muted); font-size:0.95rem; margin-top:0.4rem;" data-i18n="cat2_desc">Prótesis fijas, implantes y restauraciones libres de metal para recuperar función y armonía dental.</p>
+          </div>
+        </div>
+        <div class="treatments-grid">
+
+          <div class="treatment-card" data-slug="coronas-metal-free">
+            <div>
+              <span class="card-badge" data-t-field="badge">Zirconio & Disilicato</span>
+              <h3 class="card-title" data-t-field="title">Coronas Metal-Free</h3>
+              <p class="card-summary" data-t-field="summary">Coronas estéticas de vanguardia fabricadas en zirconio de alta translucidez o disilicato de litio, eliminando sombras grises y líneas oscuras en el borde de la encía.</p>
+            </div>
+            <a href="coronas-metal-free/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+          <div class="treatment-card" data-slug="coronas-sobre-implante">
+            <div>
+              <span class="card-badge" data-t-field="badge">Prótesis Fija Implantológica</span>
+              <h3 class="card-title" data-t-field="title">Coronas sobre Implante</h3>
+              <p class="card-summary" data-t-field="summary">Restauraciones fijas atornilladas o cementadas sobre pilares de implantes osteointegrados, diseñadas digitalmente para reponer piezas perdidas con firmeza y naturalidad.</p>
+            </div>
+            <a href="coronas-sobre-implante/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+          <div class="treatment-card" data-slug="protesis-total">
+            <div>
+              <span class="card-badge" data-t-field="badge">Rehabilitación Edéntula</span>
+              <h3 class="card-title" data-t-field="title">Prótesis Total</h3>
+              <p class="card-summary" data-t-field="summary">Dispositivos protésicos completos de última generación para pacientes desdentados, concebidos con análisis fisionómico para restaurar la altura facial, soporte labial y fonética.</p>
+            </div>
+            <a href="protesis-total/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+          <div class="treatment-card" data-slug="rehabilitacion-oral">
+            <div>
+              <span class="card-badge" data-t-field="badge">Plan Integral Funcional</span>
+              <h3 class="card-title" data-t-field="title">Rehabilitación Oral</h3>
+              <p class="card-summary" data-t-field="summary">Disciplina odontológica que combina prótesis fija, removible y oclusión para reconstruir bocas severamente desgastadas o mutiladas, devolviendo salud y función masticatoria plena.</p>
+            </div>
+            <a href="rehabilitacion-oral/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+          <div class="treatment-card" data-slug="implantes-dentales">
+            <div>
+              <span class="card-badge" data-t-field="badge">Osteointegración & Cirugía Guiada</span>
+              <h3 class="card-title" data-t-field="title">Implantes Dentales</h3>
+              <p class="card-summary" data-t-field="summary">Raíces artificiales de titanio grado médico o zirconio biocompatible integradas en el hueso maxilar para sostener coronas, puentes o prótesis completas con máxima fijación y estética.</p>
+            </div>
+            <a href="implantes-dentales/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="category-block" id="estetica-dental">
+        <div class="category-header">
+          <div class="category-icon">✨</div>
+          <div>
+            <span class="kicker" style="color:var(--champagne-dark); margin-bottom:0.2rem;" data-i18n="cat3_kicker">Armonía Facial & Biomimetismo</span>
+            <h2 class="category-title" data-i18n="cat3_title">3. Estética Dental & Sonrisa</h2>
+            <p style="color:var(--text-muted); font-size:0.95rem; margin-top:0.4rem;" data-i18n="cat3_desc">Perfeccionamiento de forma, color y microtextura dental con un enfoque 100% natural y luminoso.</p>
+          </div>
+        </div>
+        <div class="treatments-grid">
+
+          <div class="treatment-card" data-slug="diseno-de-sonrisa">
+            <div>
+              <span class="card-badge" data-t-field="badge">Digital Smile Design</span>
+              <h3 class="card-title" data-t-field="title">Diseño de Sonrisa</h3>
+              <p class="card-summary" data-t-field="summary">Planificación estética integral que armoniza la forma, proporción, color y posición de los dientes con la línea de la sonrisa, los labios y los rasgos faciales únicos del paciente.</p>
+            </div>
+            <a href="diseno-de-sonrisa/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+          <div class="treatment-card" data-slug="blanqueamiento-dental">
+            <div>
+              <span class="card-badge" data-t-field="badge">Aclaramiento Clínico</span>
+              <h3 class="card-title" data-t-field="title">Blanqueamiento Dental</h3>
+              <p class="card-summary" data-t-field="summary">Procedimiento clínico seguro que aclara varios tonos el color intrínseco del esmalte dental mediante agentes oxidantes biocompatibles supervisados por la Dra. Jailin Rada.</p>
+            </div>
+            <a href="blanqueamiento-dental/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+          <div class="treatment-card" data-slug="diseno-de-carillas">
+            <div>
+              <span class="card-badge" data-t-field="badge">Láminas Cerámicas & Resina</span>
+              <h3 class="card-title" data-t-field="title">Diseño de Carillas</h3>
+              <p class="card-summary" data-t-field="summary">Finas láminas cerámicas o de composite de alta gama adheridas al frente del diente para transformar textura, color, forma y alineación con un acabado sumamente natural.</p>
+            </div>
+            <a href="diseno-de-carillas/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+          <div class="treatment-card" data-slug="odontologia-estetica">
+            <div>
+              <span class="card-badge" data-t-field="badge">Armonización Facial y Dental</span>
+              <h3 class="card-title" data-t-field="title">Odontología Estética</h3>
+              <p class="card-summary" data-t-field="summary">Conjunto de procedimientos avanzados enfocados en embellecer la sonrisa, respetando los cánones de proporción, luminosidad, simetría y naturalidad de cada rostro.</p>
+            </div>
+            <a href="odontologia-estetica/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+      <div class="category-block" id="tratamientos-complementarios">
+        <div class="category-header">
+          <div class="category-icon">🌿</div>
+          <div>
+            <span class="kicker" style="color:var(--champagne-dark); margin-bottom:0.2rem;" data-i18n="cat4_kicker">Salud Integral & Diagnóstico Avanzado</span>
+            <h2 class="category-title" data-i18n="cat4_title">4. Tratamientos Complementarios & Especialidades</h2>
+            <p style="color:var(--text-muted); font-size:0.95rem; margin-top:0.4rem;" data-i18n="cat4_desc">Atención odontológica integral, prevención periodontal y cuidados especializados para toda la familia.</p>
+          </div>
+        </div>
+        <div class="treatments-grid">
+
+          <div class="treatment-card" data-slug="limpiezas-dentales">
+            <div>
+              <span class="card-badge" data-t-field="badge">Profilaxis & Detox Oral</span>
+              <h3 class="card-title" data-t-field="title">Limpiezas Dentales</h3>
+              <p class="card-summary" data-t-field="summary">Tratamiento preventivo y profiláctico profundo con ultrasonido y aeropulido para eliminar placa bacteriana calcificada (tártaro) y manchas extrínsecas sin agredir el esmalte.</p>
+            </div>
+            <a href="limpiezas-dentales/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+          <div class="treatment-card" data-slug="cirugia-oral">
+            <div>
+              <span class="card-badge" data-t-field="badge">Procedimientos Quirúrgicos</span>
+              <h3 class="card-title" data-t-field="title">Cirugía Oral</h3>
+              <p class="card-summary" data-t-field="summary">Procedimientos quirúrgicos ambulatorios de precisión, desde extracciones complejas de cordales (muelas del juicio) hasta plastias gingivales y regularizaciones óseas.</p>
+            </div>
+            <a href="cirugia-oral/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+          <div class="treatment-card" data-slug="endodoncia">
+            <div>
+              <span class="card-badge" data-t-field="badge">Terapia de Conductos</span>
+              <h3 class="card-title" data-t-field="title">Endodoncia</h3>
+              <p class="card-summary" data-t-field="summary">Tratamiento especializado para salvar dientes con la pulpa inflamada o infectada, desinfectando y sellando herméticamente el sistema de conductos radiculares.</p>
+            </div>
+            <a href="endodoncia/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+          <div class="treatment-card" data-slug="periodoncia">
+            <div>
+              <span class="card-badge" data-t-field="badge">Salud de Encías y Hueso</span>
+              <h3 class="card-title" data-t-field="title">Periodoncia</h3>
+              <p class="card-summary" data-t-field="summary">Diagnóstico, tratamiento y control de las patologías que afectan a las encías y al hueso alveolar de soporte, frenando la inflamación y la movilidad dental.</p>
+            </div>
+            <a href="periodoncia/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+          <div class="treatment-card" data-slug="odontologia-general">
+            <div>
+              <span class="card-badge" data-t-field="badge">Diagnóstico & Restauración</span>
+              <h3 class="card-title" data-t-field="title">Odontología General</h3>
+              <p class="card-summary" data-t-field="summary">Atención odontológica integral de prevención, diagnóstico temprano y restauración funcional de caries mediante resinas compuestas estéticas biomiméticas.</p>
+            </div>
+            <a href="odontologia-general/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+          <div class="treatment-card" data-slug="ortodoncia">
+            <div>
+              <span class="card-badge" data-t-field="badge">Alineación & Oclusión</span>
+              <h3 class="card-title" data-t-field="title">Ortodoncia</h3>
+              <p class="card-summary" data-t-field="summary">Corrección biomecánica de la posición de los dientes y huesos maxilares para lograr una mordida perfectamente funcional, estética y estable en el tiempo.</p>
+            </div>
+            <a href="ortodoncia/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+          <div class="treatment-card" data-slug="odontopediatria">
+            <div>
+              <span class="card-badge" data-t-field="badge">Salud Dental Infantil</span>
+              <h3 class="card-title" data-t-field="title">Odontopediatría</h3>
+              <p class="card-summary" data-t-field="summary">Cuidado odontológico preventivo y terapéutico especializado para bebés, niños y adolescentes en un entorno empático, lúdico y libre de temores.</p>
+            </div>
+            <a href="odontopediatria/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+          <div class="treatment-card" data-slug="radiologia-oral">
+            <div>
+              <span class="card-badge" data-t-field="badge">Diagnóstico por Imagen 2D/3D</span>
+              <h3 class="card-title" data-t-field="title">Radiología Oral</h3>
+              <p class="card-summary" data-t-field="summary">Estudios radiográficos digitales y tomografías computarizadas de haz cónico (CBCT) con ultra baja dosis de radiación para diagnósticos anatómicos de máxima certidumbre.</p>
+            </div>
+            <a href="radiologia-oral/" class="card-link" data-i18n="card_link">
+              Ver procedimiento y detalles →
+            </a>
+          </div>
+
+        </div>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="../assets/logo.png" alt="Aurea Smile" style="height: 48px; width: auto; margin-bottom: 1rem;">
+          <p style="color: var(--text-on-dark-muted); max-width: 380px;" data-i18n="footer_brand_desc">
+            Aurea Smile — Odontología Boutique en Cartagena de Indias. Tecnología digital avanzada y bienestar multisensorial liderado por la Dra. Jailin Rada.
+          </p>
+        </div>
+        <div>
+          <h4 style="color:#fff; margin-bottom:1rem; font-size:1.05rem;" data-i18n="footer_nav">Navegación</h4>
+          <ul style="list-style:none; display:grid; gap:0.5rem; font-size:0.9rem;">
+            <li><a href="../#filosofia" data-i18n="nav_concept">Por qué elegirnos</a></li>
+            <li><a href="../#doctora" data-i18n="nav_doctor">Dra. Jailin Rada</a></li>
+            <li><a href="../#tratamientos" data-i18n="nav_treatments">Tratamientos</a></li>
+            <li><a href="../blog/" data-i18n="nav_blog">Blog Clínico</a></li>
+            <li><a href="../#contacto" data-i18n="nav_contact">Ubicación y Contacto</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 style="color:#fff; margin-bottom:1rem; font-size:1.05rem;" data-i18n="footer_clinic">Consultorio</h4>
+          <p style="font-size:0.9rem; margin-bottom:0.8rem;">
+            Edificio Caja Agraria, Calle 32, Oficina 315<br>
+            Centro Histórico, Cartagena de Indias, Bolívar
+          </p>
+          <a href="https://wa.me/573161473568" target="_blank" rel="noopener" style="color:var(--champagne); font-weight:600; font-size:0.92rem;">
+            WhatsApp: +57 316 147 3568
+          </a>
+        </div>
+      </div>
+      <div class="footer-bottom">
+        <div>&copy; 2026 Aurea Smile. <span data-i18n="footer_rights">Todos los derechos reservados.</span></div>
+        <div data-i18n="footer_credits">Diseño y desarrollo web por <a href="https://canedostudio.com/" target="_blank" rel="noopener" style="color:var(--champagne); font-weight:600;">Canedo Studio</a></div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Script Bilingüe Integral con Objetos Localizados -->
+  <script src="catalog-i18n.js"></script>
+</body>
+</html>
