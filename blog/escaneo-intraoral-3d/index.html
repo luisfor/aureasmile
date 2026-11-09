@@ -1,0 +1,795 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>El fin de las pastas incómodas: ¿Cómo funciona el escaneo intraoral 3D? — Aurea Smile</title>
+  <meta name="description" content="Guía médica y clínica sobre Escaneo Intraoral 3D: evidencia, ventajas biomecánicas y recomendaciones por la Dra. Jailin Rada en Cartagena.">
+  <link rel="canonical" href="https://aureasmile.com/blog/escaneo-intraoral-3d/">
+  <meta name="theme-color" content="#091C34">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="El fin de las pastas incómodas: ¿Cómo funciona el escaneo intraoral 3D? | Aurea Smile">
+  <meta property="og:description" content="Descubre cómo la odontología digital moderna protege tu bienestar. Supervisado por la Dra. Jailin Rada.">
+  <meta property="og:type" content="article">
+
+  <!-- Google Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy-deep: #091C34;
+      --navy-surface: #0E2746;
+      --navy-border: rgba(213, 184, 139, 0.2);
+      --pearl-white: #F6F8FA;
+      --white: #FFFFFF;
+      --pearl-border: #E5EBF2;
+      --champagne: #D5B88B;
+      --champagne-light: #F4EADA;
+      --champagne-dark: #B69562;
+      --orange-cta: #F47721;
+      --orange-cta-hover: #DE6412;
+      --text-primary: #121D2F;
+      --text-muted: #59677B;
+      --text-on-dark: #F6F8FA;
+      --text-on-dark-muted: #9EAFCE;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-xl: 30px;
+      --radius-full: 9999px;
+      --shadow-sm: 0 2px 10px rgba(9, 28, 52, 0.04);
+      --shadow-md: 0 14px 35px rgba(9, 28, 52, 0.07);
+      --shadow-lg: 0 24px 50px rgba(9, 28, 52, 0.12);
+      --ease-luxe: cubic-bezier(0.16, 1, 0.3, 1);
+      --container-max: 1220px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--white);
+      color: var(--text-primary);
+      line-height: 1.7;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4, h5, h6 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      font-weight: 700;
+      color: var(--navy-deep);
+      line-height: 1.3;
+    }
+
+    a {
+      color: inherit;
+      text-decoration: none;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Top Bar */
+    .top-bar {
+      background: var(--navy-surface);
+      color: var(--text-on-dark-muted);
+      font-size: 0.8rem;
+      padding: 0.45rem 0;
+      border-bottom: 1px solid var(--navy-border);
+    }
+    .top-bar-inner {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    .top-bar-location {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+    }
+    .top-bar-actions {
+      display: flex;
+      align-items: center;
+      gap: 1.5rem;
+    }
+    .top-bar-link {
+      color: var(--text-on-dark-muted);
+      transition: color 0.2s;
+    }
+    .top-bar-link:hover { color: var(--champagne); }
+
+    .lang-switcher {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-full);
+      padding: 2px;
+      border: 1px solid rgba(213, 184, 139, 0.25);
+    }
+    .lang-btn {
+      background: none;
+      border: none;
+      color: var(--text-on-dark-muted);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 2px 9px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: var(--champagne);
+      color: var(--navy-deep);
+    }
+
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(246, 248, 250, 0.96);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--pearl-border);
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 78px;
+    }
+    .brand-logo {
+      height: 46px;
+      width: auto;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+      list-style: none;
+    }
+    .nav-link {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--navy-deep);
+      transition: color 0.2s;
+    }
+    .nav-link:hover, .nav-link.active {
+      color: var(--orange-cta);
+    }
+    .btn-header-cta {
+      background: var(--orange-cta);
+      color: #fff !important;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 0.65rem 1.3rem;
+      border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      transition: all 0.25s var(--ease-luxe);
+      box-shadow: 0 4px 14px rgba(244, 119, 33, 0.35);
+    }
+    .btn-header-cta:hover {
+      background: var(--orange-cta-hover);
+      transform: translateY(-2px);
+    }
+
+    /* Article Hero */
+    .article-header {
+      background: linear-gradient(135deg, var(--navy-deep) 0%, #112d53 100%);
+      color: #fff;
+      padding: 3.5rem 0 3rem;
+      border-bottom: 3px solid var(--champagne);
+    }
+    .breadcrumbs {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.84rem;
+      color: var(--text-on-dark-muted);
+      margin-bottom: 1.2rem;
+      flex-wrap: wrap;
+    }
+    .breadcrumbs a {
+      color: var(--champagne);
+      transition: color 0.2s;
+    }
+    .breadcrumbs a:hover { color: #fff; }
+    .article-kicker {
+      display: inline-block;
+      color: var(--champagne);
+      font-size: 0.76rem;
+      font-weight: 800;
+      text-transform: uppercase;
+      letter-spacing: 0.1em;
+      margin-bottom: 0.8rem;
+    }
+    .article-title {
+      font-size: clamp(2rem, 3.8vw, 3rem);
+      color: #fff;
+      margin-bottom: 1.5rem;
+      letter-spacing: -0.015em;
+      line-height: 1.2;
+    }
+    .article-meta {
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+      font-size: 0.85rem;
+      color: var(--text-on-dark-muted);
+      flex-wrap: wrap;
+    }
+    .article-author-badge {
+      display: flex;
+      align-items: center;
+      gap: 0.6rem;
+    }
+    .author-img {
+      width: 38px;
+      height: 38px;
+      border-radius: 50%;
+      object-fit: cover;
+      border: 2px solid var(--champagne);
+    }
+
+    /* Layout */
+    .article-layout {
+      display: grid;
+      grid-template-columns: 1fr 340px;
+      gap: 4rem;
+      padding: 4rem 0 6rem;
+    }
+
+    /* Content Typography */
+    .article-content {
+      font-size: 1.05rem;
+      color: var(--text-primary);
+    }
+    .article-content h2 {
+      font-size: 1.65rem;
+      margin: 2.8rem 0 1.2rem;
+      padding-bottom: 0.5rem;
+      border-bottom: 2px solid var(--pearl-border);
+    }
+    .article-content h3 {
+      font-size: 1.3rem;
+      margin: 2rem 0 0.8rem;
+    }
+    .article-content p {
+      margin-bottom: 1.4rem;
+    }
+    .article-content ul, .article-content ol {
+      margin: 1.2rem 0 1.8rem 1.8rem;
+      display: grid;
+      gap: 0.7rem;
+    }
+    .article-content li {
+      line-height: 1.65;
+    }
+
+    .article-hero-img {
+      margin-bottom: 2.5rem;
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-md);
+    }
+    .article-hero-img img {
+      width: 100%;
+      height: auto;
+      display: block;
+    }
+    .article-hero-img figcaption {
+      padding: 0.8rem 1.2rem;
+      background: var(--pearl-white);
+      font-size: 0.84rem;
+      color: var(--text-muted);
+      border-left: 3px solid var(--champagne);
+      font-style: italic;
+    }
+
+    .callout-quote {
+      background: var(--pearl-white);
+      border-left: 4px solid var(--champagne-dark);
+      padding: 1.6rem 2rem;
+      border-radius: var(--radius-md);
+      margin: 2.2rem 0;
+      font-size: 1.15rem;
+      font-style: italic;
+      color: var(--navy-deep);
+      line-height: 1.6;
+    }
+
+    .comparison-table-wrap {
+      overflow-x: auto;
+      margin: 2.2rem 0;
+      border-radius: var(--radius-md);
+      border: 1px solid var(--pearl-border);
+      box-shadow: var(--shadow-sm);
+    }
+    .comparison-table {
+      width: 100%;
+      border-collapse: collapse;
+      font-size: 0.92rem;
+      background: #fff;
+    }
+    .comparison-table th {
+      background: var(--navy-deep);
+      color: #fff;
+      padding: 1rem 1.2rem;
+      text-align: left;
+      font-weight: 700;
+    }
+    .comparison-table td {
+      padding: 0.95rem 1.2rem;
+      border-bottom: 1px solid var(--pearl-border);
+    }
+    .comparison-table tr:last-child td { border-bottom: none; }
+    .comparison-table tr:nth-child(even) { background: var(--pearl-white); }
+
+    .faq-item {
+      background: #fff;
+      border: 1px solid var(--pearl-border);
+      border-radius: var(--radius-md);
+      padding: 1.4rem 1.6rem;
+      margin-bottom: 1rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .faq-item h4 {
+      font-size: 1.08rem;
+      margin-bottom: 0.5rem;
+      color: var(--navy-deep);
+    }
+    .faq-item p {
+      margin-bottom: 0;
+      color: var(--text-muted);
+      font-size: 0.95rem;
+      line-height: 1.6;
+    }
+
+    .clinical-disclaimer {
+      background: #FFFDF9;
+      border: 1px solid var(--champagne-light);
+      border-left: 4px solid var(--champagne-dark);
+      padding: 1.2rem 1.5rem;
+      border-radius: var(--radius-sm);
+      margin: 2.8rem 0 1.8rem;
+      font-size: 0.85rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+
+    .scientific-refs {
+      background: var(--pearl-white);
+      border: 1px solid var(--pearl-border);
+      border-radius: var(--radius-md);
+      padding: 1.5rem 1.8rem;
+      margin-top: 2rem;
+      font-size: 0.82rem;
+      color: var(--text-muted);
+    }
+    .scientific-refs strong { color: var(--navy-deep); display: block; margin-bottom: 0.6rem; font-size: 0.9rem; }
+    .scientific-refs ol { margin: 0 0 0 1.2rem; gap: 0.4rem; }
+
+    /* Sidebar */
+    .article-sidebar {
+      display: flex;
+      flex-direction: column;
+      gap: 2rem;
+    }
+    .sidebar-card {
+      background: #fff;
+      border: 1px solid var(--pearl-border);
+      border-radius: var(--radius-lg);
+      padding: 1.8rem;
+      box-shadow: var(--shadow-sm);
+    }
+    .sidebar-card.cta-card {
+      background: linear-gradient(135deg, var(--navy-deep) 0%, #15345d 100%);
+      color: #fff;
+      border: 1px solid rgba(213, 184, 139, 0.25);
+    }
+    .sidebar-card.cta-card h3 {
+      color: #fff;
+      font-size: 1.25rem;
+      margin-bottom: 0.6rem;
+    }
+    .sidebar-card.cta-card p {
+      color: var(--text-on-dark-muted);
+      font-size: 0.88rem;
+      margin-bottom: 1.4rem;
+      line-height: 1.6;
+    }
+    .btn-sidebar-wa {
+      background: var(--orange-cta);
+      color: #fff !important;
+      font-weight: 700;
+      font-size: 0.9rem;
+      padding: 0.8rem 1.4rem;
+      border-radius: var(--radius-full);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 14px rgba(244, 119, 33, 0.35);
+    }
+    .btn-sidebar-wa:hover { background: var(--orange-cta-hover); }
+
+    .related-articles-list {
+      list-style: none;
+      display: grid;
+      gap: 1rem;
+    }
+    .related-item a {
+      font-size: 0.92rem;
+      font-weight: 700;
+      color: var(--navy-deep);
+      display: block;
+      line-height: 1.4;
+      margin-bottom: 0.25rem;
+      transition: color 0.2s;
+    }
+    .related-item a:hover { color: var(--orange-cta); }
+    .related-item span {
+      font-size: 0.76rem;
+      color: var(--text-muted);
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--navy-deep);
+      color: var(--text-on-dark-muted);
+      padding: 3.5rem 0 2rem;
+      font-size: 0.88rem;
+      border-top: 1px solid rgba(213, 184, 139, 0.2);
+    }
+    .footer-bottom {
+      text-align: center;
+      padding-top: 2rem;
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      font-size: 0.82rem;
+    }
+
+    @media (max-width: 900px) {
+      .article-layout { grid-template-columns: 1fr; }
+      .nav-links { display: none; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top Bar -->
+  <div class="top-bar">
+    <div class="container top-bar-inner">
+      <div class="top-bar-location">
+        <span>📍</span> <span data-i18n="top_location">Escaneo Intraoral 3D</span>
+      </div>
+      <div class="top-bar-actions">
+        <a href="tel:+573161473568" class="top-bar-link">📞 +57 (316) 147-3568</a>
+        <div class="lang-switcher">
+          <button type="button" class="lang-btn active" id="btn-es">ES</button>
+          <button type="button" class="lang-btn" id="btn-en">EN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="../../" aria-label="Aurea Smile">
+          <img src="../../assets/logo.png" alt="Aurea Smile Logo" class="brand-logo">
+        </a>
+        <ul class="nav-links">
+          <li><a href="../../#filosofia" class="nav-link" data-i18n="nav_concept">Por qué elegirnos</a></li>
+          <li><a href="../../#doctora" class="nav-link" data-i18n="nav_doctor">Dra. Jailin Rada</a></li>
+          <li><a href="../../tratamientos/" class="nav-link" data-i18n="nav_treatments">Tratamientos</a></li>
+          <li><a href="../../#testimonios" class="nav-link" data-i18n="nav_reviews">Opiniones</a></li>
+          <li><a href="../" class="nav-link active" data-i18n="nav_blog">Blog</a></li>
+          <li><a href="../../#ubicacion" class="nav-link" data-i18n="nav_location">Ubicación</a></li>
+        </ul>
+        <a href="https://wa.me/573161473568?text=Hola%2C%20leí%20el%20artículo%20de%20Escaneo Intraoral 3D%20y%20deseo%20agendar" target="_blank" rel="noopener" class="btn-header-cta">
+          <span>📅</span> <span data-i18n="nav_cta">Agenda tu valoración</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Article Header -->
+  <section class="article-header">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Breadcrumb">
+        <a href="../../" data-i18n="bc_home">Inicio</a>
+        <span>›</span>
+        <a href="../" data-i18n="bc_blog">Blog</a>
+        <span>›</span>
+        <span data-i18n="bc_art">Escaneo Intraoral 3D</span>
+      </nav>
+      <span class="article-kicker" data-i18n="art_kicker">Odontología Digital • Innovación Clínica</span>
+      <h1 class="article-title" data-i18n="art_title">El fin de las pastas incómodas: ¿Cómo funciona el escaneo intraoral 3D?</h1>
+      
+      <div class="article-meta">
+        <div class="article-author-badge">
+          <img src="../../assets/dra-jailin.jpg" alt="Dra. Jailin Rada" class="author-img">
+          <div>
+            <strong style="color:#fff; display:block;" data-i18n="doc_name">Dra. Jailin Rada</strong>
+            <span style="font-size:0.8rem; color:var(--champagne);" data-i18n="art_author_role">Revisión clínica y dirección médica</span>
+          </div>
+        </div>
+        <div>
+          <span data-i18n="art_date">🗓️ 15 Octubre, 2026</span>
+        </div>
+        <div>
+          <span data-i18n="art_time">⏱️ Tiempo de lectura: 5 minutos</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- Article Layout -->
+  <div class="container">
+    <div class="article-layout">
+      
+      <!-- Main Content -->
+      <article class="article-content" id="article-content-container">
+        
+        <figure class="article-hero-img">
+          <img src="../../assets/blog-escaneo-3d.jpg" alt="Estación de escaneo intraoral 3D de alta precisión en Aurea Smile">
+          <figcaption>Cámara intraoral digital de alta resolución capturando la morfología dental en tiempo real sin molestias mecánicas.</figcaption>
+        </figure>
+
+        <p class="lead" style="font-size:1.15rem; font-weight:500; color:var(--navy-deep); line-height:1.7;">
+          Para muchas personas, el recuerdo más amargo de la odontología tradicional es la cubeta metálica repleta de alginato o silicona fría, una masa densa que debía permanecer inmóvil varios minutos provocando sensación de asfixia y náuseas. Hoy, la odontología digital boutique ha sustituido este proceso por un escaneo óptico tridimensional indoloro, veloz y milimétrico.
+        </p>
+
+        <h2>1. ¿Qué es exactamente un escáner intraoral 3D?</h2>
+        <p>
+          Un escáner intraoral es un dispositivo óptico de mano equipado con sensores de luz estructurada o láser de barrido ultrarrápido. Al recorrer suavemente las arcadas dentales, emite miles de pulsos lumínicos por segundo que rebotan sobre los dientes y tejidos blandos, capturando millones de puntos de coordenadas cartesianas (X, Y, Z).
+        </p>
+        <p>
+          Un software de reconstrucción volumétrica ensambla estos datos al instante para generar una malla poligonal coloreada (archivo STL, PLY u OBJ). El paciente puede observar en una pantalla de alta definición su propia boca en tiempo real, con una fidelidad visual que antes era impensable.
+        </p>
+
+        <div class="callout-quote">
+          "El escáner intraoral no es solo un avance tecnológico: es un cambio de paradigma en el bienestar del paciente, permitiendo planificar rehabilitaciones con precisión de micras y total tranquilidad."
+        </div>
+
+        <h2>2. Ventajas clínicas comprobadas frente al método analógico</h2>
+        <p>
+          Las investigaciones publicadas en el <em>Journal of Prosthetic Dentistry</em> y la literatura protésica internacional han documentado beneficios notables tanto para el clínico como para el paciente:
+        </p>
+
+        <ul>
+          <li><strong>Comodidad y bienestar inmediato:</strong> Se erradica por completo la sensación de náuseas provocada por las cubetas convencionales de alginato.</li>
+          <li><strong>Ajuste marginal de coronas y carillas:</strong> Al no depender de yesos dentales que sufren expansión higroscópica ni de siliconas que experimentan contracción polimérica, las restauraciones alcanzan una adaptación marginal constante inferior a 50 micras.</li>
+          <li><strong>Comunicación y codiseño clínico:</strong> El paciente visualiza sus desgastes, mordida y asimetrías en 3D antes de comenzar cualquier intervención, facilitando decisiones informadas.</li>
+          <li><strong>Agilidad y flujo digital directo:</strong> El modelo digital viaja al laboratorio protésico en segundos vía red protegida, reduciendo los tiempos de entrega de días a horas.</li>
+        </ul>
+
+        <div class="comparison-table-wrap">
+          <table class="comparison-table">
+            <thead>
+              <tr>
+                <th>Criterio Clínico</th>
+                <th>Toma Tradicional (Alginato/Silicona)</th>
+                <th>Escaneo Intraoral 3D</th>
+              </tr>
+            </thead>
+            <tbody>
+              <tr>
+                <td><strong>Confort del paciente</strong></td>
+                <td>Riesgo frecuente de náuseas y sabor químico</td>
+                <td>Suave, respiración normal y descansos libres</td>
+              </tr>
+              <tr>
+                <td><strong>Estabilidad dimensional</strong></td>
+                <td>Sujeta a temperatura, humedad y vaciado</td>
+                <td>Invariable, archivo digital eterno</td>
+              </tr>
+              <tr>
+                <td><strong>Tiempo de obtención</strong></td>
+                <td>15 – 25 minutos con preparación y vaciado</td>
+                <td>3 – 5 minutos para ambas arcadas</td>
+              </tr>
+              <tr>
+                <td><strong>Visualización previa</strong></td>
+                <td>No disponible hasta vaciar el yeso</td>
+                <td>Inmediata en monitor 4K</td>
+              </tr>
+            </tbody>
+          </table>
+        </div>
+
+        <h2>3. Indicaciones principales y limitaciones reales</h2>
+        <p>
+          La tecnología digital es el pilar de los tratamientos contemporáneos en Aurea Smile, particularmente en:
+        </p>
+        <ol>
+          <li><strong>Diseño Digital de Sonrisa (DSD):</strong> Simulación facio-dental antes de realizar carillas cerámicas.</li>
+          <li><strong>Coronas y puentes metal-free:</strong> Fabricación CAD/CAM con fresado de alta exactitud.</li>
+          <li><strong>Ortodoncia invisible:</strong> Planificación secuencial de alineadores biomecánicos.</li>
+          <li><strong>Seguimiento de desgaste oclusal:</strong> Comparación de mallas con el paso de los años para detectar bruxismo incipiente.</li>
+        </ol>
+
+        <h3 style="font-size:1.25rem; margin-top:1.8rem; margin-bottom:0.8rem; color:var(--navy-deep);">Limitaciones y consideraciones clínicas honestas</h3>
+        <p>
+          En la odontología basada en evidencia, ninguna tecnología es infalible sin criterio profesional. El escaneo intraoral presenta limitaciones que deben gestionarse con destreza:
+        </p>
+        <ul>
+          <li><strong>Márgenes subgingivales profundos:</strong> Si el margen de una preparación queda cubierto por sangre o saliva densa, el haz de luz no puede leerlo; requiere retracción gingival meticulosa.</li>
+          <li><strong>Movimiento excesivo:</strong> Movimientos linguales bruscos pueden inducir ligeros desfases que exigen reescanear la zona.</li>
+          <li><strong>No sustituye el diagnóstico biológico:</strong> Un modelo 3D refleja la superficie óptica, pero no la salud pulpar ni la densidad ósea profunda, por lo que siempre se complementa con radiología digital.</li>
+        </ul>
+
+        <h2>4. Preguntas Frecuentes sobre el Escaneo 3D</h2>
+        <div class="faq-item">
+          <h4>¿El escáner intraoral emite radiación?</h4>
+          <p>No. El escáner intraoral funciona exclusivamente con luz óptica visible o tecnología estructurada. Es 100% seguro para mujeres embarazadas y personas de cualquier edad.</p>
+        </div>
+        <div class="faq-item">
+          <h4>¿Duele o genera calor en los dientes?</h4>
+          <p>En lo absoluto. El sensor no toca con fuerza las encías, no produce calor y el proceso puede pausarse en cualquier segundo si necesitas tragar saliva o hablar.</p>
+        </div>
+        <div class="faq-item">
+          <h4>¿Cuánto tiempo toma escanear mi boca entera?</h4>
+          <p>En promedio, un escaneo completo de maxilar superior, inferior y registro de mordida toma entre 3 y 5 minutos.</p>
+        </div>
+
+        <h2>5. Conclusión y perspectiva de la Dra. Jailin Rada</h2>
+        <p>
+          El escaneo intraoral 3D ha transformado la odontología de una experiencia angustiante en un proceso transparente, colaborativo y clínicamente superior. En Aurea Smile, creemos que la tecnología solo tiene sentido cuando se traduce en paz mental para el paciente y resultados estéticos que perduren en el tiempo con armonía biológica.
+        </p>
+
+        <div class="clinical-disclaimer">
+          <strong>Aviso médico informativo:</strong> Este contenido es de carácter estrictamente divulgativo y formativo. No constituye diagnóstico ni reemplaza la valoración odontológica presencial. Las opciones terapéuticas dependen de la evaluación anatómica y funcional individual realizada por un odontólogo registrado.
+        </div>
+
+        <div class="scientific-refs">
+          <strong>Referencias científicas y fuentes clínicas:</strong>
+          <ol>
+            <li>Zimmermann, M., et al. (2020). <em>Accuracy of intraoral digital scanners: A systematic review and meta-analysis</em>. Journal of Prosthetic Dentistry.</li>
+            <li>American Dental Association (ADA). Council on Scientific Affairs: <em>Digital Impression Technologies in Clinical Practice</em>.</li>
+            <li>Mangano, F., et al. (2017). <em>Intraoral scanners in dentistry: a review of the current literature</em>. BMC Oral Health.</li>
+          </ol>
+        </div>
+
+      </article>
+
+      <!-- Sidebar -->
+      <aside class="article-sidebar">
+        
+        <!-- CTA Card -->
+        <div class="sidebar-card cta-card">
+          <span style="font-size:0.8rem; color:var(--champagne); font-weight:700; text-transform:uppercase; letter-spacing:1px; display:block; margin-bottom:0.4rem;" data-i18n="sb_cta_tag">Atención en Cartagena</span>
+          <h3 data-i18n="sb_cta_title">Vive la experiencia digital en Aurea Smile</h3>
+          <p data-i18n="sb_cta_desc">Agenda tu valoración clínica personalizada y descubre cómo la tecnología 3D cuida tu salud y armonía dental.</p>
+          <a href="https://wa.me/573161473568?text=Hola%2C%20leí%20el%20artículo%20de%20Escaneo Intraoral 3D%20y%20quiero%20agendar" target="_blank" rel="noopener" class="btn-sidebar-wa">
+            <span>💬</span> <span data-i18n="sb_cta_btn">Consultar por WhatsApp</span>
+          </a>
+        </div>
+
+        <!-- Related Articles -->
+        <div class="sidebar-card">
+          <h4 style="font-size:1.1rem; color:var(--navy-deep); margin-bottom:1rem;" data-i18n="sb_related_title">Artículos Relacionados</h4>
+          <ul class="related-articles-list" id="related-articles-list">
+            
+            <li class="related-item">
+              <a href="../diseno-sonrisa-natural/">Diseño de sonrisa natural vs. dientes artificialmente blancos: Qué debes saber</a>
+              <span>Estética Dental • 6 min</span>
+            </li>
+            <li class="related-item">
+              <a href="../coronas-metal-free/">Coronas libres de metal: Zirconio y Disilicato de Litio en odontología moderna</a>
+              <span>Rehabilitación Oral • 5 min</span>
+            </li>
+          </ul>
+          <div style="margin-top:1.5rem; padding-top:1.2rem; border-top:1px solid var(--pearl-border);">
+            <a href="../" style="font-size:0.88rem; font-weight:700; color:var(--champagne-dark); display:inline-flex; align-items:center; gap:0.3rem;" data-i18n="sb_back_blog">
+              ← Volver a todos los artículos
+            </a>
+          </div>
+        </div>
+
+        <!-- Doctor Card -->
+        <div class="sidebar-card" style="text-align:center;">
+          <img src="../../assets/dra-jailin.jpg" alt="Dra. Jailin Rada" style="width:90px; height:90px; border-radius:50%; margin:0 auto 1rem; object-fit:cover; border:3px solid var(--champagne);">
+          <h4 style="font-size:1.05rem; margin-bottom:0.2rem;" data-i18n="doc_name">Dra. Jailin Rada</h4>
+          <p style="font-size:0.82rem; color:var(--champagne-dark); font-weight:600; margin-bottom:0.8rem;" data-i18n="doc_role">Directora Clínica Aurea Smile</p>
+          <p style="font-size:0.85rem; color:var(--text-muted); line-height:1.5;" data-i18n="doc_bio">
+            Especialista enfocada en odontología estética y restauradora de mínima invasión con flujos digitales 3D en Cartagena.
+          </p>
+        </div>
+
+      </aside>
+
+    </div>
+  </div>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div style="text-align:center; margin-bottom:2rem;">
+        <img src="../../assets/logo.png" alt="Aurea Smile" style="height:44px; margin:0 auto 1rem;">
+        <p style="max-width:500px; margin:0 auto; font-size:0.88rem;" data-i18n="footer_brand_desc">
+          Aurea Smile — Odontología Boutique. Cartagena, Colombia.
+        </p>
+      </div>
+      <div class="footer-bottom" data-i18n="footer_rights">
+        &copy; 2026 Aurea Smile — Dra. Jailin Rada. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      var dict = {"es": {"meta_title": "El fin de las pastas incómodas: ¿Cómo funciona el escaneo intraoral 3D? — Aurea Smile | Dra. Jailin Rada", "meta_desc": "Guía médica y clínica sobre Escaneo Intraoral 3D: evidencia, ventajas biomecánicas y recomendaciones por la Dra. Jailin Rada en Cartagena.", "top_location": "Caribe Colombiano • Cartagena • Odontología Digital Boutique", "nav_concept": "Por qué elegirnos", "nav_doctor": "Dra. Jailin Rada", "nav_treatments": "Tratamientos", "nav_reviews": "Opiniones", "nav_blog": "Blog", "nav_location": "Ubicación", "nav_cta": "Agenda tu valoración", "bc_home": "Inicio", "bc_blog": "Blog", "bc_art": "Escaneo Intraoral 3D", "art_kicker": "Odontología Digital • Innovación Clínica", "art_title": "El fin de las pastas incómodas: ¿Cómo funciona el escaneo intraoral 3D?", "art_date": "🗓️ 15 Octubre, 2026", "art_time": "⏱️ Tiempo de lectura: 5 minutos", "art_author_role": "Revisión clínica y dirección médica", "sb_cta_tag": "Atención en Cartagena", "sb_cta_title": "Vive la experiencia digital en Aurea Smile", "sb_cta_desc": "Agenda tu valoración clínica personalizada y descubre cómo la tecnología 3D cuida tu salud y armonía dental.", "sb_cta_btn": "Consultar por WhatsApp", "sb_related_title": "Artículos Relacionados", "sb_back_blog": "← Volver a todos los artículos", "doc_name": "Dra. Jailin Rada", "doc_role": "Directora Clínica Aurea Smile", "doc_bio": "Especialista enfocada en odontología estética y restauradora de mínima invasión con flujos digitales 3D en Cartagena.", "footer_brand_desc": "Aurea Smile — Odontología Boutique. Cartagena, Colombia.", "footer_rights": "© 2026 Aurea Smile — Dra. Jailin Rada. Todos los derechos reservados.", "article_body": "\n        <figure class=\"article-hero-img\">\n          <img src=\"../../assets/blog-escaneo-3d.jpg\" alt=\"Estación de escaneo intraoral 3D de alta precisión en Aurea Smile\">\n          <figcaption>Cámara intraoral digital de alta resolución capturando la morfología dental en tiempo real sin molestias mecánicas.</figcaption>\n        </figure>\n\n        <p class=\"lead\" style=\"font-size:1.15rem; font-weight:500; color:var(--navy-deep); line-height:1.7;\">\n          Para muchas personas, el recuerdo más amargo de la odontología tradicional es la cubeta metálica repleta de alginato o silicona fría, una masa densa que debía permanecer inmóvil varios minutos provocando sensación de asfixia y náuseas. Hoy, la odontología digital boutique ha sustituido este proceso por un escaneo óptico tridimensional indoloro, veloz y milimétrico.\n        </p>\n\n        <h2>1. ¿Qué es exactamente un escáner intraoral 3D?</h2>\n        <p>\n          Un escáner intraoral es un dispositivo óptico de mano equipado con sensores de luz estructurada o láser de barrido ultrarrápido. Al recorrer suavemente las arcadas dentales, emite miles de pulsos lumínicos por segundo que rebotan sobre los dientes y tejidos blandos, capturando millones de puntos de coordenadas cartesianas (X, Y, Z).\n        </p>\n        <p>\n          Un software de reconstrucción volumétrica ensambla estos datos al instante para generar una malla poligonal coloreada (archivo STL, PLY u OBJ). El paciente puede observar en una pantalla de alta definición su propia boca en tiempo real, con una fidelidad visual que antes era impensable.\n        </p>\n\n        <div class=\"callout-quote\">\n          \"El escáner intraoral no es solo un avance tecnológico: es un cambio de paradigma en el bienestar del paciente, permitiendo planificar rehabilitaciones con precisión de micras y total tranquilidad.\"\n        </div>\n\n        <h2>2. Ventajas clínicas comprobadas frente al método analógico</h2>\n        <p>\n          Las investigaciones publicadas en el <em>Journal of Prosthetic Dentistry</em> y la literatura protésica internacional han documentado beneficios notables tanto para el clínico como para el paciente:\n        </p>\n\n        <ul>\n          <li><strong>Comodidad y bienestar inmediato:</strong> Se erradica por completo la sensación de náuseas provocada por las cubetas convencionales de alginato.</li>\n          <li><strong>Ajuste marginal de coronas y carillas:</strong> Al no depender de yesos dentales que sufren expansión higroscópica ni de siliconas que experimentan contracción polimérica, las restauraciones alcanzan una adaptación marginal constante inferior a 50 micras.</li>\n          <li><strong>Comunicación y codiseño clínico:</strong> El paciente visualiza sus desgastes, mordida y asimetrías en 3D antes de comenzar cualquier intervención, facilitando decisiones informadas.</li>\n          <li><strong>Agilidad y flujo digital directo:</strong> El modelo digital viaja al laboratorio protésico en segundos vía red protegida, reduciendo los tiempos de entrega de días a horas.</li>\n        </ul>\n\n        <div class=\"comparison-table-wrap\">\n          <table class=\"comparison-table\">\n            <thead>\n              <tr>\n                <th>Criterio Clínico</th>\n                <th>Toma Tradicional (Alginato/Silicona)</th>\n                <th>Escaneo Intraoral 3D</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td><strong>Confort del paciente</strong></td>\n                <td>Riesgo frecuente de náuseas y sabor químico</td>\n                <td>Suave, respiración normal y descansos libres</td>\n              </tr>\n              <tr>\n                <td><strong>Estabilidad dimensional</strong></td>\n                <td>Sujeta a temperatura, humedad y vaciado</td>\n                <td>Invariable, archivo digital eterno</td>\n              </tr>\n              <tr>\n                <td><strong>Tiempo de obtención</strong></td>\n                <td>15 – 25 minutos con preparación y vaciado</td>\n                <td>3 – 5 minutos para ambas arcadas</td>\n              </tr>\n              <tr>\n                <td><strong>Visualización previa</strong></td>\n                <td>No disponible hasta vaciar el yeso</td>\n                <td>Inmediata en monitor 4K</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n\n        <h2>3. Indicaciones principales y limitaciones reales</h2>\n        <p>\n          La tecnología digital es el pilar de los tratamientos contemporáneos en Aurea Smile, particularmente en:\n        </p>\n        <ol>\n          <li><strong>Diseño Digital de Sonrisa (DSD):</strong> Simulación facio-dental antes de realizar carillas cerámicas.</li>\n          <li><strong>Coronas y puentes metal-free:</strong> Fabricación CAD/CAM con fresado de alta exactitud.</li>\n          <li><strong>Ortodoncia invisible:</strong> Planificación secuencial de alineadores biomecánicos.</li>\n          <li><strong>Seguimiento de desgaste oclusal:</strong> Comparación de mallas con el paso de los años para detectar bruxismo incipiente.</li>\n        </ol>\n\n        <h3 style=\"font-size:1.25rem; margin-top:1.8rem; margin-bottom:0.8rem; color:var(--navy-deep);\">Limitaciones y consideraciones clínicas honestas</h3>\n        <p>\n          En la odontología basada en evidencia, ninguna tecnología es infalible sin criterio profesional. El escaneo intraoral presenta limitaciones que deben gestionarse con destreza:\n        </p>\n        <ul>\n          <li><strong>Márgenes subgingivales profundos:</strong> Si el margen de una preparación queda cubierto por sangre o saliva densa, el haz de luz no puede leerlo; requiere retracción gingival meticulosa.</li>\n          <li><strong>Movimiento excesivo:</strong> Movimientos linguales bruscos pueden inducir ligeros desfases que exigen reescanear la zona.</li>\n          <li><strong>No sustituye el diagnóstico biológico:</strong> Un modelo 3D refleja la superficie óptica, pero no la salud pulpar ni la densidad ósea profunda, por lo que siempre se complementa con radiología digital.</li>\n        </ul>\n\n        <h2>4. Preguntas Frecuentes sobre el Escaneo 3D</h2>\n        <div class=\"faq-item\">\n          <h4>¿El escáner intraoral emite radiación?</h4>\n          <p>No. El escáner intraoral funciona exclusivamente con luz óptica visible o tecnología estructurada. Es 100% seguro para mujeres embarazadas y personas de cualquier edad.</p>\n        </div>\n        <div class=\"faq-item\">\n          <h4>¿Duele o genera calor en los dientes?</h4>\n          <p>En lo absoluto. El sensor no toca con fuerza las encías, no produce calor y el proceso puede pausarse en cualquier segundo si necesitas tragar saliva o hablar.</p>\n        </div>\n        <div class=\"faq-item\">\n          <h4>¿Cuánto tiempo toma escanear mi boca entera?</h4>\n          <p>En promedio, un escaneo completo de maxilar superior, inferior y registro de mordida toma entre 3 y 5 minutos.</p>\n        </div>\n\n        <h2>5. Conclusión y perspectiva de la Dra. Jailin Rada</h2>\n        <p>\n          El escaneo intraoral 3D ha transformado la odontología de una experiencia angustiante en un proceso transparente, colaborativo y clínicamente superior. En Aurea Smile, creemos que la tecnología solo tiene sentido cuando se traduce en paz mental para el paciente y resultados estéticos que perduren en el tiempo con armonía biológica.\n        </p>\n\n        <div class=\"clinical-disclaimer\">\n          <strong>Aviso médico informativo:</strong> Este contenido es de carácter estrictamente divulgativo y formativo. No constituye diagnóstico ni reemplaza la valoración odontológica presencial. Las opciones terapéuticas dependen de la evaluación anatómica y funcional individual realizada por un odontólogo registrado.\n        </div>\n\n        <div class=\"scientific-refs\">\n          <strong>Referencias científicas y fuentes clínicas:</strong>\n          <ol>\n            <li>Zimmermann, M., et al. (2020). <em>Accuracy of intraoral digital scanners: A systematic review and meta-analysis</em>. Journal of Prosthetic Dentistry.</li>\n            <li>American Dental Association (ADA). Council on Scientific Affairs: <em>Digital Impression Technologies in Clinical Practice</em>.</li>\n            <li>Mangano, F., et al. (2017). <em>Intraoral scanners in dentistry: a review of the current literature</em>. BMC Oral Health.</li>\n          </ol>\n        </div>\n", "related_items": "\n            <li class=\"related-item\">\n              <a href=\"../diseno-sonrisa-natural/\">Diseño de sonrisa natural vs. dientes artificialmente blancos: Qué debes saber</a>\n              <span>Estética Dental • 6 min</span>\n            </li>\n            <li class=\"related-item\">\n              <a href=\"../coronas-metal-free/\">Coronas libres de metal: Zirconio y Disilicato de Litio en odontología moderna</a>\n              <span>Rehabilitación Oral • 5 min</span>\n            </li>"}, "en": {"meta_title": "No more messy molds: How does 3D intraoral scanning work? — Aurea Smile | Dr. Jailin Rada", "meta_desc": "Clinical medical insights on 3D Intraoral Scanning: clinical evidence, biomechanical advantages, and expert guidance by Dr. Jailin Rada in Cartagena.", "top_location": "Colombian Caribbean • Cartagena • Boutique Digital Dentistry", "nav_concept": "Why Choose Us", "nav_doctor": "Dr. Jailin Rada", "nav_treatments": "Treatments", "nav_reviews": "Reviews", "nav_blog": "Blog", "nav_location": "Location", "nav_cta": "Book Assessment", "bc_home": "Home", "bc_blog": "Blog", "bc_art": "3D Intraoral Scanning", "art_kicker": "Digital Dentistry • Clinical Innovation", "art_title": "No more messy molds: How does 3D intraoral scanning work?", "art_date": "🗓️ October 15, 2026", "art_time": "⏱️ Reading time: 5 minutes", "art_author_role": "Clinical review & medical direction", "sb_cta_tag": "Boutique Care in Cartagena", "sb_cta_title": "Experience digital dentistry at Aurea Smile", "sb_cta_desc": "Schedule your personalized 3D consultation and explore modern, minimally invasive dental solutions in complete comfort.", "sb_cta_btn": "Inquire via WhatsApp", "sb_related_title": "Related Articles", "sb_back_blog": "← Back to all articles", "doc_name": "Dr. Jailin Rada", "doc_role": "Clinical Director, Aurea Smile", "doc_bio": "Specialist in minimally invasive restorative & cosmetic dentistry utilizing 3D digital workflows in Cartagena.", "footer_brand_desc": "Aurea Smile — Boutique Dentistry. Cartagena, Colombia.", "footer_rights": "© 2026 Aurea Smile — Dr. Jailin Rada. All rights reserved.", "article_body": "\n        <figure class=\"article-hero-img\">\n          <img src=\"../../assets/blog-escaneo-3d.jpg\" alt=\"High-precision 3D intraoral scanning station at Aurea Smile\">\n          <figcaption>High-resolution digital intraoral camera capturing dental morphology in real time with zero mechanical discomfort.</figcaption>\n        </figure>\n\n        <p class=\"lead\" style=\"font-size:1.15rem; font-weight:500; color:var(--navy-deep); line-height:1.7;\">\n          For many patients, the most unpleasant memory of traditional dentistry is the cold metal tray packed with alginate paste or silicone putty—a dense mass that had to remain motionless for several minutes, triggering gag reflexes and suffocation feelings. Today, boutique digital dentistry replaces that archaic method with painless, high-speed, micron-accurate 3D optical scanning.\n        </p>\n\n        <h2>1. What exactly is a 3D intraoral scanner?</h2>\n        <p>\n          An intraoral scanner is a handheld optical instrument equipped with structured light sensors or ultra-fast scanning lasers. As it gently hovers along dental arches, it emits thousands of light pulses per second that bounce off teeth and soft tissues, capturing millions of precise Cartesian coordinates (X, Y, Z).\n        </p>\n        <p>\n          Specialized volumetric reconstruction software renders these data points instantaneously into a full-color polygonal mesh (STL, PLY, or OBJ files). Patients can view their own smile on a 4K display in real time with a level of clarity and fidelity that was once unimaginable.\n        </p>\n\n        <div class=\"callout-quote\">\n          \"The intraoral scanner is more than a technological milestone: it is a paradigm shift in patient wellbeing, allowing restorations to be planned with micron precision in complete comfort.\"\n        </div>\n\n        <h2>2. Clinically proven advantages over analogue impressions</h2>\n        <p>\n          Peer-reviewed studies in the <em>Journal of Prosthetic Dentistry</em> and global prosthodontic literature have documented remarkable benefits for both clinician and patient:\n        </p>\n\n        <ul>\n          <li><strong>Immediate Comfort & Zero Gag Reflex:</strong> Completely eliminates the discomfort and nausea triggered by conventional gooey impression trays.</li>\n          <li><strong>Micron Marginal Adaptation:</strong> Without dental stone gypsums that undergo hygroscopic expansion or silicones that shrink during polymerization, restorations achieve consistent marginal seals under 50 microns.</li>\n          <li><strong>Chairside Visualization & Co-Design:</strong> Patients can see wear facets, crossbites, and dental asymmetry in full 3D before starting any clinical procedure, facilitating transparent informed decisions.</li>\n          <li><strong>Instant Digital Workflows:</strong> Digital impression models travel to specialized dental milling laboratories in seconds over secure channels, shortening turnaround times from weeks to hours.</li>\n        </ul>\n\n        <div class=\"comparison-table-wrap\">\n          <table class=\"comparison-table\">\n            <thead>\n              <tr>\n                <th>Clinical Criterion</th>\n                <th>Traditional Impression (Alginate/Silicone)</th>\n                <th>3D Intraoral Optical Scan</th>\n              </tr>\n            </thead>\n            <tbody>\n              <tr>\n                <td><strong>Patient Comfort</strong></td>\n                <td>Frequent gag reflex and chemical aftertaste</td>\n                <td>Gentle, normal nasal breathing with easy pauses</td>\n              </tr>\n              <tr>\n                <td><strong>Dimensional Stability</strong></td>\n                <td>Vulnerable to room temperature and humidity</td>\n                <td>Permanent, invariable digital coordinate file</td>\n              </tr>\n              <tr>\n                <td><strong>Turnaround Time</strong></td>\n                <td>15 – 25 minutes including tray prep and stone cast</td>\n                <td>3 – 5 minutes for complete dual-arch capture</td>\n              </tr>\n              <tr>\n                <td><strong>Visual Preview</strong></td>\n                <td>Not possible until gypsum model is poured</td>\n                <td>Immediate 4K interactive display view</td>\n              </tr>\n            </tbody>\n          </table>\n        </div>\n\n        <h2>3. Primary clinical indications and real-world considerations</h2>\n        <p>\n          Digital impressions serve as the cornerstone for modern treatment planning at Aurea Smile, specifically for:\n        </p>\n        <ol>\n          <li><strong>Digital Smile Design (DSD):</strong> Facio-dental simulation prior to placing ceramic porcelain veneers.</li>\n          <li><strong>Metal-Free Crowns & Bridges:</strong> High-precision CAD/CAM robotic milling in monolithic ceramics.</li>\n          <li><strong>Clear Aligners & Orthodontics:</strong> Sequential computer-guided biomechanical tooth movement.</li>\n          <li><strong>Occlusal Wear Monitoring:</strong> Quantitative chronological mesh comparison to diagnose early bruxism.</li>\n        </ol>\n\n        <h3 style=\"font-size:1.25rem; margin-top:1.8rem; margin-bottom:0.8rem; color:var(--navy-deep);\">Honest clinical limitations</h3>\n        <p>\n          In evidence-based dentistry, no technology works magic without refined clinical expertise. Optical scanning presents specific biological considerations:\n        </p>\n        <ul>\n          <li><strong>Deep Subgingival Finish Lines:</strong> If tooth preparation margins are obscured by heavy crevicular fluid or bleeding, optical light cannot penetrate; meticulous gingival retraction is mandatory.</li>\n          <li><strong>Excessive Movement:</strong> Sudden patient tongue movements can introduce minor stitching artifacts that require quick local rescanning.</li>\n          <li><strong>No Substitute for Radiographic Bone Diagnosis:</strong> A 3D scan visualizes optical surfaces, but cannot assess internal pulp vitality or deep alveolar bone density, always requiring digital X-rays.</li>\n        </ul>\n\n        <h2>4. Frequently Asked Questions about 3D Scanning</h2>\n        <div class=\"faq-item\">\n          <h4>Does an intraoral scanner emit radiation?</h4>\n          <p>No. Intraoral scanners utilize harmless visible optical light or structured LED projection. It is 100% radiation-free and completely safe for expectant mothers and patients of all ages.</p>\n        </div>\n        <div class=\"faq-item\">\n          <h4>Does the scan hurt or create tooth sensitivity?</h4>\n          <p>Not at all. The wand never presses forcefully against your teeth or gums, generates no heat, and the scan can be paused anytime if you need to swallow or speak.</p>\n        </div>\n        <div class=\"faq-item\">\n          <h4>How long does a complete oral scan take?</h4>\n          <p>On average, capturing upper and lower dental arches along with your dynamic bite registration takes just 3 to 5 minutes.</p>\n        </div>\n\n        <h2>5. Conclusion and Dr. Jailin Rada's Clinical Perspective</h2>\n        <p>\n          3D intraoral scanning has transformed dental care from an apprehensive experience into an interactive, transparent, and clinically superior journey. At Aurea Smile, we believe high technology truly matters when it provides peace of mind for our patients and produces timeless aesthetic smiles in biological harmony.\n        </p>\n\n        <div class=\"clinical-disclaimer\">\n          <strong>Clinical Medical Notice:</strong> This content is designed strictly for educational and informational purposes. It does not constitute medical diagnosis and cannot replace an in-person dental consultation. Clinical options depend on individualized biological evaluations performed by a registered dental surgeon.\n        </div>\n\n        <div class=\"scientific-refs\">\n          <strong>Scientific References & Clinical Sources:</strong>\n          <ol>\n            <li>Zimmermann, M., et al. (2020). <em>Accuracy of intraoral digital scanners: A systematic review and meta-analysis</em>. Journal of Prosthetic Dentistry.</li>\n            <li>American Dental Association (ADA). Council on Scientific Affairs: <em>Digital Impression Technologies in Clinical Practice</em>.</li>\n            <li>Mangano, F., et al. (2017). <em>Intraoral scanners in dentistry: a review of the current literature</em>. BMC Oral Health.</li>\n          </ol>\n        </div>\n", "related_items": "\n            <li class=\"related-item\">\n              <a href=\"../diseno-sonrisa-natural/\">Natural smile architecture vs. artificial chalky whites: What you should know</a>\n              <span>Cosmetic Dentistry • 6 min</span>\n            </li>\n            <li class=\"related-item\">\n              <a href=\"../coronas-metal-free/\">Metal-Free Crowns: Zirconia and Lithium Disilicate in modern prosthodontics</a>\n              <span>Oral Rehabilitation • 5 min</span>\n            </li>"}};
+
+      var btnEs = document.getElementById('btn-es');
+      var btnEn = document.getElementById('btn-en');
+
+      function getSavedLanguage() {
+        try {
+          var saved = localStorage.getItem('aurea_smile_lang');
+          if (saved === 'en' || saved === 'es') return saved;
+        } catch(e) {}
+        return 'es';
+      }
+
+      function setLang(lang) {
+        try {
+          localStorage.setItem('aurea_smile_lang', lang);
+        } catch(e) {}
+        document.documentElement.lang = lang;
+
+        if (btnEs) btnEs.classList.toggle('active', lang === 'es');
+        if (btnEn) btnEn.classList.toggle('active', lang === 'en');
+
+        // Document title & meta
+        if (dict[lang] && dict[lang].meta_title) {
+          document.title = dict[lang].meta_title;
+        }
+        var metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc && dict[lang] && dict[lang].meta_desc) {
+          metaDesc.setAttribute('content', dict[lang].meta_desc);
+        }
+
+        // Text replacements
+        document.querySelectorAll('[data-i18n]').forEach(function(el) {
+          var k = el.getAttribute('data-i18n');
+          if (dict[lang] && dict[lang][k]) {
+            el.innerHTML = dict[lang][k];
+          }
+        });
+
+        // Dynamic body & related
+        var contentEl = document.getElementById('article-content-container');
+        if (contentEl && dict[lang] && dict[lang].article_body) {
+          contentEl.innerHTML = dict[lang].article_body;
+        }
+
+        var relatedEl = document.getElementById('related-articles-list');
+        if (relatedEl && dict[lang] && dict[lang].related_items) {
+          relatedEl.innerHTML = dict[lang].related_items;
+        }
+      }
+
+      if (btnEs) btnEs.addEventListener('click', function() { setLang('es'); });
+      if (btnEn) btnEn.addEventListener('click', function() { setLang('en'); });
+
+      document.addEventListener('DOMContentLoaded', function() {
+        setLang(getSavedLanguage());
+      });
+    })();
+  </script>
+</body>
+</html>

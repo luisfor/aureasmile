@@ -1,0 +1,773 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Blog Odontológico — Aurea Smile | Dra. Jailin Rada</title>
+  <meta name="description" content="Artículos clínicos y divulgación odontológica sobre escaneo intraoral 3D, diseño de sonrisa natural y coronas libres de metal por la Dra. Jailin Rada en Cartagena.">
+  <link rel="canonical" href="https://aureasmile.com/blog/">
+  <meta name="theme-color" content="#091C34">
+
+  <!-- Open Graph -->
+  <meta property="og:title" content="Blog Odontológico — Aurea Smile | Dra. Jailin Rada">
+  <meta property="og:description" content="Artículos clínicos y divulgación odontológica sobre salud, estética y tecnología dental en Cartagena, Colombia.">
+  <meta property="og:image" content="../assets/blog-escaneo-3d.jpg">
+  <meta property="og:type" content="blog">
+
+  <!-- Google Fonts: Plus Jakarta Sans + Inter -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+
+  <style>
+    :root {
+      --navy-deep: #091C34;
+      --navy-surface: #0E2746;
+      --navy-card: #133256;
+      --navy-border: rgba(213, 184, 139, 0.2);
+      --pearl-white: #F6F8FA;
+      --white: #FFFFFF;
+      --pearl-border: #E5EBF2;
+      --champagne: #D5B88B;
+      --champagne-light: #F4EADA;
+      --champagne-dark: #B69562;
+      --orange-cta: #F47721;
+      --orange-cta-hover: #DE6412;
+      --text-primary: #121D2F;
+      --text-muted: #59677B;
+      --text-on-dark: #F6F8FA;
+      --text-on-dark-muted: #9EAFCE;
+      --radius-sm: 8px;
+      --radius-md: 14px;
+      --radius-lg: 22px;
+      --radius-xl: 30px;
+      --radius-full: 9999px;
+      --shadow-sm: 0 2px 10px rgba(9, 28, 52, 0.04);
+      --shadow-md: 0 14px 35px rgba(9, 28, 52, 0.07);
+      --shadow-lg: 0 24px 50px rgba(9, 28, 52, 0.12);
+      --ease-luxe: cubic-bezier(0.16, 1, 0.3, 1);
+      --container-max: 1220px;
+    }
+
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+
+    html {
+      scroll-behavior: smooth;
+      font-size: 16px;
+    }
+
+    body {
+      font-family: 'Inter', -apple-system, BlinkMacSystemFont, sans-serif;
+      background-color: var(--pearl-white);
+      color: var(--text-primary);
+      line-height: 1.65;
+      overflow-x: hidden;
+      -webkit-font-smoothing: antialiased;
+    }
+
+    h1, h2, h3, h4 {
+      font-family: 'Plus Jakarta Sans', sans-serif;
+      color: var(--navy-deep);
+      font-weight: 700;
+      line-height: 1.25;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+      transition: all 0.25s var(--ease-luxe);
+    }
+
+    img {
+      max-width: 100%;
+      height: auto;
+      display: block;
+    }
+
+    .container {
+      width: 100%;
+      max-width: var(--container-max);
+      margin: 0 auto;
+      padding: 0 1.5rem;
+    }
+
+    /* Top bar */
+    .top-bar {
+      background: var(--navy-deep);
+      color: var(--text-on-dark-muted);
+      font-size: 0.84rem;
+      padding: 0.6rem 0;
+      border-bottom: 1px solid rgba(213, 184, 139, 0.15);
+    }
+    .top-bar .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      flex-wrap: wrap;
+      gap: 0.5rem;
+    }
+    .top-bar-link {
+      color: var(--text-on-dark);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      font-weight: 500;
+    }
+    .top-bar-link:hover { color: var(--champagne); }
+
+    .lang-switcher {
+      display: inline-flex;
+      background: rgba(255, 255, 255, 0.08);
+      border-radius: var(--radius-full);
+      padding: 2px;
+      border: 1px solid rgba(213, 184, 139, 0.25);
+    }
+    .lang-btn {
+      background: none;
+      border: none;
+      color: var(--text-on-dark-muted);
+      font-size: 0.75rem;
+      font-weight: 700;
+      padding: 2px 9px;
+      border-radius: var(--radius-full);
+      cursor: pointer;
+      transition: all 0.2s;
+    }
+    .lang-btn.active {
+      background: var(--champagne);
+      color: var(--navy-deep);
+    }
+
+    /* Header */
+    .header {
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+      background: rgba(246, 248, 250, 0.96);
+      backdrop-filter: blur(16px);
+      -webkit-backdrop-filter: blur(16px);
+      border-bottom: 1px solid var(--pearl-border);
+    }
+    .nav {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      height: 78px;
+    }
+    .brand-logo {
+      height: 46px;
+      width: auto;
+    }
+    .nav-links {
+      display: flex;
+      align-items: center;
+      gap: 1.8rem;
+      list-style: none;
+    }
+    .nav-link {
+      font-size: 0.92rem;
+      font-weight: 600;
+      color: var(--navy-deep);
+    }
+    .nav-link:hover, .nav-link.active {
+      color: var(--orange-cta);
+    }
+    .btn-header-cta {
+      background: var(--orange-cta);
+      color: #fff !important;
+      font-weight: 700;
+      font-size: 0.88rem;
+      padding: 0.65rem 1.35rem;
+      border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.5rem;
+      box-shadow: 0 4px 14px rgba(244, 119, 33, 0.28);
+    }
+    .btn-header-cta:hover {
+      background: var(--orange-cta-hover);
+      transform: translateY(-1px);
+    }
+
+    /* Hero Blog Header */
+    .blog-hero {
+      background: radial-gradient(circle at 80% 20%, rgba(213, 184, 139, 0.15) 0%, transparent 60%),
+                  linear-gradient(180deg, var(--navy-deep) 0%, var(--navy-surface) 100%);
+      color: #fff;
+      padding: 4.5rem 0 4rem;
+      border-bottom: 1px solid rgba(213, 184, 139, 0.2);
+    }
+    .breadcrumbs {
+      display: flex;
+      align-items: center;
+      gap: 0.5rem;
+      font-size: 0.84rem;
+      color: var(--text-on-dark-muted);
+      margin-bottom: 1.5rem;
+    }
+    .breadcrumbs a { color: var(--champagne); }
+    .breadcrumbs a:hover { text-decoration: underline; }
+    .blog-hero-kicker {
+      font-size: 0.85rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 2px;
+      color: var(--champagne);
+      display: block;
+      margin-bottom: 0.5rem;
+    }
+    .blog-hero-title {
+      color: #fff;
+      font-size: 2.8rem;
+      line-height: 1.15;
+      margin-bottom: 1.2rem;
+    }
+    .blog-hero-subtitle {
+      color: var(--text-on-dark-muted);
+      font-size: 1.15rem;
+      max-width: 680px;
+      line-height: 1.6;
+    }
+
+    /* Blog Main Listing */
+    .blog-main {
+      padding: 5rem 0;
+    }
+    .blog-listing-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 2.5rem;
+    }
+    .blog-card {
+      background: #ffffff;
+      border: 1px solid var(--pearl-border);
+      border-radius: var(--radius-lg);
+      overflow: hidden;
+      box-shadow: var(--shadow-sm);
+      display: flex;
+      flex-direction: column;
+      transition: all 0.3s var(--ease-luxe);
+    }
+    .blog-card:hover {
+      transform: translateY(-5px);
+      box-shadow: var(--shadow-md);
+      border-color: var(--champagne);
+    }
+    .blog-img-wrap {
+      height: 220px;
+      background: var(--navy-deep);
+      position: relative;
+      overflow: hidden;
+    }
+    .blog-img {
+      width: 100%;
+      height: 100%;
+      object-fit: cover;
+      transition: transform 0.5s;
+    }
+    .blog-card:hover .blog-img {
+      transform: scale(1.04);
+    }
+    .blog-tag {
+      position: absolute;
+      top: 14px;
+      left: 14px;
+      background: rgba(9, 28, 52, 0.88);
+      backdrop-filter: blur(8px);
+      color: var(--champagne);
+      font-size: 0.72rem;
+      font-weight: 700;
+      text-transform: uppercase;
+      padding: 0.3rem 0.75rem;
+      border-radius: var(--radius-full);
+      border: 1px solid rgba(213, 184, 139, 0.3);
+    }
+    .blog-body {
+      padding: 2rem;
+      display: flex;
+      flex-direction: column;
+      flex-grow: 1;
+      justify-content: space-between;
+    }
+    .blog-meta-row {
+      display: flex;
+      align-items: center;
+      gap: 0.8rem;
+      font-size: 0.8rem;
+      color: var(--text-muted);
+      margin-bottom: 0.8rem;
+    }
+    .blog-card-title {
+      font-size: 1.25rem;
+      line-height: 1.35;
+      margin-bottom: 0.9rem;
+      color: var(--navy-deep);
+    }
+    .blog-card-title a:hover {
+      color: var(--orange-cta);
+    }
+    .blog-excerpt {
+      font-size: 0.92rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+      margin-bottom: 1.5rem;
+    }
+    .blog-read-btn {
+      font-size: 0.9rem;
+      font-weight: 700;
+      color: var(--navy-deep);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.4rem;
+      margin-top: auto;
+    }
+    .blog-read-btn:hover {
+      color: var(--orange-cta);
+      transform: translateX(4px);
+    }
+
+    /* Disclaimer Box */
+    .blog-disclaimer-box {
+      margin-top: 4.5rem;
+      background: #ffffff;
+      border-left: 4px solid var(--champagne-dark);
+      padding: 1.6rem 2rem;
+      border-radius: 0 var(--radius-md) var(--radius-md) 0;
+      box-shadow: var(--shadow-sm);
+    }
+    .blog-disclaimer-box p {
+      font-size: 0.88rem;
+      color: var(--text-muted);
+      line-height: 1.6;
+    }
+    .blog-disclaimer-box strong {
+      color: var(--navy-deep);
+    }
+
+    /* CTA Section */
+    .blog-cta-banner {
+      background: var(--navy-deep);
+      color: #fff;
+      padding: 4rem;
+      border-radius: var(--radius-xl);
+      margin-top: 5rem;
+      text-align: center;
+      position: relative;
+      overflow: hidden;
+      border: 1px solid rgba(213, 184, 139, 0.25);
+    }
+    .blog-cta-banner h2 {
+      color: #fff;
+      font-size: 2.2rem;
+      margin-bottom: 1rem;
+    }
+    .blog-cta-banner p {
+      color: var(--text-on-dark-muted);
+      font-size: 1.05rem;
+      max-width: 620px;
+      margin: 0 auto 2rem;
+    }
+    .btn-wa-cta {
+      background: var(--orange-cta);
+      color: #fff !important;
+      font-weight: 700;
+      padding: 0.95rem 2rem;
+      border-radius: var(--radius-full);
+      display: inline-flex;
+      align-items: center;
+      gap: 0.6rem;
+      box-shadow: 0 6px 20px rgba(244, 119, 33, 0.35);
+    }
+    .btn-wa-cta:hover {
+      background: var(--orange-cta-hover);
+      transform: translateY(-2px);
+    }
+
+    /* Footer */
+    .footer {
+      background: var(--navy-deep);
+      color: var(--text-on-dark-muted);
+      padding: 4.5rem 0 2rem;
+      border-top: 1px solid rgba(213, 184, 139, 0.15);
+    }
+    .footer-grid {
+      display: grid;
+      grid-template-columns: 1.5fr 1fr 1fr 1fr;
+      gap: 3rem;
+      margin-bottom: 3rem;
+    }
+    .footer-title {
+      color: #fff;
+      font-size: 1.05rem;
+      margin-bottom: 1.2rem;
+    }
+    .footer-links {
+      list-style: none;
+      display: grid;
+      gap: 0.65rem;
+      font-size: 0.9rem;
+    }
+    .footer-links a:hover { color: var(--champagne); }
+    .footer-bottom {
+      border-top: 1px solid rgba(255, 255, 255, 0.08);
+      padding-top: 2rem;
+      text-align: center;
+      font-size: 0.85rem;
+    }
+
+    /* Responsive */
+    @media (max-width: 1024px) {
+      .blog-listing-grid { grid-template-columns: repeat(2, 1fr); }
+      .footer-grid { grid-template-columns: 1fr 1fr; }
+    }
+    @media (max-width: 768px) {
+      .blog-listing-grid { grid-template-columns: 1fr; }
+      .blog-hero-title { font-size: 2.2rem; }
+      .blog-cta-banner { padding: 2.5rem 1.5rem; }
+      .nav-links { display: none; }
+      .footer-grid { grid-template-columns: 1fr; }
+    }
+  </style>
+</head>
+<body>
+
+  <!-- Top bar -->
+  <div class="top-bar">
+    <div class="container">
+      <div style="display:flex; align-items:center; gap:0.5rem;">
+        <span>📍</span>
+        <span data-i18n="top_location">Caribe Colombiano • Cartagena • Odontología Digital Boutique</span>
+      </div>
+      <div style="display:flex; align-items:center; gap:1.2rem;">
+        <a href="https://wa.me/573161473568" target="_blank" rel="noopener" class="top-bar-link">
+          <span>💬</span> WhatsApp: +57 316 147 3568
+        </a>
+        <div class="lang-switcher">
+          <button class="lang-btn active" id="btn-es">ES</button>
+          <button class="lang-btn" id="btn-en">EN</button>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <!-- Header -->
+  <header class="header">
+    <div class="container">
+      <nav class="nav">
+        <a href="../" aria-label="Aurea Smile - Inicio">
+          <img src="../assets/logo.png" alt="Aurea Smile Logo" class="brand-logo">
+        </a>
+        <ul class="nav-links">
+          <li><a href="../#filosofia" class="nav-link" data-i18n="nav_concept">Por qué elegirnos</a></li>
+          <li><a href="../#doctora" class="nav-link" data-i18n="nav_doctor">Dra. Jailin Rada</a></li>
+          <li><a href="../#tratamientos" class="nav-link" data-i18n="nav_treatments">Tratamientos</a></li>
+          <li><a href="../#testimonios" class="nav-link" data-i18n="nav_reviews">Opiniones</a></li>
+          <li><a href="./" class="nav-link active" data-i18n="nav_blog">Blog</a></li>
+          <li><a href="../#ubicacion" class="nav-link" data-i18n="nav_location">Ubicación</a></li>
+        </ul>
+        <a href="https://wa.me/573161473568?text=Hola%2C%20quiero%20agendar%20mi%20valoración%20con%20la%20Dra.%20Jailin%20Rada" target="_blank" rel="noopener" class="btn-header-cta">
+          <span>📅</span> <span data-i18n="nav_cta">Agenda tu valoración</span>
+        </a>
+      </nav>
+    </div>
+  </header>
+
+  <!-- Hero Blog -->
+  <section class="blog-hero">
+    <div class="container">
+      <nav class="breadcrumbs" aria-label="Migas de pan">
+        <a href="../" data-i18n="bc_home">Inicio</a>
+        <span>›</span>
+        <span data-i18n="bc_blog">Blog Odontológico</span>
+      </nav>
+      <span class="blog-hero-kicker" data-i18n="hero_kicker">Educación Clínica & Evidencia</span>
+      <h1 class="blog-hero-title" data-i18n="hero_title">Artículos y Novedades Odontológicas</h1>
+      <p class="blog-hero-subtitle" data-i18n="hero_sub">
+        Guías claras, fundamentadas y transparentes sobre tecnología dental, estética responsable y bienestar oral, redactadas para pacientes exigentes.
+      </p>
+    </div>
+  </section>
+
+  <!-- Main Listing -->
+  <main class="blog-main">
+    <div class="container">
+      <div class="blog-listing-grid">
+
+        <!-- Artículo 1 -->
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <span class="blog-tag" data-i18n="art1_tag">Odontología Digital</span>
+            <img src="../assets/blog-escaneo-3d.jpg" alt="Escáner intraoral 3D óptico en Aurea Smile" class="blog-img" loading="lazy">
+          </div>
+          <div class="blog-body">
+            <div>
+              <div class="blog-meta-row">
+                <span>🗓️ 15 Octubre, 2026</span>
+                <span>⏱️ 5 min</span>
+              </div>
+              <h2 class="blog-card-title">
+                <a href="escaneo-intraoral-3d/" data-i18n="art1_title">El fin de las pastas incómodas: ¿Cómo funciona el escaneo intraoral 3D?</a>
+              </h2>
+              <p class="blog-excerpt" data-i18n="art1_excerpt">
+                Descubre cómo los sensores ópticos de alta velocidad capturan la anatomía dental en tiempo real con precisión micrométrica, eliminando las náuseas y acelerando tu tratamiento.
+              </p>
+            </div>
+            <a href="escaneo-intraoral-3d/" class="blog-read-btn" data-i18n="read_article">
+              Leer artículo completo →
+            </a>
+          </div>
+        </article>
+
+        <!-- Artículo 2 -->
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <span class="blog-tag" data-i18n="art2_tag">Estética Dental</span>
+            <img src="../assets/blog-diseno-sonrisa.jpg" alt="Muestrario de carillas de porcelana estética y guía de color dental" class="blog-img" loading="lazy">
+          </div>
+          <div class="blog-body">
+            <div>
+              <div class="blog-meta-row">
+                <span>🗓️ 08 Octubre, 2026</span>
+                <span>⏱️ 6 min</span>
+              </div>
+              <h2 class="blog-card-title">
+                <a href="diseno-sonrisa-natural/" data-i18n="art2_title">Diseño de sonrisa natural vs. dientes artificialmente blancos: Qué debes saber</a>
+              </h2>
+              <p class="blog-excerpt" data-i18n="art2_excerpt">
+                Por qué la verdadera elegancia reside en la translucidez óptica, la textura del esmalte y la proporción facial individual, superando la tendencia de dientes opacos o uniformes.
+              </p>
+            </div>
+            <a href="diseno-sonrisa-natural/" class="blog-read-btn" data-i18n="read_article">
+              Leer artículo completo →
+            </a>
+          </div>
+        </article>
+
+        <!-- Artículo 3 -->
+        <article class="blog-card">
+          <div class="blog-img-wrap">
+            <span class="blog-tag" data-i18n="art3_tag">Rehabilitación</span>
+            <img src="../assets/blog-coronas-metal-free.jpg" alt="Coronas de zirconio y disilicato de litio libres de metal" class="blog-img" loading="lazy">
+          </div>
+          <div class="blog-body">
+            <div>
+              <div class="blog-meta-row">
+                <span>🗓️ 01 Octubre, 2026</span>
+                <span>⏱️ 5 min</span>
+              </div>
+              <h2 class="blog-card-title">
+                <a href="coronas-metal-free/" data-i18n="art3_title">Coronas libres de metal: Zirconio y Disilicato de Litio en odontología moderna</a>
+              </h2>
+              <p class="blog-excerpt" data-i18n="art3_excerpt">
+                Comprende las diferencias biomecánicas entre zirconio monolítico y disilicato de litio, sus indicaciones precisas y por qué evitan el halo oscuro en las encías.
+              </p>
+            </div>
+            <a href="coronas-metal-free/" class="blog-read-btn" data-i18n="read_article">
+              Leer artículo completo →
+            </a>
+          </div>
+        </article>
+
+      </div>
+
+      <!-- Disclaimer Ético -->
+      <div class="blog-disclaimer-box">
+        <p>
+          <strong>Aviso médico informativo:</strong> Los artículos de divulgación de Aurea Smile tienen carácter exclusivamente educativo y orientativo. No constituyen diagnóstico, prescripción ni pronóstico odontológico definitivo. Cada condición bucodental requiere una valoración clínica individualizada con la Dra. Jailin Rada o un profesional odontológico colegiado.
+        </p>
+      </div>
+
+      <!-- CTA Banner -->
+      <div class="blog-cta-banner">
+        <h2 data-i18n="cta_title">¿Deseas una valoración personalizada para tu caso?</h2>
+        <p data-i18n="cta_desc">
+          Conversa directamente con el equipo de Aurea Smile en Cartagena y resuelve tus dudas con un enfoque clínico riguroso y humano.
+        </p>
+        <a href="https://wa.me/573161473568?text=Hola%2C%20leí%20el%20blog%20de%20Aurea%20Smile%20y%20deseo%20agendar%20una%20valoración" target="_blank" rel="noopener" class="btn-wa-cta">
+          <span>💬</span> <span data-i18n="cta_btn">Agendar Valoración en WhatsApp</span>
+        </a>
+      </div>
+
+    </div>
+  </main>
+
+  <!-- Footer -->
+  <footer class="footer">
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <img src="../assets/logo.png" alt="Aurea Smile" style="height: 44px; margin-bottom: 1.2rem;">
+          <p style="font-size: 0.9rem; line-height: 1.6;">
+            Aurea Smile — Odontología Boutique. Dra. Jailin Rada. Cartagena, Colombia.
+          </p>
+        </div>
+        <div>
+          <h3 class="footer-title" data-i18n="ft_treatments_title">Tratamientos</h3>
+          <ul class="footer-links">
+            <li><a href="../tratamientos/#odontologia-digital" data-i18n="ft_item1">Odontología Digital 3D</a></li>
+            <li><a href="../tratamientos/#estetica-dental" data-i18n="ft_item2">Diseño de Sonrisa</a></li>
+            <li><a href="../tratamientos/#rehabilitacion-oral" data-i18n="ft_item3">Rehabilitación Oral</a></li>
+            <li><a href="../tratamientos/coronas-metal-free/" data-i18n="ft_item4">Coronas Metal-Free</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title" data-i18n="ft_nav_title">Navegación</h3>
+          <ul class="footer-links">
+            <li><a href="../" data-i18n="bc_home">Inicio</a></li>
+            <li><a href="../#doctora" data-i18n="nav_doctor">Dra. Jailin Rada</a></li>
+            <li><a href="./" data-i18n="nav_blog">Blog Odontológico</a></li>
+            <li><a href="../#ubicacion" data-i18n="nav_location">Ubicación & Google Maps</a></li>
+            <li><a href="../calificanos.html" data-i18n="nav_review_service">Evaluar Servicio</a></li>
+          </ul>
+        </div>
+        <div>
+          <h3 class="footer-title" data-i18n="ft_contact_title">Contacto</h3>
+          <ul class="footer-links">
+            <li><a href="https://wa.me/573161473568" target="_blank" rel="noopener">WhatsApp: +57 316 147 3568</a></li>
+            <li><span data-i18n="ft_city">Cartagena, Colombia</span></li>
+            <li><span data-i18n="ft_hours">Lunes a Sábado</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="footer-bottom" data-i18n="footer_bottom">
+        &copy; 2026 Aurea Smile — Dra. Jailin Rada. Todos los derechos reservados.
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function() {
+      var dict = {
+        es: {
+          meta_title: "Blog Odontológico — Aurea Smile | Dra. Jailin Rada",
+          meta_desc: "Guías clínicas, artículos y novedades sobre odontología digital, carillas, coronas metal-free y estética dental en Cartagena por la Dra. Jailin Rada.",
+          top_location: "Caribe Colombiano • Cartagena • Odontología Digital Boutique",
+          nav_concept: "Por qué elegirnos",
+          nav_doctor: "Dra. Jailin Rada",
+          nav_treatments: "Tratamientos",
+          nav_reviews: "Opiniones",
+          nav_blog: "Blog",
+          nav_location: "Ubicación",
+          nav_cta: "Agenda tu valoración",
+          bc_home: "Inicio",
+          bc_blog: "Blog Odontológico",
+          hero_kicker: "Educación Clínica & Evidencia",
+          hero_title: "Artículos y Novedades Odontológicas",
+          hero_sub: "Guías claras, fundamentadas y transparentes sobre tecnología dental, estética responsable y bienestar oral, redactadas para pacientes exigentes.",
+          art1_tag: "Odontología Digital",
+          art1_title: "El fin de las pastas incómodas: ¿Cómo funciona el escaneo intraoral 3D?",
+          art1_excerpt: "Descubre cómo los sensores ópticos de alta velocidad capturan la anatomía dental en tiempo real con precisión micrométrica, eliminando las náuseas y acelerando tu tratamiento.",
+          art2_tag: "Estética Dental",
+          art2_title: "Diseño de sonrisa natural vs. dientes artificialmente blancos: Qué debes saber",
+          art2_excerpt: "Por qué la verdadera elegancia reside en la translucidez óptica, la textura del esmalte y la proporción facial individual, superando la tendencia de dientes opacos o uniformes.",
+          art3_tag: "Rehabilitación",
+          art3_title: "Coronas libres de metal: Zirconio y Disilicato de Litio en odontología moderna",
+          art3_excerpt: "Comprende las diferencias biomecánicas entre zirconio monolítico y disilicato de litio, sus indicaciones precisas y por qué evitan el halo oscuro en las encías.",
+          read_article: "Leer artículo completo →",
+          cta_title: "¿Deseas una valoración personalizada para tu caso?",
+          cta_desc: "Conversa directamente con el equipo de Aurea Smile en Cartagena y resuelve tus dudas con un enfoque clínico riguroso y humano.",
+          cta_btn: "Agendar Valoración en WhatsApp",
+          ft_treatments_title: "Tratamientos",
+          ft_item1: "Odontología Digital 3D",
+          ft_item2: "Diseño de Sonrisa",
+          ft_item3: "Rehabilitación Oral",
+          ft_item4: "Coronas Metal-Free",
+          ft_nav_title: "Navegación",
+          nav_review_service: "Evaluar Servicio",
+          ft_contact_title: "Contacto",
+          ft_city: "Cartagena, Colombia",
+          ft_hours: "Lunes a Sábado",
+          footer_bottom: "© 2026 Aurea Smile — Dra. Jailin Rada. Todos los derechos reservados."
+        },
+        en: {
+          meta_title: "Dental Blog & Insights — Aurea Smile | Dr. Jailin Rada",
+          meta_desc: "Clinical articles, evidence-based guides, and insights on digital dentistry, veneers, and oral health in Cartagena by Dr. Jailin Rada.",
+          top_location: "Colombian Caribbean • Cartagena • Boutique Digital Dentistry",
+          nav_concept: "Why Choose Us",
+          nav_doctor: "Dr. Jailin Rada",
+          nav_treatments: "Treatments",
+          nav_reviews: "Reviews",
+          nav_blog: "Blog",
+          nav_location: "Location",
+          nav_cta: "Book Assessment",
+          bc_home: "Home",
+          bc_blog: "Dental Blog",
+          hero_kicker: "Clinical Education & Evidence",
+          hero_title: "Dental Articles & Insights",
+          hero_sub: "Evidence-based, transparent guides on digital technology, aesthetic harmony, and oral health designed for discerning patients.",
+          art1_tag: "Digital Dentistry",
+          art1_title: "No more messy molds: How does 3D intraoral scanning work?",
+          art1_excerpt: "Discover how high-speed optical sensors capture dental anatomy in real time with micron-level precision, eliminating gag reflex and accelerating your care.",
+          art2_tag: "Cosmetic Dentistry",
+          art2_title: "Natural smile architecture vs. artificial chalky whites: What you should know",
+          art2_excerpt: "Why authentic dental elegance stems from optical translucency, enamel micro-texture, and facial harmony rather than artificial opaque uniformity.",
+          art3_tag: "Rehabilitation",
+          art3_title: "Metal-Free Crowns: Zirconia and Lithium Disilicate in modern prosthodontics",
+          art3_excerpt: "Learn the biomechanical distinctions between monolithic zirconia and lithium disilicate, their indications, and why they eliminate dark gum margins.",
+          read_article: "Read full article →",
+          cta_title: "Would you like a personalized assessment for your smile?",
+          cta_desc: "Connect directly with Aurea Smile's clinical desk in Cartagena to explore your options with scientific rigor and dedicated care.",
+          cta_btn: "Book Assessment on WhatsApp",
+          ft_treatments_title: "Treatments",
+          ft_item1: "3D Digital Dentistry",
+          ft_item2: "Smile Design",
+          ft_item3: "Oral Rehabilitation",
+          ft_item4: "Metal-Free Crowns",
+          ft_nav_title: "Navigation",
+          nav_review_service: "Rate Our Service",
+          ft_contact_title: "Contact",
+          ft_city: "Cartagena, Colombia",
+          ft_hours: "Monday to Saturday",
+          footer_bottom: "© 2026 Aurea Smile — Dr. Jailin Rada. All rights reserved."
+        }
+      };
+
+      var btnEs = document.getElementById('btn-es');
+      var btnEn = document.getElementById('btn-en');
+
+      function getSavedLanguage() {
+        try {
+          var saved = localStorage.getItem('aurea_smile_lang');
+          if (saved === 'en' || saved === 'es') return saved;
+        } catch(e) {}
+        return 'es';
+      }
+
+      function setLang(lang) {
+        try {
+          localStorage.setItem('aurea_smile_lang', lang);
+        } catch(e) {}
+        document.documentElement.lang = lang;
+
+        if (btnEs) btnEs.classList.toggle('active', lang === 'es');
+        if (btnEn) btnEn.classList.toggle('active', lang === 'en');
+
+        if (dict[lang] && dict[lang].meta_title) {
+          document.title = dict[lang].meta_title;
+        }
+        var metaDesc = document.querySelector('meta[name="description"]');
+        if (metaDesc && dict[lang] && dict[lang].meta_desc) {
+          metaDesc.setAttribute('content', dict[lang].meta_desc);
+        }
+
+        document.querySelectorAll('[data-i18n]').forEach(function(el) {
+          var k = el.getAttribute('data-i18n');
+          if (dict[lang] && dict[lang][k]) {
+            el.innerHTML = dict[lang][k];
+          }
+        });
+      }
+
+      if (btnEs) btnEs.addEventListener('click', function() { setLang('es'); });
+      if (btnEn) btnEn.addEventListener('click', function() { setLang('en'); });
+
+      // Iniciar con idioma persistente
+      setLang(getSavedLanguage());
+    })();
+  </script>
+</body>
+</html>
